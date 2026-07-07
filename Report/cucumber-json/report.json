@@ -1,0 +1,92 @@
+[
+  {
+    "description": "  As a user\n  I want to login to the LMS application\n  So that I can access the dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify login with a valid email and valid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 215662100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1283893799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72734400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15599799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 976936900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 97446399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login_vithya_07_july_2026",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login_VITHYA_07_JULY_2026",
+    "tags": [],
+    "uri": "src\\test\\Features\\login.feature"
+  }
+]
