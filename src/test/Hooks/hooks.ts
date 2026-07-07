@@ -1,8 +1,10 @@
+import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
 import { Browser, chromium } from "@playwright/test";
 import { CustomWorld } from "../World/CustomWorld";
 import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
+import { courseStructurePage } from '../Pages/courseStructurePage';
 setDefaultTimeout(60000);
 let browser: Browser;
 BeforeAll(async () => {
@@ -15,6 +17,8 @@ Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
+    this.addCourseStructure= new AddCourseStructurePage(this.page)
+    this.courseStructure = new courseStructurePage(this.page)
    
 });
 After(async function (this: CustomWorld, { result, pickle }) {
@@ -24,7 +28,7 @@ After(async function (this: CustomWorld, { result, pickle }) {
     if (result?.status === Status.FAILED) {
 
         const img = await this.page.screenshot({
-            path: `test-results/screenshots/${pickle.name}.png`,
+            path: `Report/screenshots/${pickle.name}.png`,
             type: "png"
         });
     }
