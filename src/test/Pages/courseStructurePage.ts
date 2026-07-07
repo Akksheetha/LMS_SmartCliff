@@ -11,7 +11,7 @@ export class courseStructurePage extends basepage{
 
     constructor(page:Page){
         super(page)
-        this.courseStructureIcon=page.locator("//div[@class='p-1.5 bg-blue-100']")
+        this.courseStructureIcon=page.locator("//div[@title='Course Management']")
         this.search=page.locator("//div[@class='relative']/child::input[@type='text']")
         this.AddCourseStructure_btn= page.locator("//span[text()='Add Course Structure']")
     }

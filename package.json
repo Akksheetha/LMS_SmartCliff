@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "cross-env ENV=qa cucumber-js",
+    "test:jeeva" : "cucumber-js --tags '@jeeva'",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
     "test:edge": "cross-env BROWSER=msedge cucumber-js"
@@ -22,8 +23,9 @@
     "winston": "^3.19.0"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^13.0.0",
+    "@cucumber/cucumber": "^12.9.0",
     "csv-parse": "^7.0.1",
+    "json": "^11.0.0",
     "ts-node": "^10.9.2",
     "xlsx": "^0.18.5"
   }

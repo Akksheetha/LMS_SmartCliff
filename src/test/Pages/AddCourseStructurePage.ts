@@ -9,35 +9,59 @@ export class AddCourseStructurePage extends basepage{
     private AddSumodule_btn:Locator;
     private subModuleText:Locator 
     private ActionSettings:Locator
+    private herichy:Locator
+   // private AddModule:Locator
 
     constructor(page:Page){
         super(page)
-        this.AddSubmodule=page.locator("//span[text()='Sub Module']")
+        
+        this.AddSubmodule=page.locator("//button[@title='Add New Sub Module']")
         this.title=page.locator("//textarea[@id='title']")
         this.describe = page.locator("//textarea[@id='description']")
         this.checkbox = page.locator("(//input[@type='checkbox'])[2]")
         this.AddSumodule_btn= page.locator("//div[@class='flex justify-end gap-2']/child::button[@type='submit']")
         this.subModuleText=page.locator("(//span[@class='flex-[0.8] text-center px-2 break-words whitespace-normal overflow-hidden text-ellipsis'])[2]")
-        this.ActionSettings=page.locator("//div[@class='relative flex items-center gap-1.5 z-10']")
-        
+        this.ActionSettings=page.locator("//span[text()='More']")
+        this.herichy=page.locator("(//div[@class='relative']/div)[1]")
+        //this.AddModule=page.locator("//button[@title='Add module']")
     }
 
-    async addsubmoduleLink(){
-        this.click(this.AddSubmodule)
+
+async addsubmoduleLink() {
+
+    // Click outside the dropdown
+    await this.page.mouse.click(5, 5);
+
+    await this.page.waitForTimeout(300);
+
+    await this.AddSubmodule.waitFor({
+        state: "visible"
+    });
+
+    await this.AddSubmodule.scrollIntoViewIfNeeded();
+
+    await this.AddSubmodule.click();
     }
+
     async fillTitle(text:string){
-        this.fill(this.title,text)
+        await this.fill(this.title,text)
     }
     async filldescribe(text:string){
-        this.fill(this.describe,text)
+        await this.fill(this.describe,text)
     }
     async clickCheckbox(){
-        this.click(this.checkbox)
+        await this.click(this.checkbox)
     }
     async addsubmodule_btn(){
-        this.click(this.AddSumodule_btn)
+        await this.click(this.AddSumodule_btn)
     }
     async Textsubmodule(){
         return this.Locator(this.subModuleText)
+    }
+    async clickActionSetting(){
+        await this.click(this.ActionSettings)
+    }
+    async clickHierarchy(){
+        await this.click(this.herichy)
     }
 }

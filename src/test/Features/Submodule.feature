@@ -1,3 +1,4 @@
+@jeeva
 Feature:user working on submodule functionality
 
 Feature Description
@@ -10,8 +11,8 @@ Feature Description
               And the user click the Add course Structure of the searched course
               And the user click the Action Setting option
               And the user enable the hierarchy Action
-              And the user added new module
-
+    
+        
         Scenario: user Add a newSubmodule 1st time
              When the user click the add sub module in the sub module
               And the user enter the title of "HTML"

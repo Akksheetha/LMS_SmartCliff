@@ -1,43 +1,20 @@
-import {Page,Locator} from '@playwright/test'
+import { Locator, Page } from "@playwright/test";
 
-export class basepage{
-    protected page:Page
+export class basepage {
 
-    constructor(page:Page){
-        this.page = page
-    }
+    constructor(protected page: Page) {}
+
     async click(locator: Locator) {
+        await locator.waitFor({ state: "visible" });
         await locator.click();
     }
 
     async fill(locator: Locator, text: string) {
+        await locator.waitFor({ state: "visible" });
         await locator.fill(text);
     }
 
-    async getText(locator:Locator){
-        await locator.textContent()
-    }
-
-    async scroll(locator:Locator){
-        await locator.scrollIntoViewIfNeeded()
-    }
-
-    async doubleClick(locator: Locator) {
-        await locator.dblclick();
-    }
-    
-    async isVisible(locator: Locator): Promise<boolean> {
-        return await locator.isVisible();
-    }
-
-    async isEnabled(locator: Locator): Promise<boolean> {
-        return await locator.isEnabled();
-    }
-
-    async isChecked(locator: Locator): Promise<boolean> {
-        return await locator.isChecked();
-    }
-    async Locator(locator:Locator){
-        return locator
+    async Locator(locator: Locator) {
+        return await locator.textContent();
     }
 }

@@ -4,7 +4,11 @@ import { Browser, chromium } from "@playwright/test";
 import { CustomWorld } from "../World/CustomWorld";
 import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
+
 import { courseStructurePage } from '../Pages/courseStructurePage';
+
+import { LoginPage } from "../Pages/LoginPage";
+
 setDefaultTimeout(60000);
 let browser: Browser;
 BeforeAll(async () => {
@@ -17,8 +21,12 @@ Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
+
     this.addCourseStructure= new AddCourseStructurePage(this.page)
     this.courseStructure = new courseStructurePage(this.page)
+
+    this.loginPage = new LoginPage(this.page);
+
    
 });
 After(async function (this: CustomWorld, { result, pickle }) {
