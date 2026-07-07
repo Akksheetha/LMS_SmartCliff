@@ -5,6 +5,7 @@
 | Field         | Details |
 | ------------- | ------- |
 | PR Title      |         |
+| PR Number     |         |
 | Author        |         |
 | Date          |         |
 | Source Branch |         |
