@@ -1,0 +1,24 @@
+{
+  "validUser": {
+    "email": "testing@gmail.com",
+    "password": "123"
+  },
+  "invalidEmail": {
+    "email": "test@gmail.com",
+    "password": "123"
+  },
+  "invalidPassword": {
+    "email": "testing@gmail.com",
+    "password": "1"
+  },
+  "bothInvalid": {
+    "email": "test@gmail.com",
+    "password": "12"
+  },
+  "expected": {
+    "welcomeMessage": "Welcome back, testing!",
+    "emailError": "Email is invalid",
+    "passwordError": "Password is incorrect",
+    "requiredField": "Please fill out this field."
+  }
+}
