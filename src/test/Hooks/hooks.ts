@@ -19,6 +19,7 @@ Before(async function (this: CustomWorld) {
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
     this.loginPage = new LoginPage(this.page);
+    this.searchPage = new searchPage(this.page);
 
 });
 After(async function (this: CustomWorld, { result, pickle }) {

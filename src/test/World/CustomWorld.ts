@@ -15,7 +15,7 @@ export class CustomWorld extends World{
     loginPage!: LoginPage;
 
     //logger=logger;
-    searchPage!:searchPage;
+    searchPage!: searchPage;
 
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage
