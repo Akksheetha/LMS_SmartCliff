@@ -20,7 +20,6 @@ Feature: Login_VITHYA_07_JULY_2026
     Then User should see the email error message
 
 
-
   Scenario: Verify login with an empty email and password field
     When User leaves the email field empty
     And User leaves the password field empty
