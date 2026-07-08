@@ -8,16 +8,19 @@ import { LoginPage } from "../Pages/LoginPage";
 import { AddCourseStructurePage } from '../Pages/AddCourseStructurePage';
 import { TopicPage } from "../Pages/CourseTopicPage";
 import { logger } from "../Utilities/logger";
+import {FilterPage} from "../Pages/FilterPage";
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
     page!:Page;
     loginPage!: LoginPage;
     searchPage!: searchPage;
-    addCourseStructure!:AddCourseStructurePage
-    dashboardpage !: DashboardPage
-    coursemanagepage !: CourseManagePage
-    coursestructurepage !: CourseStructurePage
+    addCourseStructure!:AddCourseStructurePage;
+    dashboardpage !: DashboardPage;
+    coursemanagepage !: CourseManagePage;
+    coursestructurepage !: CourseStructurePage;
+    filterPage !: FilterPage;
+    
     topicPage!: TopicPage;
     logger=logger;
     download!: Download;

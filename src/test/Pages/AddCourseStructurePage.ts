@@ -20,6 +20,10 @@ export class AddCourseStructurePage extends basepage {
     readonly hierarchy: Locator;
     readonly SubmoduleThreeDot:Locator
     readonly SubmoduleADD:Locator
+    readonly SubmoduleEdit:Locator
+    readonly SubmoduleSingleDelete:Locator
+    readonly SubDeletePopup:Locator
+    readonly operationCompletedMsg:Locator
 
     constructor(page: Page) {
         super(page);
@@ -42,8 +46,10 @@ export class AddCourseStructurePage extends basepage {
 
         this.SubmoduleThreeDot = page.locator("(//div[@class='flex-[0.2] flex justify-end']//button)[2]")
         this.SubmoduleADD= page.locator("//span[text()='Add']")
-
-
+        this.SubmoduleEdit= page.locator("//span[text()='Edit']")
+        this.SubmoduleSingleDelete= page.locator("//span[text()='Delete']")
+        this.SubDeletePopup = page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[text()='Delete']")
+        this.operationCompletedMsg = page.locator("//span[text()='Operation completed successfully!']")
     }
 
     async clickActionSettings() {
@@ -113,5 +119,20 @@ export class AddCourseStructurePage extends basepage {
     }
     async clickSubModuelAdd(){
         await this.click(this.SubmoduleADD)
+    }
+
+    async clicksubmoduleEdit(){
+        await this.click(this.SubmoduleEdit)
+    }
+    async clickDelete(){
+        await this.click(this.SubmoduleSingleDelete)
+    }
+    async clickDeleteConfom(){
+        await this.click(this.SubDeletePopup)
+    }
+
+    async operationCompledText(){
+        await this.operationCompletedMsg.waitFor({ state: "visible" });
+        return this.operationCompletedMsg.textContent()
     }
 }
