@@ -6,7 +6,7 @@
         "description": "",
         "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 11,
         "name": "Verify login with a valid email and valid password",
         "steps": [
           {
@@ -14,72 +14,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 242026300
+              "duration": 302371400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "User launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1814530500
+              "duration": 2602148199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 12,
             "name": "User enters a valid email",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 74564999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16355300
+              "duration": 82627700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25008500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
             "name": "User clicks on the Sign In button",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 988347500
+              "duration": 997225000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 15,
             "name": "User should be see the Learning Hub Heading",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:57"
             },
             "result": {
-              "status": "passed",
-              "duration": 7423925400
+              "status": "failed",
+              "duration": 10012142600,
+              "error_message": "page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/admindashboard\" until \"load\"\n============================================================\n    at LoginPage.verifyLearningHubHeading (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:46:25)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:59:26)"
             }
           },
           {
@@ -87,18 +88,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80126299
+              "duration": 543419400
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
         "id": "login_vithya_07_july_2026;verify-login-with-an-invalid-email-and-a-valid-password",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 17,
         "name": "Verify login with an invalid email and a valid password",
         "steps": [
           {
@@ -106,72 +112,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 204375799
+              "duration": 492519899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "User launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1614225800
+              "duration": 1949495899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 18,
             "name": "User enters an invalid email",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 62126800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13304099
+              "duration": 208622700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17878300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
             "name": "User clicks on the Sign In button",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 959816500
+              "duration": 440909299
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 21,
             "name": "User should see the email error message",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:63"
             },
             "result": {
-              "status": "passed",
-              "duration": 3441676400
+              "status": "failed",
+              "duration": 5015648800,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Email is invalid')\nExpected: \u001b[32m\"Email is invalid\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Email is invalid')\u001b[22m\n\n    at captureRawStack (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at LoginPage.verifyEmailError (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:52:39)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:65:26)"
             }
           },
           {
@@ -179,11 +186,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76600399
+              "duration": 351413100
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
@@ -198,20 +210,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 244477100
+              "duration": 630515800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "User launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1801747400
+              "duration": 1691269099
             }
           },
           {
@@ -224,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86671600
+              "duration": 67383600
             }
           },
           {
@@ -237,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13886699
+              "duration": 8320599
             }
           },
           {
@@ -250,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 977701799
+              "duration": 974054099
             }
           },
           {
@@ -263,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39339899
+              "duration": 59423300
             }
           },
           {
@@ -271,11 +283,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78805700
+              "duration": 194758799
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
@@ -290,20 +307,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 216197000
+              "duration": 597240100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "User launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1667198499
+              "duration": 2422692200
             }
           },
           {
@@ -316,7 +333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76439200
+              "duration": 75703799
             }
           },
           {
@@ -329,7 +346,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20186200
+              "duration": 13064099
             }
           },
           {
@@ -342,7 +359,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 957292100
+              "duration": 1087464599
             }
           },
           {
@@ -354,8 +371,9 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:63"
             },
             "result": {
-              "status": "passed",
-              "duration": 3428285200
+              "status": "failed",
+              "duration": 5015283300,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Email is invalid')\nExpected: \u001b[32m\"Email is invalid\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Email is invalid')\u001b[22m\n\n    at captureRawStack (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at LoginPage.verifyEmailError (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:52:39)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:65:26)"
             }
           },
           {
@@ -363,19 +381,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73470900
+              "duration": 353639100
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       }
     ],
     "id": "login_vithya_07_july_2026",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Login_VITHYA_07_JULY_2026",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@Vithya",
+        "line": 1
+      }
+    ],
     "uri": "src\\test\\Features\\login.feature"
   }
 ]
