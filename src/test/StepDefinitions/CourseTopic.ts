@@ -5,25 +5,33 @@ Given('the user launches the LMS application', async function (this:CustomWorld)
     await this.loginPage.launchApplication(process.env.BASEURL!);
 });
 
-Given('the user logs in with valid credentials and navigates to Dashboard', async function (this:CustomWorld) {
+Given(
+  'the user logs in with valid credentials and navigates to Dashboard',
+  async function (this: CustomWorld) {
+
     await this.loginPage.enterEmail(loginData.validUser.email);
-     await this.loginPage.enterPassword(loginData.validUser.password);
-     await this.loginPage.clickLoginButton();
-});
+    await this.loginPage.enterPassword(loginData.validUser.password);
+    await this.loginPage.clickLoginButton();
+
+    console.log(this.page.url());
+  }
+);
 
 When('the user clicks course Management and navigate to course structure Page', async function (this:CustomWorld) {
     await this.topicPage.navigateToCourses();
 });
 
-When('clicks Add course structure action', async function (this: CustomWorld, dataTable) {
+When(
+  'clicks Add course structure action',
+  async function (this: CustomWorld, dataTable) {
 
     const data = dataTable.hashes()[0];
 
     console.log(data);
 
-    await this.topicPage.clickAddCourseStructure(data.Code);
-
-});
+    await this.topicPage.clickAddCourseStructure(data.Course);
+  }
+);
 
 When('the user clicks Add Topic', async function (this:CustomWorld) {
     await this.topicPage.clickAddTopic();

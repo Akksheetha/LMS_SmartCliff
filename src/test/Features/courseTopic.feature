@@ -1,4 +1,4 @@
-@Akksheertha
+@Akksheetha
 Feature: Course Topic Management
 
 Background:
@@ -6,8 +6,8 @@ Background:
     And the user logs in with valid credentials and navigates to Dashboard
     When the user clicks course Management and navigate to course structure Page
     And clicks Add course structure action
-   | Code       |
-   | J-AT-A-002 |
+   | Course |
+   | Playwright |
 
 @AddingTopic
 Scenario: Add a Topic with valid details
