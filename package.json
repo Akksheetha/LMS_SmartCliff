@@ -8,7 +8,8 @@
     "test:jeeva" : "cucumber-js --tags '@jeeva'",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
-    "test:edge": "cross-env BROWSER=msedge cucumber-js"
+    "test:edge": "cross-env BROWSER=msedge cucumber-js",
+    "Janani":"cucumber-js src/test/Features --tags @Janani"
   },
   "keywords": [],
   "author": "",
