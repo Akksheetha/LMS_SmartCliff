@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 215662100
+              "duration": 231767399
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 8,
             "name": "User launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1283893799
+              "duration": 2149087899
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 11,
             "name": "User enters a valid email",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 72734400
+              "duration": 69693200
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 12,
             "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 15599799
+              "duration": 16116399
             }
           },
           {
@@ -62,11 +62,24 @@
             "line": 13,
             "name": "User clicks on the Sign In button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 976936900
+              "duration": 951045099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should be see the Learning Hub Heading",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11210635800
             }
           },
           {
@@ -74,7 +87,283 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97446399
+              "duration": 67350600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-an-invalid-email-and-a-valid-password",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify login with an invalid email and a valid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 198094300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1205292400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User enters an invalid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60153600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24057100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 926365499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User should see the email error message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3965477200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60849200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-an-empty-email-and-password-field",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify login with an empty email and password field",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173409999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1773296500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User leaves the email field empty",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66513399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User leaves the password field empty",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12560499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929511000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "User should see the required field validation message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25511800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63363700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-an-invalid-email-and-an-incorrect-password",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Verify login with an invalid email and an incorrect password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 205154600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053675400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User enters an invalid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65218399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "User enters an incorrect password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21371900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 940590300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "User should see the email error message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3920789300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55085899
             }
           }
         ],
