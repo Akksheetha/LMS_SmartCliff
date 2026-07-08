@@ -6,9 +6,11 @@ Report/cucumber-html/
 Report/cucumber-json/
 rerun/
 
-# Playwright / Cucumber Test Reports
+# Reports
 Report/cucumber-html/
 Report/cucumber-json/
+Report/reports/
+Report/log/
 rerun/
 test-results/
 playwright-report/
