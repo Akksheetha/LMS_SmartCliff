@@ -29,14 +29,11 @@ export class AddCourseStructurePage extends basepage{
 
 async addsubmoduleLink() {
 
-    // Click outside the dropdown
     await this.page.mouse.click(5, 5);
 
     await this.page.waitForTimeout(300);
 
-    await this.AddSubmodule.waitFor({
-        state: "visible"
-    });
+    await this.AddSubmodule.waitFor({state: "visible"});
 
     await this.AddSubmodule.scrollIntoViewIfNeeded();
 

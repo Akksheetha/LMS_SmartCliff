@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "user-working-on-submodule-functionality;user-add-a-newsubmodule-1st-time",
+        "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality;user-add-a-newsubmodule-1st-time",
         "keyword": "Scenario",
         "line": 16,
         "name": "user Add a newSubmodule 1st time",
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 282287400
+              "duration": 292916999
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 837712400
+              "duration": 1039030200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 751322600
+              "duration": 705478299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1917399
+              "duration": 2080700
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1628400
+              "duration": 1672599
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1839500
+              "duration": 1775700
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14997294100
+              "duration": 15390291099
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 127288499
+              "duration": 100840500
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19179427100
+              "duration": 609565300
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76158499
+              "duration": 47495699
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37908599
+              "duration": 51333499
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 356482700
+              "duration": 263522600
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 192102999
+              "duration": 150607299
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 280299
+              "duration": 255000
             }
           },
           {
@@ -191,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71022599
+              "duration": 72094300
             }
           }
         ],
@@ -204,10 +204,10 @@
         "type": "scenario"
       }
     ],
-    "id": "user-working-on-submodule-functionality",
+    "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality",
     "line": 2,
     "keyword": "Feature",
-    "name": "user working on submodule functionality",
+    "name": "JeevaPranesh_07_JULY_2026_user working on submodule functionality",
     "tags": [
       {
         "name": "@jeeva",
@@ -215,5 +215,95 @@
       }
     ],
     "uri": "src\\test\\Features\\Submodule.feature"
+  },
+  {
+    "description": "              As a user\n              I want to login to the LMS application\n  So that I can access the dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify login with a valid email and valid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248866500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 612741199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149120299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39960600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 985301100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 70830099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login_vithya_07_july_2026",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login_VITHYA_07_JULY_2026",
+    "tags": [],
+    "uri": "src\\test\\Features\\login.feature"
   }
 ]
