@@ -235,7 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 281635600
+
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 597557899
+
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96404700
+
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32456799
+
             }
           },
           {
@@ -287,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 989674500
+
             }
           },
           {
@@ -295,7 +295,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60232299
+
             }
           }
         ],
@@ -309,5 +309,437 @@
     "name": "Login_VITHYA_07_JULY_2026",
     "tags": [],
     "uri": "src\\test\\Features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-course-structures;verify-the-user-can-search-for-a-course-using-course-name",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Verify the user can search for a Course using Course Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 191179900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636142100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94195700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33849900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 892913599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user clicks the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9423630600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters \"pytest\" in the search box",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13720999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the course \"pytest\" should be listed in the Course Structures table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3463861800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36323199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search",
+            "line": 9
+          },
+          {
+            "name": "@Positive",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-course-structures;verify-the-user-can-search-for-a-course-using-course-code",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Verify the user can search for a Course using Course Code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 232561499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 530000100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81904300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22373500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 858697199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user clicks the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10493502600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters \"J-B-TAD-006\" in the search box",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20399099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the course \"pytest\" should be listed in the Course Structures table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2401192100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37105600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search",
+            "line": 9
+          },
+          {
+            "name": "@Positive",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-course-structures;verify-the-user-cannot-retrieve-any-records-when-an-invalid-keyword-is-entered",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify the user cannot retrieve any records when an invalid keyword is entered",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204042700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487511900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78202299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24657099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 853162499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user clicks the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9928202599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user enters \"xyz_invalid_999\" in the search box",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20728499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "no course records should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4495743900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the message \"No users found\" should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7844799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the message \"No data matches your current criteria\" should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7262300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "\"0 courses\" should be displayed in the page header",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:34"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5021422299,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h2[contains(.,\\'courses\\')]')\nExpected substring: \u001b[32m\"0 courses\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h2[contains(.,\\'courses\\')]')\u001b[22m\n\n    at captureRawStack (C:\\Users\\janan\\OneDrive\\Desktop\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\janan\\OneDrive\\Desktop\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toContainText (C:\\Users\\janan\\OneDrive\\Desktop\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at searchPage.assertCourseCount (C:\\Users\\janan\\OneDrive\\Desktop\\LMS_SmartCliff\\src\\test\\Pages\\SearchPage.ts:62:46)\n    at World.<anonymous> (C:\\Users\\janan\\OneDrive\\Desktop\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Search.ts:36:27)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134078299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search",
+            "line": 19
+          },
+          {
+            "name": "@Negative",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-course-structures",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Course Structures",
+    "tags": [],
+    "uri": "src\\test\\Features\\search.feature"
   }
 ]

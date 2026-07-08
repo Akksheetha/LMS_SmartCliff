@@ -1,3 +1,5 @@
+
+import { searchPage } from './../Pages/SearchPage';
 import { CourseStructurePage } from './../Pages/CourseStructurePage';
 import { CourseManagePage } from './../Pages/CourseManagePage';
 import { DashboardPage } from './../Pages/DashboardPage';
@@ -11,10 +13,15 @@ export class CustomWorld extends World{
     context!:BrowserContext;
     page!:Page;
     loginPage!: LoginPage;
+
+    //logger=logger;
+    searchPage!:searchPage;
+
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage
     coursestructurepage !: CourseStructurePage
     topicPage!: TopicPage;
     logger=logger;
+
 }   
 setWorldConstructor(CustomWorld);
