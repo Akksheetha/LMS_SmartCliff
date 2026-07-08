@@ -15,7 +15,7 @@ import { LoginPage } from "../Pages/LoginPage";
 import { TopicPage } from "../Pages/CourseTopicPage";
 import { CourseManagePage } from '../Pages/CourseManagePage';
 import { DashboardPage } from '../Pages/DashboardPage';
-setDefaultTimeout(60000);
+setDefaultTimeout(120 * 1000);
 let browser: Browser;
 BeforeAll(async () => {
     getEnv();
@@ -27,6 +27,7 @@ Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
+    this.page.setDefaultTimeout(70000);
     this.addCourseStructure= new AddCourseStructurePage(this.page)
     this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);

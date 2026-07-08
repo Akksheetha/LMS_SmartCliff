@@ -18,6 +18,8 @@ export class AddCourseStructurePage extends basepage {
     readonly subModuleText: Locator;
     readonly ActionSettings: Locator;
     readonly hierarchy: Locator;
+    readonly SubmoduleThreeDot:Locator
+    readonly SubmoduleADD:Locator
 
     constructor(page: Page) {
         super(page);
@@ -37,6 +39,11 @@ export class AddCourseStructurePage extends basepage {
         this.subModuleText = page.locator("(//span[@class='flex-[0.8] text-center px-2 break-words whitespace-normal overflow-hidden text-ellipsis'])[2]");
         this.ActionSettings = page.locator("//span[text()='More']");
         this.hierarchy = page.locator("(//div[@class='relative']/div)[1]");
+
+        this.SubmoduleThreeDot = page.locator("(//div[@class='flex-[0.2] flex justify-end']//button)[2]")
+        this.SubmoduleADD= page.locator("//span[text()='Add']")
+
+
     }
 
     async clickActionSettings() {
@@ -95,5 +102,16 @@ export class AddCourseStructurePage extends basepage {
 
     async clickHierarchy() {
         await this.click(this.hierarchy);
+    }
+
+    async clickSubmoduleThreeDot(){
+        await this.page.mouse.click(5, 5);
+        await this.page.waitForTimeout(300);
+        await this.SubmoduleThreeDot.waitFor({ state: "visible" });
+        await this.AddSubmodule.scrollIntoViewIfNeeded();
+        await this.click(this.SubmoduleThreeDot)
+    }
+    async clickSubModuelAdd(){
+        await this.click(this.SubmoduleADD)
     }
 }
