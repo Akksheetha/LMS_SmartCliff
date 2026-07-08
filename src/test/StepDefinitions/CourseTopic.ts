@@ -1,51 +1,54 @@
-import {Given, When, Then} from "@cucumber/cucumber";
+import { Given, When, Then } from "@cucumber/cucumber";
+import { CustomWorld } from "../World/CustomWorld";
+import { expect } from "@playwright/test";
 import loginData from "../testData/LoginData.json";
-import { CustomWorld } from '../World/CustomWorld';
-Given('the user launches the LMS application', async function (this:CustomWorld) {
+
+const validUser = loginData.validUser;
+
+
+Given('the user launches the LMS application', async function(this:CustomWorld){
     await this.loginPage.launchApplication(process.env.BASEURL!);
 });
 
-Given(
-  'the user logs in with valid credentials and navigates to Dashboard',
-  async function (this: CustomWorld) {
 
-    await this.loginPage.enterEmail(loginData.validUser.email);
-    await this.loginPage.enterPassword(loginData.validUser.password);
+Given('the user logs in with valid credentials and navigates to Dashboard', async function(this:CustomWorld){
+    await this.loginPage.enterEmail(validUser.email);
+    await this.loginPage.enterPassword(validUser.password);
     await this.loginPage.clickLoginButton();
-
-    console.log(this.page.url());
-  }
-);
-
-When('the user clicks course Management and navigate to course structure Page', async function (this:CustomWorld) {
-    await this.topicPage.navigateToCourses();
 });
 
-When(
-  'clicks Add course structure action',
-  async function (this: CustomWorld, dataTable) {
 
+When('the user clicks course Management and navigate to course structure Page', async function(this:CustomWorld){
+    await this.dashboardpage.clickCourseManagement();
+});
+
+
+When('clicks Add course structure action', async function(this:CustomWorld, dataTable){
     const data = dataTable.hashes()[0];
+    await this.coursemanagepage.fillsearch(data.Code);
+    await this.coursemanagepage.clickAddCourse();
+});
 
-    console.log(data);
-
-    await this.topicPage.clickAddCourseStructure(data.Course);
-  }
-);
-
-When('the user clicks Add Topic', async function (this:CustomWorld) {
+When('the user clicks Add Topic by clicking enable actions', async function(this:CustomWorld){
+    await this.addCourseStructure.clickSubmoduleActionSettings();
+    await this.addCourseStructure.clickHierarchy();
     await this.topicPage.clickAddTopic();
 });
 
-When('enters the topic details and select required options', async function (this:CustomWorld,dataTable) {
+
+When('enters the topic details', async function(this:CustomWorld, dataTable){
     const data = dataTable.hashes()[0];
-    await this.topicPage.enterTopicDetails(data.title,data.description);
+    await this.topicPage.fillTopicTitle(data.Title);
+    await this.topicPage.fillTopicDescription(data.Description);
 });
 
-When('clicks Save button', async function (this:CustomWorld) {
-    await this.topicPage.clickSave();
+
+When('clicks Save button', async function(this:CustomWorld){
+    await this.topicPage.clickSaveButton();
 });
 
-Then('the topic should be created successfully', async function (this:CustomWorld) {
-    await this.topicPage.verifyTopicCreated("created");
+
+Then('the topic should be created successfully', async function(this:CustomWorld){
+    const topicText = await this.topicPage.getTopicText("Custom World");
+    expect(topicText).toContain("Custom World");
 });
