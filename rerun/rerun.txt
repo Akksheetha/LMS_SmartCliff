@@ -1,9 +1,0 @@
-src\test\Features\ManageLevel.feature:15
-src\test\Features\Submodule.feature:16
-src\test\Features\login.feature:11:17:30
-src\test\Features\search.feature:16:17:20
-src\test\Features\PrintFile.feature:16
-src\test\Features\Submodule.feature:16:24:43:44:45:47
-src\test\Features\courseTopic.feature:14
-src\test\Features\login.feature:11:17:23:29:35
-src\test\Features\search.feature:16:17:20

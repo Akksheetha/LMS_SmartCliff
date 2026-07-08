@@ -13,6 +13,7 @@ import { TopicPage } from "../Pages/CourseTopicPage";
 import { CourseStructurePage } from './../Pages/CourseStructurePage';
 import { CourseManagePage } from './../Pages/CourseManagePage';
 import { DashboardPage } from './../Pages/DashboardPage';
+import {FilterPage} from './../Pages/FilterPage';
 setDefaultTimeout(60000);
 setDefaultTimeout(120 * 1000);
 let browser: Browser;
@@ -27,14 +28,15 @@ Before(async function (this: CustomWorld) {
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
     this.page.setDefaultTimeout(70000);
-    this.addCourseStructure= new AddCourseStructurePage(this.page)
-    this.coursemanagepage= new CourseManagePage(this.page)
+    this.addCourseStructure= new AddCourseStructurePage(this.page);
+    this.coursemanagepage= new CourseManagePage(this.page);
     this.loginPage = new LoginPage(this.page);
     this.searchPage = new searchPage(this.page);
     this.topicPage = new TopicPage(this.page);
-    this.coursestructurepage = new CourseStructurePage(this.page)
-    this.coursemanagepage = new CourseManagePage(this.page)
-    this.dashboardpage = new DashboardPage(this.page)
+    this.coursestructurepage = new CourseStructurePage(this.page);
+    this.coursemanagepage = new CourseManagePage(this.page);
+    this.dashboardpage = new DashboardPage(this.page);
+    this.filterPage = new FilterPage(this.page);
 });
 
 After(async function (this: CustomWorld, { result, pickle }) {
