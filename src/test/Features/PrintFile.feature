@@ -1,5 +1,5 @@
-@ManageLevel
-Feature: Manage Level
+@PrintFile
+Feature: Print File
 
   Background:
     Given User launches the LMS application
@@ -11,12 +11,8 @@ Feature: Manage Level
     And User is on the Course Management page
     And User enter javascript in search bar
     And User clicks on Add Course Structure in javascript Course
-    And User clicks on Action Settings
-    And User enables Direct Actions
-    And User clicks on the three-dot menu
+    And User clicks on Print Button
 
-  Scenario: Verify the user can successfully add a module level
-    When User clicks the Add button
-    And User selects the level option
-    And User clicks the Add button
-    Then User should see a success message
+  Scenario: Verify the user can successfully print the excel file
+    When User clicks on Excel Button
+    Then excel file should download

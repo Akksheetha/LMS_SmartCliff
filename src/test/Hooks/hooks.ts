@@ -5,6 +5,9 @@ import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
 import { LoginPage } from "../Pages/LoginPage";
 import { TopicPage } from "../Pages/CourseTopicPage";
+import { CourseStructurePage } from './../Pages/CourseStructurePage';
+import { CourseManagePage } from './../Pages/CourseManagePage';
+import { DashboardPage } from './../Pages/DashboardPage';
 setDefaultTimeout(60000);
 let browser: Browser;
 BeforeAll(async () => {
@@ -19,14 +22,14 @@ Before(async function (this: CustomWorld) {
     this.page = await this.context.newPage();
     this.loginPage = new LoginPage(this.page);
     this.topicPage = new TopicPage(this.page);
-   
+    this.coursestructurepage = new CourseStructurePage(this.page)
+    this.coursemanagepage = new CourseManagePage(this.page)
+    this.dashboardpage = new DashboardPage(this.page)
 });
+
 After(async function (this: CustomWorld, { result, pickle }) {
-
     console.log(result?.status);
-
     if (result?.status === Status.FAILED) {
-
         const img = await this.page.screenshot({
             path: `test-results/screenshots/${pickle.name}.png`,
             type: "png"

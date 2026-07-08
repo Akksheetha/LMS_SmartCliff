@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test";
+import { Download, Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
 
 export class CourseStructurePage extends basepage {
@@ -9,16 +9,22 @@ export class CourseStructurePage extends basepage {
     readonly addbtn : Locator
     readonly selectbtn : Locator
     readonly addbtn2 : Locator
+    readonly selectvalue : Locator
+    readonly printBtn : Locator
+    readonly excelBtn : Locator
 
 
     constructor(page: Page) {
         super(page);
-        this.morebtn = page.locator("/html/body/div[3]/div/main/div/div[1]/div/div[3]/div/div[1]/div/div[1]/div[1]/button")
-        this.checkbox = page.locator("/html/body/div[3]/div/main/div/div[1]/div/div[3]/div/div[1]/div/div[1]/div[1]/div[1]/div[2]/div[3]/label/div[2]/input")
-        this.threedot = page.locator("/html/body/div[3]/div/main/div/div[1]/div/div[3]/div/div[2]/div/div[1]/div[2]/div/table/tbody/tr[1]/td[3]/div/div[2]/button")
-        this.addbtn = page.locator("//*[@id='menu-level-6a4d3e8e31cdaae3c856020e-placeholder']/button[1]")
-        this.selectbtn = page.locator("//*[@id='radix-«r10»']/div[2]/div[1]/button")
-        this.addbtn2 = page.locator("//*[@id='radix-«r10»']/div[2]/div[2]/button[2]")
+        this.morebtn = page.getByRole('button', { name: 'More' })
+        this.checkbox = page.locator("//span[text()='Direct Actions']")
+        this.threedot = page.locator(`//tr[td[contains(., 'Javascript')]]//button`)
+        this.addbtn = page.getByRole('button', { name: 'Add' })
+        this.selectbtn = page.getByRole('combobox', { name: 'Select level' })
+        this.addbtn2 = page.getByRole('button', { name: 'Add' })
+        this.selectvalue = page.locator("//span[text()='Easy']")
+        this.printBtn = page.getByRole('button', { name: 'Print' })
+        this.excelBtn = page.getByRole('button', { name: 'Excel' })
     }
 
     async clickActionSettings(){
@@ -26,8 +32,9 @@ export class CourseStructurePage extends basepage {
     }
 
     async enableDirectAction() {
-        await this.check(this.checkbox)
-        await this.click(this.morebtn)
+        await this.click(this.checkbox)
+        await this.page.mouse.click(5,5)
+        await this.page.waitForTimeout(3000)
     }
 
     async clickThreedot() {
@@ -38,7 +45,19 @@ export class CourseStructurePage extends basepage {
     }
     async clickSelectBtn() {
         await this.click(this.selectbtn)
+        await this.click(this.selectvalue)
         await this.click(this.addbtn2)
     }
-    
+    async clickPrint() {
+        await this.click(this.printBtn)
+    }
+
+async clickExcel(): Promise<Download> {
+    const downloadPromise = this.page.waitForEvent("download");
+    await this.click(this.excelBtn);
+    const download = await downloadPromise;
+    await download.saveAs(`downloads/${await download.suggestedFilename()}`);
+    await this.page.waitForTimeout(5000);
+    return download;
+}
 }

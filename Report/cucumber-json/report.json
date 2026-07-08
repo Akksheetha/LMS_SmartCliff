@@ -4,290 +4,174 @@
     "elements": [
       {
         "description": "",
-        "id": "manage-level;verify-the-user-can-successfully-add-a-module-level",
+        "id": "print-file;verify-the-user-can-successfully-print-the-excel-file",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify the user can successfully add a module level",
+        "line": 16,
+        "name": "Verify the user can successfully print the excel file",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 299103600
+              "duration": 281985999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "User launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 601251000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 5,
-            "name": "User enters a valid email",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 98622600
+              "duration": 592799900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 33186499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 565904200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User clicks on Course Management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:5"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 13884600,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'clickCourseManagement')\n    at World.<anonymous> (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\src\\test\\StepDefinitions\\ManageLevel.ts:6:30)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User is on the Course Management page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:9"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "User clicks on Add Course Structure in Playwright Course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "User clicks on Action Settings",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:17"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "User enables Direct Actions",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User clicks on the three-dot menu",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "User clicks the Add button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "User selects the level option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:33"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "User clicks the Add button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "User should see a success message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:37"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 277499200
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "manage-level",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Manage Level",
-    "tags": [],
-    "uri": "src\\test\\Features\\ManageLevel.feature"
-  },
-  {
-    "description": "  As a user\n  I want to login to the LMS application\n  So that I can access the dashboard",
-    "elements": [
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Verify login with a valid email and valid password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 281635600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 597557899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
             "name": "User enters a valid email",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 96404700
+              "duration": 119699900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 7,
             "name": "User enters a valid password",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 32456799
+              "duration": 28881199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 8,
             "name": "User clicks on the Sign In button",
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:51"
             },
             "result": {
               "status": "passed",
-              "duration": 989674500
+              "duration": 966777500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User is on the Dashboard page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20392829399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on Course Management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76364600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User is on the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 858188200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enter javascript in search bar",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5198067600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on Add Course Structure in javascript Course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65563600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on Print Button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8921303199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User clicks on Excel Button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5636769999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "excel file should download",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 980499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'failure')\n    at World.<anonymous> (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\src\\test\\StepDefinitions\\PrintFile.ts:14:30)"
             }
           },
           {
@@ -295,19 +179,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60232299
+              "duration": 233975599
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@PrintFile",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "login_vithya_07_july_2026",
-    "line": 1,
+    "id": "print-file",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Login_VITHYA_07_JULY_2026",
-    "tags": [],
-    "uri": "src\\test\\Features\\login.feature"
+    "name": "Print File",
+    "tags": [
+      {
+        "name": "@PrintFile",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\PrintFile.feature"
   }
 ]
