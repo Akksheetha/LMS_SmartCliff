@@ -2,8 +2,8 @@ import * as report from "multiple-cucumber-html-reporter";
 import * as os from "os";
 
 report.generate({
-  jsonDir: "./reports",
-  reportPath: "./reports/html",
+  jsonDir: "./Report/cucumber-json",
+  reportPath: "./Report/reports/html",
   reportName: "LMS SmartCliff Automation Report",
   pageTitle: "LMS SmartCliff Test Report",
   displayDuration: true,

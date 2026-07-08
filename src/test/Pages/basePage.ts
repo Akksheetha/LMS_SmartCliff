@@ -53,4 +53,7 @@ export class basepage {
     async check(locator: Locator) {
         return await locator.check()
     }
+    async locator(locator:Locator){
+        return locator
+    }
 }

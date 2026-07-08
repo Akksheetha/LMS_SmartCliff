@@ -7,8 +7,6 @@ module.exports={
             "ts-node/register"
         ],
 
-        
-
         require:[
             "src/test/StepDefinitions/**/*.ts",
             "src/test/Hooks/**/*.ts",
@@ -27,7 +25,6 @@ module.exports={
 
         format: [
             "progress",
-            "progress-bar",
             "html:Report/cucumber-html/cucumber-report.html",
             "json:Report/cucumber-json/report.json",
             "rerun:rerun/rerun.txt"

@@ -6,9 +6,9 @@ export class LoginPage extends basepage {
     readonly email: Locator;
     readonly password: Locator;
     readonly loginButton: Locator;
-    readonly welcomeMessage: Locator;
     readonly emailError: Locator;
     readonly passwordError: Locator;
+    readonly learningHub: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -16,8 +16,7 @@ export class LoginPage extends basepage {
         this.email = page.locator("//input[@type='email']");
         this.password = page.locator("//input[@type='password']");
         this.loginButton = page.locator("//button[@type='submit']")
-
-        this.welcomeMessage = page.getByText("Welcome back");
+        this.learningHub = page.locator("span.text-gray-800", { hasText: "Learning Hub" });
         this.emailError = page.getByText("Email is invalid");
         this.passwordError = page.getByText("Password is incorrect");
     }
@@ -39,18 +38,22 @@ export class LoginPage extends basepage {
     }
 
     async verifyDashboard() {
-        await expect(this.page).toHaveURL("https://lms-smartcliff.vercel.app/lms/pages/admindashboard");
+        
+        await expect(this.page).toHaveURL("https://lms-smartcliff.vercel.app/lms/pages/admindashboard",{timeout:5000});
     }
 
-    async verifyWelcomeMessage(expectedMessage: string) {
-        await expect(this.welcomeMessage).toContainText(expectedMessage);
+    async verifyLearningHubHeading() {
+        await this.page.waitForURL("**/admindashboard", { timeout: 10000 });
+        await expect(this.learningHub).toBeVisible({ timeout: 10000 });
     }
+
 
     async verifyEmailError(expectedMessage: string) {
         await expect(this.emailError).toHaveText(expectedMessage);
     }
 
     async verifyPasswordError(expectedMessage: string) {
+       
         await expect(this.passwordError).toHaveText(expectedMessage);
     }
 

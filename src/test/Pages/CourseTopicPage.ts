@@ -1,90 +1,52 @@
-import { expect, Locator, Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
 
 export class TopicPage extends basepage {
-    private courses: Locator;
-    private nextButton: Locator;
-    private addTopic: Locator;
-    private title: Locator;
-    private description: Locator;
-    private save: Locator;
-    private cancel: Locator;
+
+    private AddTopic: Locator;
+    private topicTitle: Locator;
+    private topicDescription: Locator;
+    private saveTopicButton: Locator;
+    private topicText: Locator;
+
 
     constructor(page: Page) {
+
         super(page);
-        this.courses = page.getByTitle("Course Management");
-        this.nextButton = page.getByRole("button", { name: "Next" });
-        this.addTopic = page.getByRole("button", { name: "Add Topic" });
-        this.title = page.getByPlaceholder("Enter Title");
-        this.description = page.getByPlaceholder("Enter Description");
-        this.save = page.getByRole("button", { name: "Save" });
-        this.cancel = page.getByRole("button", { name: "Cancel" });
+        this.AddTopic = page.locator("//button[@title='Add New Topic']").first();
+        this.topicTitle = page.locator("//textarea[@id='title']");
+        this.topicDescription = page.locator("//textarea[@id='description']");
+        this.saveTopicButton = page.locator("//button[@type='submit']");
+        this.topicText = page.locator("(//span[contains(@class,'break-words')])[last()]");
     }
 
-    async navigateToCourses() {
-        await this.click(this.courses);
+
+    async clickAddTopic(){
+        await this.page.mouse.click(5,5);
+        await this.AddTopic.waitFor({state:"visible"});
+        await this.AddTopic.click();
     }
 
-    async clickAddCourseStructure(courseCode: string) {
 
-    while (true) {
-
-        const rows = this.page.locator("tbody tr");
-        const count = await rows.count();
-
-        for (let i = 0; i < count; i++) {
-
-            const row = rows.nth(i);
-            const text = await row.textContent();
-
-            if (text?.includes(courseCode)) {
-
-                await this.click(
-                    row.getByRole("button", {
-                        name: "Add Course Structure"
-                    })
-                );
-
-                return;
-            }
-        }
-
-        if (!(await this.isEnabled(this.nextButton))) {
-            break;
-        }
-
-        await this.click(this.nextButton);
-        await this.page.waitForLoadState("networkidle");
+    async fillTopicTitle(text:string){
+        await this.fill(this.topicTitle,text);
     }
 
-    throw new Error(`Course '${courseCode}' not found.`);
+
+    async fillTopicDescription(text:string){
+        await this.fill(this.topicDescription,text);
+    }
+
+
+    async clickSaveButton(){
+        await this.click(this.saveTopicButton);
+    }
+
+
+    async getTopicText(title:string){
+        const topic = this.page.locator(`//span[text()='${title}']`).first();
+        await topic.waitFor({state:"visible"});
+        return await topic.textContent();
+
 }
-
-    async clickAddTopic() {
-        await this.click(this.addTopic);
-    }
-
-    async enterTopicDetails(title: string, description: string) {
-
-        await this.fill(this.title, title);
-
-        await this.fill(this.description, description);
-
-    }
-
-    async clickSave() {
-        await this.click(this.save);
-    }
-
-    async clickCancel() {
-        await this.click(this.cancel);
-    }
-    async verifyTopicCreated(title: string) {
-
-        const topic = this.page.getByText(title, { exact: true });
-
-        await expect(topic).toBeVisible();
-
-    }
-
 }
