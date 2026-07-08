@@ -11,10 +11,10 @@ Feature: Search Course Structures
     And user enters "<SearchKeyword>" in the search box
     Then the course "<ExpectedCourseName>" should be listed in the Course Structures table
 
-    Examples:
-      | SearchType   | SearchKeyword | ExpectedCourseName |
-      | Course Name  | pytest        | pytest              |
-      | Course Code  | J-B-TAD-006   | pytest              |
+        Examples:
+                  | SearchType  | SearchKeyword | ExpectedCourseName |
+                  | Course Name | pytest        | pytest             |
+                  | Course Code | J-B-TAD-006   | pytest             |
 
   @Search @Negative @Janani
   Scenario: Verify the user cannot retrieve any records when an invalid keyword is entered

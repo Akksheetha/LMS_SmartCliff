@@ -1,6 +1,6 @@
 [
   {
-    "description": "",
+    "description": "Feature Description",
     "elements": [
       {
         "description": "",
@@ -62,7 +62,7 @@
             "line": 7,
             "name": "User clicks on the Sign In button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:33"
             },
             "result": {
               "status": "passed",
@@ -180,7 +180,7 @@
             "line": 6,
             "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:39"
             },
             "result": {
               "status": "passed",
@@ -206,7 +206,7 @@
             "line": 8,
             "name": "user clicks the course management",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:44"
             },
             "result": {
               "status": "passed",
@@ -298,7 +298,7 @@
             "line": 5,
             "name": "User enters a valid email",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:48"
             },
             "result": {
               "status": "passed",
@@ -308,10 +308,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
-            "name": "User enters a valid password",
+            "line": 20,
+            "name": "the user click the skill",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:52"
             },
             "result": {
               "status": "passed",
@@ -348,7 +348,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 21,
-            "name": "user enters \"xyz_invalid_999\" in the search box",
+            "name": "the user click Add submodule button",
             "match": {
               "location": "src\\test\\StepDefinitions\\Search.ts:8"
             },
@@ -396,11 +396,16 @@
         "type": "scenario"
       }
     ],
-    "id": "search-course-structures",
-    "line": 1,
+    "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Search Course Structures",
-    "tags": [],
-    "uri": "src\\test\\Features\\search.feature"
+    "name": "JeevaPranesh_07_JULY_2026_user working on submodule functionality",
+    "tags": [
+      {
+        "name": "@jeeva",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\Submodule.feature"
   }
 ]
