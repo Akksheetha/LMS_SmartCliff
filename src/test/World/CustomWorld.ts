@@ -4,6 +4,8 @@ import { DashboardPage } from './../Pages/DashboardPage';
 import { World,setWorldConstructor } from "@cucumber/cucumber";
 import {Browser,BrowserContext,Page} from "@playwright/test";
 import { LoginPage } from "../Pages/LoginPage";
+import { TopicPage } from "../Pages/CourseTopicPage";
+import { logger } from "../Utilities/logger";
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
@@ -12,6 +14,7 @@ export class CustomWorld extends World{
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage
     coursestructurepage !: CourseStructurePage
-    //logger=logger;
+    topicPage!: TopicPage;
+    logger=logger;
 }   
 setWorldConstructor(CustomWorld);
