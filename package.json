@@ -9,7 +9,12 @@
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
     "test:edge": "cross-env BROWSER=msedge cucumber-js",
     "Vithya":"cucumber-js src/test/Features --tags @Vithya",
-    "Janani":"cucumber-js src/test/Features --tags @Janani"
+    "Janani":"cucumber-js src/test/Features --tags @Janani",
+     "Jeeva":"cucumber-js src/test/Features --tags @Jeeva",
+     "Akksheetha":"cucumber-js src/test/Features --tags @Akksheetha",
+     "Dharshan":"cucumber-js src/test/Features --tags @Dharshan"
+    
+    
     
   },
   "keywords": [],
