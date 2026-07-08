@@ -1,14 +1,20 @@
+
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
+
+import { searchPage } from './../Pages/SearchPage';
+
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
 import { Browser, chromium } from "@playwright/test";
 import { CustomWorld } from "../World/CustomWorld";
 import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
 
-import { coursestructurePage } from '../Pages/CSPage';
 
 import { LoginPage } from "../Pages/LoginPage";
 
+import { TopicPage } from "../Pages/CourseTopicPage";
+import { CourseManagePage } from '../Pages/CourseManagePage';
+import { DashboardPage } from '../Pages/DashboardPage';
 setDefaultTimeout(60000);
 let browser: Browser;
 BeforeAll(async () => {
@@ -21,13 +27,10 @@ Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
-
     this.addCourseStructure= new AddCourseStructurePage(this.page)
-    this.courseStructure = new coursestructurePage(this.page)
-
+    this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);
-
-   
+    this.dashboardpage= new DashboardPage(this.page)
 });
 After(async function (this: CustomWorld, { result, pickle }) {
 

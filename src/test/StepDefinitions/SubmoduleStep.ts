@@ -14,20 +14,20 @@ When('the user login with valid data', async function (this:CustomWorld) {
 });
 
 When('the user click the course management', async function (this:CustomWorld) {
-    await this.courseStructure.clickCourseStructureIcon()
+    await this.dashboardpage.clickCourseManagement()
 });
 
 When('the user seach the course code of {string} which is already created', async function (this:CustomWorld,string) {
-    await this.courseStructure.fillsearch(string)
+    await this.coursemanagepage.fillsearch(string)
 });
 
 When('the user click the Add course Structure of the searched course', async function (this:CustomWorld) {
-    await this.courseStructure.clickAddCourse()
-    console.log("clicked the addcourse structure")
+    await this.coursemanagepage.clickAddCourse()
+    
 });
 
 When('the user click the Action Setting option', async function (this:CustomWorld) {
-    await this.addCourseStructure.clickActionSetting()
+    await this.addCourseStructure.clickActionSettings()
 });
 
 When('the user enable the hierarchy Action', async function (this:CustomWorld) {
@@ -42,15 +42,15 @@ When('the user click the add sub module in the sub module', async function (this
 });
 
 When('the user enter the title of {string}', async function (this:CustomWorld,string) {
-   await this.addCourseStructure.fillTitle(string)
+   await this.addCourseStructure.fillTitle_sub(string)
 });
 
 When('the user enter the Description of {string}', async function (this:CustomWorld,string) {
-    await this.addCourseStructure.filldescribe(string)
+    await this.addCourseStructure.filldescribe_Sub(string)
 });
 
 When('the user click the skill', async function (this:CustomWorld) {
-    await this.addCourseStructure.clickCheckbox()
+    await this.addCourseStructure.clickSubmoduleCheckbox()
 });
 
 When('the user click Add submodule button', async function (this:CustomWorld) {
