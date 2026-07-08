@@ -52,3 +52,12 @@ Then('the topic should be created successfully', async function(this:CustomWorld
     const topicText = await this.topicPage.getTopicText("Custom World");
     expect(topicText).toContain("Custom World");
 });
+
+When('the user clicks save button without entering Title', async function (this:CustomWorld) {
+    await this.topicPage.clickSaveButton();
+});
+
+Then('the error message should be displayed successfully', async function (this:CustomWorld) {
+    await expect(this.topicPage.titletxt).toBeVisible({ timeout: 3000 });
+    await expect(this.topicPage.titletxt).toContainText("Title is required");
+});
