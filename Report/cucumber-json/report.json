@@ -1,5 +1,226 @@
 [
   {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "manage-level;verify-the-user-can-successfully-add-a-module-level",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify the user can successfully add a module level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 299103600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 601251000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98622600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33186499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 565904200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clicks on Course Management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 13884600,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'clickCourseManagement')\n    at World.<anonymous> (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\src\\test\\StepDefinitions\\ManageLevel.ts:6:30)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User is on the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on Add Course Structure in Playwright Course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User clicks on Action Settings",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enables Direct Actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on the three-dot menu",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User clicks the Add button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User selects the level option",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User clicks the Add button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User should see a success message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277499200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "manage-level",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Manage Level",
+    "tags": [],
+    "uri": "src\\test\\Features\\ManageLevel.feature"
+  },
+  {
     "description": "  As a user\n  I want to login to the LMS application\n  So that I can access the dashboard",
     "elements": [
       {
@@ -14,7 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 215662100
+              "duration": 281635600
             }
           },
           {
@@ -27,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1283893799
+              "duration": 597557899
             }
           },
           {
@@ -40,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72734400
+              "duration": 96404700
             }
           },
           {
@@ -53,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15599799
+              "duration": 32456799
             }
           },
           {
@@ -66,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 976936900
+              "duration": 989674500
             }
           },
           {
@@ -74,7 +295,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97446399
+              "duration": 60232299
             }
           }
         ],

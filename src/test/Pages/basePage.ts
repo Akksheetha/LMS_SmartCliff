@@ -37,4 +37,7 @@ export class basepage{
     async isChecked(locator: Locator): Promise<boolean> {
         return await locator.isChecked();
     }
+    async check(locator: Locator) {
+        return await locator.check()
+    }
 }
