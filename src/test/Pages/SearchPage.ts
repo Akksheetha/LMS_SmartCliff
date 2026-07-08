@@ -7,7 +7,6 @@ export class searchPage extends basepage {
     private readonly searchInput: Locator;
     private readonly courseNames: Locator;
     private readonly noUsersMessage: Locator;
-    private readonly noDataMessage: Locator;
     private readonly courseCountHeader: Locator;
 
     constructor(page: Page) {
@@ -16,8 +15,7 @@ export class searchPage extends basepage {
         this.courseManagement = page.locator("//div[@title='Course Management']");
         this.searchInput = page.locator("//input[@placeholder='Search courses, codes, clients, or categories...']");
         this.courseNames = page.locator("//span[@class='text-sm font-semibold text-gray-900 dark:text-white font-sans truncate']");
-        this.noUsersMessage = page.getByText("No users found");
-        this.noDataMessage = page.getByText("No data matches your current criteria");
+        this.noUsersMessage = page.locator("//p[@class='text-xs font-normal text-gray-400 dark:text-gray-500']");
         this.courseCountHeader = page.locator("//h2[contains(.,'courses')]");
     }
 
@@ -49,11 +47,13 @@ export class searchPage extends basepage {
     async assertCourseDisplayed(expectedCourse: string) {
         await expect(this.courseNames).toContainText(expectedCourse);
     }
+async assertNoRecords() {
+    await this.page.waitForTimeout(2000);
 
-    async assertNoRecords() {
-        await expect(this.noUsersMessage).toBeVisible();
-    }
+    await expect(this.noUsersMessage).toBeVisible();
 
+    await expect(this.noUsersMessage).toContainText("No data matches your current criteria");
+}
     async assertMessage(message: string) {
         await expect(this.page.getByText(message)).toBeVisible();
     }

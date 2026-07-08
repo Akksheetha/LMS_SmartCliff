@@ -1,7 +1,8 @@
-@Akksheertha
+@Akksheetha
 Feature: Course Topic Management
 
-        Background:
+
+Background:
             Given the user launches the LMS application
               And the user logs in with valid credentials and navigates to Dashboard
              When the user clicks course Management and navigate to course structure Page
