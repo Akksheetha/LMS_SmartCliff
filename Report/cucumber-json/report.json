@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 302371400
+              "duration": 275471000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2602148199
+              "duration": 5543848300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 82627700
+              "duration": 81191199
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25008500
+              "duration": 20820200
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 997225000
+              "duration": 987312799
             }
           },
           {
@@ -78,9 +78,8 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:57"
             },
             "result": {
-              "status": "failed",
-              "duration": 10012142600,
-              "error_message": "page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/admindashboard\" until \"load\"\n============================================================\n    at LoginPage.verifyLearningHubHeading (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:46:25)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:59:26)"
+              "status": "passed",
+              "duration": 11451453300
             }
           },
           {
@@ -88,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 543419400
+              "duration": 77859000
             }
           }
         ],
@@ -112,7 +111,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 492519899
+              "duration": 243000400
             }
           },
           {
@@ -125,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1949495899
+              "duration": 1655635600
             }
           },
           {
@@ -138,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 208622700
+              "duration": 75201900
             }
           },
           {
@@ -151,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17878300
+              "duration": 17495500
             }
           },
           {
@@ -164,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 440909299
+              "duration": 956062799
             }
           },
           {
@@ -177,7 +176,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5015648800,
+              "duration": 5015632699,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Email is invalid')\nExpected: \u001b[32m\"Email is invalid\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Email is invalid')\u001b[22m\n\n    at captureRawStack (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at LoginPage.verifyEmailError (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:52:39)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:65:26)"
             }
           },
@@ -186,7 +185,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 351413100
+              "duration": 207190200
             }
           }
         ],
@@ -210,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 630515800
+              "duration": 229853299
             }
           },
           {
@@ -223,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1691269099
+              "duration": 1550726899
             }
           },
           {
@@ -236,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67383600
+              "duration": 74824400
             }
           },
           {
@@ -249,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8320599
+              "duration": 17093400
             }
           },
           {
@@ -262,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 974054099
+              "duration": 991181199
             }
           },
           {
@@ -275,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 59423300
+              "duration": 35700000
             }
           },
           {
@@ -283,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 194758799
+              "duration": 91043600
             }
           }
         ],
@@ -307,7 +306,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 597240100
+              "duration": 213496900
             }
           },
           {
@@ -320,7 +319,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2422692200
+              "duration": 1697760699
             }
           },
           {
@@ -333,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75703799
+              "duration": 85252599
             }
           },
           {
@@ -346,7 +345,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13064099
+              "duration": 20176999
             }
           },
           {
@@ -359,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1087464599
+              "duration": 970121500
             }
           },
           {
@@ -371,9 +370,8 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 5015283300,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Email is invalid')\nExpected: \u001b[32m\"Email is invalid\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Email is invalid')\u001b[22m\n\n    at captureRawStack (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at LoginPage.verifyEmailError (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\LoginPage.ts:52:39)\n    at World.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Login.ts:65:26)"
+              "status": "passed",
+              "duration": 4463241399
             }
           },
           {
@@ -381,7 +379,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 353639100
+              "duration": 74002500
             }
           }
         ],

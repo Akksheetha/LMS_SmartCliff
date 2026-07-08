@@ -7,7 +7,7 @@ export class DashboardPage extends basepage {
 
     constructor(page: Page) {
         super(page);
-        this.courseManagement = page.locator("/html/body/div[3]/div/aside/div/div/div/div[2]/div/div");
+        this.courseManagement = page.locator("//div[@title='Course Management']")
     }
 
     async clickCourseManagement() {

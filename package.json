@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env ENV=qa cucumber-js",
-    "Vithya":"cucumber-js src/test/Features --tags @Vithya",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
-    "test:edge": "cross-env BROWSER=msedge cucumber-js"
+    "test:edge": "cross-env BROWSER=msedge cucumber-js",
+    "Vithya":"cucumber-js src/test/Features --tags @Vithya",
+    "Janani":"cucumber-js src/test/Features --tags @Janani"
+    
   },
   "keywords": [],
   "author": "",

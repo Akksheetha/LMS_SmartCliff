@@ -7,8 +7,6 @@ module.exports={
             "ts-node/register"
         ],
 
-        
-
         require:[
             "src/test/StepDefinitions/**/*.ts",
             "src/test/Hooks/**/*.ts",
