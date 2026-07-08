@@ -33,7 +33,7 @@ export class basepage {
         await locator.dblclick();
     }
     
-    async isVisible(locator: Locator) {
+    async isVisible(locator: Locator){
         const visible = await locator.isVisible();
         logger.info(`Element ${locator} visibility status: ${visible}`);
         return visible;
@@ -45,7 +45,7 @@ export class basepage {
         return enabled;
     }
 
-    async isChecked(locator: Locator) {
+    async isChecked(locator: Locator){
         const checked = await locator.isChecked();
         logger.info(`Element ${locator} checked status: ${checked}`);
         return checked;

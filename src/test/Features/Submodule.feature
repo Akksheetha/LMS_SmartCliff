@@ -20,3 +20,15 @@ Feature Description
               And the user click the skill
               And the user click Add submodule button
              Then the user should see the title in submodule
+
+        Scenario:user add multiple submodule
+             When the user click the threeDot_btn
+              And the user click the Add btn
+              And the user enter the title of "HTML"
+              And the user enter the Description of "it is a frontend"
+              And the user click the skill
+              And the user click Add submodule button
+             Then the user should see the title in submodule
+
+          
+
