@@ -31,7 +31,7 @@ Before(async function (this: CustomWorld) {
     this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);
     this.searchPage = new searchPage(this.page);
-
+    this.topicPage = new TopicPage(this.page);
     this.dashboardpage= new DashboardPage(this.page)
 });
 After(async function (this: CustomWorld, { result, pickle }) {
