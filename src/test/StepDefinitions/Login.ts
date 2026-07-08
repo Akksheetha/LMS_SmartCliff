@@ -1,10 +1,11 @@
-import { Given, When } from "@cucumber/cucumber";
+import { Given, When ,Then} from "@cucumber/cucumber";
 import { CustomWorld } from "../World/CustomWorld";
 import loginData from "../testData/LoginData.json";
 
 const validUser = loginData.validUser;
 const invalidEmail = loginData.invalidEmail;
 const invalidPassword = loginData.invalidPassword;
+const expected = loginData.expected;
 
 Given("User launches the LMS application", async function (this: CustomWorld) {
 
@@ -51,5 +52,28 @@ When("User leaves the password field empty", async function (this: CustomWorld) 
 When("User clicks on the Sign In button", async function (this: CustomWorld) {
 
     await this.loginPage.clickLoginButton();
+
+});
+Then("User should be see the Learning Hub Heading", async function (this: CustomWorld) {
+
+    await this.loginPage.verifyLearningHubHeading();
+
+});
+
+Then("User should see the email error message", async function (this: CustomWorld) {
+
+    await this.loginPage.verifyEmailError(expected.emailError);
+
+});
+
+Then("User should see the password error message", async function (this: CustomWorld) {
+
+    await this.loginPage.verifyPasswordError(expected.passwordError);
+
+});
+
+Then("User should see the required field validation message", async function (this: CustomWorld) {
+
+    await this.loginPage.verifyRequiredField(expected.requiredField);
 
 });
