@@ -50,4 +50,10 @@ export class basepage {
         logger.info(`Element ${locator} checked status: ${checked}`);
         return checked;
     }
+    async check(locator: Locator) {
+        return await locator.check()
+    }
+    async locator(locator:Locator){
+        return locator
+    }
 }
