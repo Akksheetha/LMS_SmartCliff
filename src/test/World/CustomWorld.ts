@@ -23,6 +23,6 @@ export class CustomWorld extends World{
     
     topicPage!: TopicPage;
     logger=logger;
-    download !:Download
+    download!: Download;
 }   
 setWorldConstructor(CustomWorld);

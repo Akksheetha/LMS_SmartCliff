@@ -1,0 +1,206 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "print-file;verify-the-user-can-successfully-print-the-excel-file",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify the user can successfully print the excel file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 259064000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2528639699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102037000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27059900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 994397100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User is on the Dashboard page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10650128400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on Course Management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66818000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User is on the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4452121999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enter javascript in search bar",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6129253699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User clicks on Add Course Structure in javascript Course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65164300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on Print Button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5140655899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User clicks on Excel Button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 507425400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "excel file should download",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279767899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89392800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PrintFile",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "print-file",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Print File",
+    "tags": [
+      {
+        "name": "@PrintFile",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\PrintFile.feature"
+  }
+]
