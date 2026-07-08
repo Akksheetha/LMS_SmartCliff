@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test-normal": "cucumber-js",
     "test": "cross-env ENV=qa cucumber-js",
+    "test:jeeva" : "cross-env ENV=qa cucumber-js --tags '@jeeva'",
+    "rerun": "cross-env ENV=qa cucumber-js @rerun/rerun.txt",
     "posttest": "npx ts-node src/test/Utilities/report.mts",
-    "test:jeeva" : "cucumber-js --tags '@jeeva'",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
     "test:edge": "cross-env BROWSER=msedge cucumber-js",

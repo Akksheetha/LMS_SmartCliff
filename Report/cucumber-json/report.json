@@ -1,0 +1,433 @@
+[
+  {
+    "description": "Feature Description",
+    "elements": [
+      {
+        "description": "",
+        "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality;user-add-a-newsubmodule-1st-time",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "user Add a newSubmodule 1st time",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 295892399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user launch the application of lms-smartcliff",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1850073800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user login with valid data",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 806013200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16918414499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user seach the course code of \"C3-AT-A-002\" which is already created",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3839199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user click the Add course Structure of the searched course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2875600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user click the Action Setting option",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12045886200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user enable the hierarchy Action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121387000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user click the add sub module in the sub module",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 512297899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the user enter the title of \"HTML\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31607599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the user enter the Description of \"it is a frontend\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34010900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user click the skill",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3373637199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user click Add submodule button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5073097000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the user should see the title in submodule",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 241399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40441099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality;user-add-multiple-submodule",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "user add multiple submodule",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 160918200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user launch the application of lms-smartcliff",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1877281800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user login with valid data",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1050895199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17536081099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user seach the course code of \"C3-AT-A-002\" which is already created",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2654399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user click the Add course Structure of the searched course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2316000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user click the Action Setting option",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15965425600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user enable the hierarchy Action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189503400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user click the threeDot_btn",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477099799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the user click the Add btn",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223915800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the user enter the title of \"HTML\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79192199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the user enter the Description of \"it is a frontend\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52231599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the user click the skill",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3320315299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the user click Add submodule button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5103035100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the user should see the title in submodule",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46042600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "jeevapranesh_07_july_2026_user-working-on-submodule-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "JeevaPranesh_07_JULY_2026_user working on submodule functionality",
+    "tags": [
+      {
+        "name": "@jeeva",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\Submodule.feature"
+  }
+]
