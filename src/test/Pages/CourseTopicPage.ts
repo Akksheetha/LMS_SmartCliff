@@ -9,56 +9,73 @@ export class TopicPage extends basepage {
     private description: Locator;
     private save: Locator;
     private cancel: Locator;
+    private courseNameList:Locator;
+    private actionList: Locator;
+    private previous:Locator;
+    private loading:Locator;
 
     constructor(page: Page) {
-        super(page);
-        this.courses = page.getByTitle("Course Management");
-        this.nextButton = page.getByRole("button", { name: "Next" });
-        this.addTopic = page.getByRole("button", { name: "Add Topic" });
-        this.title = page.getByPlaceholder("Enter Title");
-        this.description = page.getByPlaceholder("Enter Description");
-        this.save = page.getByRole("button", { name: "Save" });
-        this.cancel = page.getByRole("button", { name: "Cancel" });
+    super(page);
+
+    this.courses = page.getByTitle("Course Management");
+
+    this.courseNameList = page.locator("//tbody/tr/td[3]");
+
+    this.actionList = page.locator("//tbody/tr//button[@title='Add Course Structure']");
+
+    this.previous = page.getByRole("button", { name: "Previous" });
+
+    this.nextButton = page.getByRole("button", { name: "Next" });
+
+    this.loading = page.locator(".animate-pulse");
+
+    this.addTopic = page.getByRole("button", { name: "Add Topic" });
+
+    this.title = page.getByPlaceholder("Enter Title");
+
+    this.description = page.getByPlaceholder("Enter Description");
+
+    this.save = page.getByRole("button", { name: "Save" });
+
+    this.cancel = page.getByRole("button", { name: "Cancel" });
     }
 
     async navigateToCourses() {
-        await this.click(this.courses);
+    await this.click(this.courses);
+
+    await this.page.waitForLoadState("networkidle");
+
+    console.log(await this.page.title());
+
+    console.log(this.page.url());
     }
 
-    async clickAddCourseStructure(courseCode: string) {
+    async clickAddCourseStructure(courseName: string) {
 
-    while (true) {
+    const rows = this.page.locator("tbody tr");
 
-        const rows = this.page.locator("tbody tr");
-        const count = await rows.count();
+    const count = await rows.count();
 
-        for (let i = 0; i < count; i++) {
+    for (let i = 0; i < count; i++) {
 
-            const row = rows.nth(i);
-            const text = await row.textContent();
+        const row = rows.nth(i);
 
-            if (text?.includes(courseCode)) {
+        const rowText = await row.innerText();
 
-                await this.click(
-                    row.getByRole("button", {
-                        name: "Add Course Structure"
-                    })
-                );
+        if (rowText.includes(courseName)) {
 
-                return;
-            }
+            await this.click(
+                row.getByRole("button", {
+                    name: "Add Course Structure"
+                })
+            );
+
+            return;
         }
-
-        if (!(await this.isEnabled(this.nextButton))) {
-            break;
-        }
-
-        await this.click(this.nextButton);
-        await this.page.waitForLoadState("networkidle");
     }
 
-    throw new Error(`Course '${courseCode}' not found.`);
-}
+    throw new Error(`Course '${courseName}' not found.`);
+    }
 
     async clickAddTopic() {
         await this.click(this.addTopic);
