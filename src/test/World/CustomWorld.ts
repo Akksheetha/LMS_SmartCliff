@@ -17,7 +17,6 @@ export class CustomWorld extends World{
     //logger=logger;
     searchPage!: searchPage;
     addCourseStructure!:AddCourseStructurePage
-
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage
     
