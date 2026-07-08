@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 292916999
+              "duration": 1023205200
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1039030200
+              "duration": 4783096300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 705478299
+              "duration": 1249605599
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2080700
+              "duration": 2668499
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1672599
+              "duration": 2858699
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1775700
+              "duration": 3085699
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15390291099
+              "duration": 21919112500
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100840500
+              "duration": 913997700
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 609565300
+              "duration": 2814046300
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47495699
+              "duration": 1078743700
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51333499
+              "duration": 591878199
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 263522600
+              "duration": 581183799
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150607299
+              "duration": 754050500
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 255000
+              "duration": 380299
             }
           },
           {
@@ -191,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 72094300
+              "duration": 2217502399
             }
           }
         ],
@@ -215,95 +215,5 @@
       }
     ],
     "uri": "src\\test\\Features\\Submodule.feature"
-  },
-  {
-    "description": "              As a user\n              I want to login to the LMS application\n  So that I can access the dashboard",
-    "elements": [
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Verify login with a valid email and valid password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 248866500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 612741199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "User enters a valid email",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 149120299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39960600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 985301100
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 70830099
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "login_vithya_07_july_2026",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login_VITHYA_07_JULY_2026",
-    "tags": [],
-    "uri": "src\\test\\Features\\login.feature"
   }
 ]

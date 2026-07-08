@@ -5,7 +5,7 @@ import { CustomWorld } from "../World/CustomWorld";
 import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
 
-import { courseStructurePage } from '../Pages/courseStructurePage';
+import { coursestructurePage } from '../Pages/CSPage';
 
 import { LoginPage } from "../Pages/LoginPage";
 
@@ -23,7 +23,7 @@ Before(async function (this: CustomWorld) {
     this.page = await this.context.newPage();
 
     this.addCourseStructure= new AddCourseStructurePage(this.page)
-    this.courseStructure = new courseStructurePage(this.page)
+    this.courseStructure = new coursestructurePage(this.page)
 
     this.loginPage = new LoginPage(this.page);
 

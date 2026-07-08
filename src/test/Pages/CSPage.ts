@@ -1,8 +1,7 @@
-
 import { Locator ,Page} from "@playwright/test";
 import { basepage } from "./basePage";
 
-export class courseStructurePage extends basepage{
+export class coursestructurePage extends basepage{
 
     private courseStructureIcon:Locator;
     private search:Locator

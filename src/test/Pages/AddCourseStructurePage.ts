@@ -10,12 +10,11 @@ export class AddCourseStructurePage extends basepage{
     private subModuleText:Locator 
     private ActionSettings:Locator
     private herichy:Locator
-   // private AddModule:Locator
 
     constructor(page:Page){
         super(page)
         
-        this.AddSubmodule=page.locator("//button[@title='Add New Sub Module']")
+        this.AddSubmodule=page.locator("(//button[@title='Add New Sub Module'])[1]")
         this.title=page.locator("//textarea[@id='title']")
         this.describe = page.locator("//textarea[@id='description']")
         this.checkbox = page.locator("(//input[@type='checkbox'])[2]")
@@ -30,13 +29,9 @@ export class AddCourseStructurePage extends basepage{
 async addsubmoduleLink() {
 
     await this.page.mouse.click(5, 5);
-
     await this.page.waitForTimeout(300);
-
     await this.AddSubmodule.waitFor({state: "visible"});
-
     await this.AddSubmodule.scrollIntoViewIfNeeded();
-
     await this.AddSubmodule.click();
     }
 

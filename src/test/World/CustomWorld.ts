@@ -1,4 +1,4 @@
-import { courseStructurePage } from './../Pages/courseStructurePage';
+import { coursestructurePage } from "../Pages/CSPage";
 import { World,setWorldConstructor } from "@cucumber/cucumber";
 import {Browser,BrowserContext,Page} from "@playwright/test";
 import { AddCourseStructurePage } from "../Pages/AddCourseStructurePage";
@@ -11,7 +11,7 @@ export class CustomWorld extends World{
     loginPage!: LoginPage;
     //logger=logger;
     addCourseStructure!:AddCourseStructurePage
-    courseStructure!:courseStructurePage
+    courseStructure!:coursestructurePage
     
 }   
 setWorldConstructor(CustomWorld);
