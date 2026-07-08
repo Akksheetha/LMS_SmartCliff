@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env ENV=qa cucumber-js",
+    "posttest": "npx ts-node src/test/Utilities/report.mts",
     "test:jeeva" : "cucumber-js --tags '@jeeva'",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
