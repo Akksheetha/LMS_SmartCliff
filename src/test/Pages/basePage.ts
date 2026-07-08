@@ -42,9 +42,14 @@ export class basepage {
         return checked;
     }
     async check(locator: Locator) {
-        return await locator.check()
+        await locator.check()
     }
+    
     async locator(locator:Locator){
         return locator
+    }
+
+    async uncheck(locator:Locator) {
+        await locator.uncheck()
     }
 }
