@@ -20,6 +20,11 @@ Feature: Login_VITHYA_07_JULY_2026
     And User clicks on the Sign In button
     Then User should see the email error message
 
+    Scenario: Verify login with an valid email and a incorrect password
+    When User enters a valid email
+    And User enters an incorrect password
+    And User clicks on the Sign In button
+    Then User should see the password error message
 
   Scenario: Verify login with an empty email and password field
     When User leaves the email field empty
