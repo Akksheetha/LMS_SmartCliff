@@ -8,6 +8,7 @@ export class TopicPage extends basepage {
     private topicDescription: Locator;
     private saveTopicButton: Locator;
     private topicText: Locator;
+    readonly titletxt:Locator;
 
 
     constructor(page: Page) {
@@ -18,6 +19,7 @@ export class TopicPage extends basepage {
         this.topicDescription = page.locator("//textarea[@id='description']");
         this.saveTopicButton = page.locator("//button[@type='submit']");
         this.topicText = page.locator("(//span[contains(@class,'break-words')])[last()]");
+        this.titletxt = this.page.locator("text=Title is required");
     }
 
 
@@ -47,6 +49,5 @@ export class TopicPage extends basepage {
         const topic = this.page.locator(`//span[text()='${title}']`).first();
         await topic.waitFor({state:"visible"});
         return await topic.textContent();
-
-}
+    }
 }
