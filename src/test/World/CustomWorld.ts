@@ -13,15 +13,13 @@ export class CustomWorld extends World{
     context!:BrowserContext;
     page!:Page;
     loginPage!: LoginPage;
-    //logger=logger;
     searchPage!: searchPage;
     addCourseStructure!:AddCourseStructurePage
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage
     coursestructurepage !: CourseStructurePage
-    
     topicPage!: TopicPage;
     logger=logger;
-    download !:Download
+    download!: Download;
 }   
 setWorldConstructor(CustomWorld);

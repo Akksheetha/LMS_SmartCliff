@@ -1,2 +1,0 @@
-src\test\Features\PrintFile.feature:16
-src\test\Features\login.feature:17

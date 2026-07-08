@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 281985999
+              "duration": 259064000
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "User launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 592799900
+              "duration": 2528639699
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "User enters a valid email",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 119699900
+              "duration": 102037000
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 7,
             "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 28881199
+              "duration": 27059900
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 8,
             "name": "User clicks on the Sign In button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:51"
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 966777500
+              "duration": 994397100
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 9,
             "name": "User is on the Dashboard page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:5"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 20392829399
+              "duration": 10650128400
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 10,
             "name": "User clicks on Course Management",
             "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:10"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 76364600
+              "duration": 66818000
             }
           },
           {
@@ -101,11 +101,11 @@
             "line": 11,
             "name": "User is on the Course Management page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:14"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 858188200
+              "duration": 4452121999
             }
           },
           {
@@ -114,11 +114,11 @@
             "line": 12,
             "name": "User enter javascript in search bar",
             "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:18"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 5198067600
+              "duration": 6129253699
             }
           },
           {
@@ -127,11 +127,11 @@
             "line": 13,
             "name": "User clicks on Add Course Structure in javascript Course",
             "match": {
-              "location": "src\\test\\StepDefinitions\\ManageLevel.ts:25"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 65563600
+              "duration": 65164300
             }
           },
           {
@@ -140,11 +140,11 @@
             "line": 14,
             "name": "User clicks on Print Button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:5"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 8921303199
+              "duration": 5140655899
             }
           },
           {
@@ -153,11 +153,11 @@
             "line": 17,
             "name": "User clicks on Excel Button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:9"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 5636769999
+              "duration": 507425400
             }
           },
           {
@@ -166,12 +166,11 @@
             "line": 18,
             "name": "excel file should download",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:13"
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:38"
             },
             "result": {
-              "status": "failed",
-              "duration": 980499,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'failure')\n    at World.<anonymous> (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\src\\test\\StepDefinitions\\PrintFile.ts:14:30)"
+              "status": "passed",
+              "duration": 279767899
             }
           },
           {
@@ -179,7 +178,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 233975599
+              "duration": 89392800
             }
           }
         ],

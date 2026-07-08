@@ -1,0 +1,8 @@
+export const constantData = {
+    "PrintFileExcel":{
+        dashboardh1:"Learning Hub",
+        coursemanagementh1:"Course Structures",
+        searchBarValue:"JavaScript",
+        searchAssertion:"JavaScript"
+    }
+}
