@@ -4,6 +4,7 @@ import { CustomWorld } from "../World/CustomWorld";
 import { getEnv } from "../Utilities/envReader";
 import { setDefaultTimeout } from "@cucumber/cucumber";
 import { LoginPage } from "../Pages/LoginPage";
+import { TopicPage } from "../Pages/CourseTopicPage";
 setDefaultTimeout(60000);
 let browser: Browser;
 BeforeAll(async () => {
@@ -17,6 +18,7 @@ Before(async function (this: CustomWorld) {
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
     this.loginPage = new LoginPage(this.page);
+    this.topicPage = new TopicPage(this.page);
    
 });
 After(async function (this: CustomWorld, { result, pickle }) {
