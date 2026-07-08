@@ -33,19 +33,19 @@ export class basepage {
         await locator.dblclick();
     }
     
-    async isVisible(locator: Locator): Promise<boolean> {
+    async isVisible(locator: Locator){
         const visible = await locator.isVisible();
         logger.info(`Element ${locator} visibility status: ${visible}`);
         return visible;
     }
 
-    async isEnabled(locator: Locator): Promise<boolean> {
+    async isEnabled(locator: Locator){
         const enabled = await locator.isEnabled();
         logger.info(`Element ${locator} enabled status: ${enabled}`);
         return enabled;
     }
 
-    async isChecked(locator: Locator): Promise<boolean> {
+    async isChecked(locator: Locator){
         const checked = await locator.isChecked();
         logger.info(`Element ${locator} checked status: ${checked}`);
         return checked;

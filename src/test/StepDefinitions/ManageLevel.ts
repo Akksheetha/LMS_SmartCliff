@@ -2,15 +2,27 @@ import { CustomWorld } from './../World/CustomWorld';
 import { Given,When,Then } from "@cucumber/cucumber";
 import {expect} from "@playwright/test"
 
+Given('User is on the Dashboard page', async function () {
+  const text = await this.dashboardpage.gettextofLeanringhub()
+  await expect(text).toBe("Learning Hub")
+});
+
 Given('User clicks on Course Management', async function (this:CustomWorld) {
-    await this.dashboardpage.clickCourseManagement()
+  await this.dashboardpage.clickCourseManagement()
 });
 
 Given('User is on the Course Management page', async function (this:CustomWorld) {
-  await expect(this.coursemanagepage.coursestructure).toHaveText("Course Structures")
+  await expect(this.coursemanagepage.courseStructureH1).toHaveText("Course Structures")
 });
 
-Given('User clicks on Add Course Structure in Playwright Course', async function () {
+Given('User enter javascript in search bar', async function (this: CustomWorld) {
+  await this.coursemanagepage.searchJavascript("JavaScript");
+  await expect(this.coursemanagepage.tableElement).toHaveText("JavaScript",{
+      timeout: 60000,
+  });
+});
+
+Given('User clicks on Add Course Structure in javascript Course', async function () {
  await this.coursemanagepage.clickaddcoursemanagestructure()
 });
 
