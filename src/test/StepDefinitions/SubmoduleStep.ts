@@ -1,3 +1,4 @@
+import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { Given,When,Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
@@ -72,3 +73,28 @@ When('the user click the threeDot_btn', async function (this:CustomWorld) {
 When('the user click the Add btn', async function (this:CustomWorld) {
     await this.addCourseStructure.clickSubModuelAdd()
 });
+
+
+When('the user click the edit btn', async function (this:CustomWorld) {
+        await this.addCourseStructure.clicksubmoduleEdit()
+ });
+
+   When('the user click the threeDot_btn in the exsiting submodule', async function (this:CustomWorld) {
+            await this.addCourseStructure.clickSubmoduleThreeDot()
+         });
+       
+       
+         When('the user click the delete btn', async function (this:CustomWorld) {
+            await this.addCourseStructure.clickDelete()
+         });
+       
+
+       
+         When('the user click the delete btn of confom Delete popup', async function (this:CustomWorld) {
+           await this.addCourseStructure.clickDeleteConfom()
+         });
+       
+         Then('the user should see the operation compeleted message', async function (this:CustomWorld) {
+            let act = await this.addCourseStructure.operationCompledText()
+            expect(act).toContain("Operation completed successfully!")
+         });
