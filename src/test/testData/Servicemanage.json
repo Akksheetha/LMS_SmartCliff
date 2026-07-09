@@ -1,0 +1,10 @@
+{
+    "AddService": {
+        "servicename":"JavaScript",
+        "description":"This is Javascript language"
+    },
+    "EditService": {
+        "servicename":"javascript",
+        "description":"Description is edited"
+    }
+}

@@ -13,6 +13,11 @@ export class TopicPage extends basepage {
     private pythonskill:Locator;
     private sqlskill:Locator;
     private preview:Locator;
+    private delete1:Locator;
+    private delete2:Locator;
+    private delete:Locator;
+    readonly cell1:Locator;
+    readonly cell2:Locator;
     readonly titletxt:Locator;
     readonly skilltext:Locator;
 
@@ -31,7 +36,12 @@ export class TopicPage extends basepage {
         this.pythonskill = page.getByRole('checkbox', { name: '🐍 Python' });
         this.sqlskill = page.getByRole('checkbox', { name: '🐬 MySQL' });
         this.skilltext = page.getByText('Annotations').first();
+        this.cell1 = page.getByRole('cell', { name: 'Custom World' }).nth(1);
+        this.cell2 = page.getByRole('cell', { name: 'Annotations' }).nth(1);
         this.preview = page.locator("button[title='Click to preview course structure'] span[class='hidden sm:inline']");
+        this.delete = page.getByRole('button', { name: 'Delete', exact: true });
+        this.delete1 = page.locator('td', { hasText: 'Enable actions to edit, delete, or change the position of Custom World' }).getByRole('button');
+        this.delete2 = page.locator("tr:nth-child(2) td.text-center .relative .p-1");
     }
 
 
@@ -78,6 +88,24 @@ export class TopicPage extends basepage {
     }
     async clickPreview(){
         await this.click(this.preview);
+    }
+    async clickDelete1(){
+            try{
+                await this.click(this.delete1);
+                await this.click(this.delete);
+            }catch(error){
+                throw error;
+            }
+
+    }
+    async clickDelete2(){
+            try{
+                await this.click(this.delete2);
+                await this.click(this.delete);
+            }catch(error){
+                throw error;
+            }
+
     }
 
 }
