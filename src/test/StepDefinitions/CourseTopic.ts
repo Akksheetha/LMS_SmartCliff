@@ -76,3 +76,12 @@ Then('the topic with Skill Set should be created successfully', async function (
     const topicText = await this.topicPage.getSkillText("Annotations");
     expect(topicText).toContain("Annotations");
 });
+
+When('then user clicks the preview option', async function (this:CustomWorld) {
+    this.topicPage.clickPreview();
+});
+
+Then('the created topics should be displayed', async function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+});
