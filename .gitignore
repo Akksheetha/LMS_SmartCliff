@@ -1,33 +1,39 @@
-# Logs
-reports/logs/
-*.log
-/Report/
-Report/log/
-Report/cucumber-html/
-Report/cucumber-json/
-rerun/
-
-# Allure
-Report/allure-report/
-# Reports
-Report/cucumber-html/
-Report/cucumber-json/
-Report/reports/
-Report/log/
-rerun/
-test-results/
-playwright-report/
-blob-report/
-
 # Dependencies
 node_modules/
 
-# Local Environment / Secrets
+# Environment
 .env
 .env.*
 
+# Logs
+*.log
+logs/
+
+# Generated Reports
+Report/cucumber-html/
+Report/cucumber-json/
+Report/screenshots/
+Report/log/
+Report/reports/
+# Allure
+allure-results/
+Report/allure/
+
+# Allure
+allure-results/
+Report/allure-report/
+
 # Playwright
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+playwright-report/
+test-results/
+blob-report/
+
+# Rerun
+rerun/
+
+# Downloads (if generated during execution)
+downloads/
+
+# OS Files
+.DS_Store
+Thumbs.db
