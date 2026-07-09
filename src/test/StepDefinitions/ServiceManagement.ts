@@ -69,3 +69,7 @@ Then('the service should be edited and updated', async function (this:CustomWorl
  let text = await this.dynamicfieldpage.getTextofmessagesection()
  expect(text).toBe(constantData.EditServiceType.successmes)
 });
+
+Then('the system should display the services that searched', async function (this:CustomWorld) {
+  await expect(this.dynamicfieldpage.tablevalue).toContainText(data.EditService.servicename,{timeout:60000})
+});

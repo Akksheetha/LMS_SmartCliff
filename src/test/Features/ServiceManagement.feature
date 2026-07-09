@@ -22,10 +22,15 @@ Scenario: Verify the user cannot add exist service type
     And the user clicks createservice button
     Then the service should not be created
 
+Scenario:Verify the user can search the service type
+   When the user search the service in search bar
+   Then the system should display the services that searched
+
 Scenario: Verify the user can successfully edit service type
     When the user search the service in search bar
     And the user clicks edit icon button in the result of search for service type
     And the user enters service name and description to be edited
     And the user clicks updateservice button
     Then the service should be edited and updated
+
 
