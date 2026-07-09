@@ -4,22 +4,56 @@
     "elements": [
       {
         "description": "",
+<<<<<<< HEAD
+        "id": "service-management;verify-the-user-can-successfully-edit-service-type",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify the user can successfully edit service type",
+=======
         "id": "akksheetha-7th-july-course-topic-management;delete-the-topic-created",
         "keyword": "Scenario",
         "line": 44,
         "name": "Delete the topic created",
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
+              "duration": 278259099
+=======
               "duration": 540065999
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+<<<<<<< HEAD
+            "line": 5,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2679029600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99202200
+=======
             "line": 6,
             "name": "the user launches the LMS application",
             "match": {
@@ -28,12 +62,74 @@
             "result": {
               "status": "passed",
               "duration": 2267132899
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
+<<<<<<< HEAD
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23199300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15014649500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User is on the Dashboard page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\PrintFile.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10277276999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on Dynamic Field Settings",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115401300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User is on the Dynamic field settings page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915194400
+=======
             "name": "the user logs in with valid credentials and navigates to Dashboard",
             "match": {
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
@@ -41,11 +137,22 @@
             "result": {
               "status": "passed",
               "duration": 7400024099
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+<<<<<<< HEAD
+            "line": 26,
+            "name": "the user search the service in search bar",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1551600
+=======
             "line": 8,
             "name": "the user clicks course Management and navigate to course structure Page",
             "match": {
@@ -83,11 +190,48 @@
               "status": "failed",
               "duration": 90014315600,
               "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+<<<<<<< HEAD
+            "line": 27,
+            "name": "the user clicks edit icon button in the result of search for service type",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7532930000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the user enters service name and description to be edited",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 385061700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the user clicks updateservice button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2379000
+=======
             "line": 45,
             "name": "the user clicks the three dots and clicks the delete option",
             "match": {
@@ -96,11 +240,22 @@
             "result": {
               "status": "skipped",
               "duration": 0
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+<<<<<<< HEAD
+            "line": 30,
+            "name": "the service should be edited and updated",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5436630199
+=======
             "line": 46,
             "name": "the topic should be deleted successfully",
             "match": {
@@ -109,6 +264,7 @@
             "result": {
               "status": "skipped",
               "duration": 0
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           },
           {
@@ -116,24 +272,37 @@
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
+              "duration": 85277799
+=======
               "duration": 346875999
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
             }
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@ServiceManagement",
+            "line": 1
+=======
             "name": "@Akksheetha",
             "line": 1
           },
           {
             "name": "@DeleteTopic",
             "line": 43
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
           }
         ],
         "type": "scenario"
       }
     ],
+<<<<<<< HEAD
+    "id": "service-management",
+=======
     "id": "akksheetha-7th-july-course-topic-management",
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
     "line": 2,
     "keyword": "Feature",
     "name": "Akksheetha-7th july-Course Topic Management",
@@ -143,6 +312,10 @@
         "line": 1
       }
     ],
+<<<<<<< HEAD
+    "uri": "src\\test\\Features\\ServiceManagement.feature"
+=======
     "uri": "src\\test\\Features\\courseTopic.feature"
+>>>>>>> b79f4e3cfaf22912cb4acc141001f39621dd1fd2
   }
 ]
