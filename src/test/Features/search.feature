@@ -1,4 +1,4 @@
-Feature: Search Course Structures
+Feature: Search Course
 
   Background:
     Given User launches the LMS application

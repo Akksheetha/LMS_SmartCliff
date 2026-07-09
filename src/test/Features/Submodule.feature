@@ -10,11 +10,12 @@ Feature Description
               And the user seach the course code of "C3-AT-A-002" which is already created
               And the user click the Add course Structure of the searched course
               And the user click the Action Setting option
-              And the user enable the hierarchy Action
+              
     
         
         Scenario: user Add a newSubmodule 1st time
-             When the user click the add sub module in the sub module
+             When the user enable the hierarchy Action
+              And the user click the add sub module in the sub module
               And the user enter the title of "HTML"
               And the user enter the Description of "it is a frontend"
               And the user click the skill
@@ -22,7 +23,8 @@ Feature Description
              Then the user should see the title in submodule
 
         Scenario:user add multiple submodule
-             When the user click the threeDot_btn
+             When the user enable the hierarchy Action
+              And the user click the threeDot_btn
               And the user click the Add btn
               And the user enter the title of "HTML"
               And the user enter the Description of "it is a frontend"
@@ -31,7 +33,8 @@ Feature Description
              Then the user should see the title in submodule
 
         Scenario:user edit the existing submodule
-             When the user click the threeDot_btn
+             When the user enable the hierarchy Action
+              And the user click the threeDot_btn
               And the user click the edit btn
               And the user enter the title of "<title>"
               And the user enter the Description of "<describe>"
@@ -45,10 +48,21 @@ Feature Description
                   | Java       | Object Oriented language |
 
         Scenario:user delete the single existing submodule
-             When the user click the threeDot_btn in the exsiting submodule
+             When the user enable the hierarchy Action
+              And the user click the threeDot_btn in the exsiting submodule
               And the user click the delete btn
               And the user click the delete btn of confom Delete popup
              Then the user should see the operation compeleted message
+
+        Scenario: Scenario name : user able to delete multiple submodule
+             When the user click multiple Delete button
+              And the user click the sub module button
+              And the user click the checkbox of select All
+              And the user click the delete button
+              And the user click the delete button of confomDelete popup
+             Then the user should see the operation compeleted message
+
+
           
 
           
