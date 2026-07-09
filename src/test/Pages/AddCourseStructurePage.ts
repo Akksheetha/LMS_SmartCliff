@@ -24,6 +24,14 @@ export class AddCourseStructurePage extends basepage {
     readonly deleteAll_btn:Locator
     readonly DeleteAll_confom_btn:Locator
     readonly teachingElementdropDown:Locator
+    readonly SelectiDoActivities:Locator
+    readonly SelectweDoActivities:Locator
+    readonly SelectyouDoActivities:Locator
+    readonly SelectAllTeachingElements:Locator
+    readonly iDoActivities:Locator
+    readonly weDoActivities:Locator
+    readonly youDoActivities:Locator
+    readonly allTeachingElements:Locator
 
     constructor(page: Page) {
         super(page);
@@ -48,8 +56,15 @@ export class AddCourseStructurePage extends basepage {
         this.selectAll= page.locator("//input[@class='w-4 h-4 cursor-pointer accent-orange-500 rounded']")
         this.deleteAll_btn= page.locator("(//div[@class='flex gap-2 justify-center sm:justify-end w-full sm:w-auto']/child::button)[2]")
         this.DeleteAll_confom_btn= page.locator("(//div[@class='flex gap-3 pt-2']//button[@data-slot='button'])[2]")
-        this.teachingElementdropDown=page.locator("//span[text()='Select elements']")
-
+        this.teachingElementdropDown=page.locator("(//button[@type='button'])[4]")
+        this.SelectiDoActivities=page.getByText('I Do Activities')
+        this.SelectweDoActivities=page.getByText('We Do Activities')
+        this.SelectyouDoActivities= page.getByText('You Do Activities')
+        this.SelectAllTeachingElements=page.getByText('All Teaching Elements')
+        this.iDoActivities=page.locator("(//th[text()='I Do Activities'])[1]");
+        this.weDoActivities=page.locator("(//th[text()='We Do Activities'])[1]");
+        this.youDoActivities=page.locator("(//th[text()='You Do Activities'])[1]");
+        this.allTeachingElements=page.locator("(//th[text()='All Teaching Elements'])[1]");
     }   
 
     async clickActionSettings() {
@@ -187,6 +202,26 @@ export class AddCourseStructurePage extends basepage {
         }
         
     }
+    async selectTeachingElement(element:string){
+        switch(element){
+            case "I Do Activities":
+                await this.click(this.SelectiDoActivities);
+                await this.page.mouse.click(5,5)
+                break;
+            case "We Do Activities":
+                await this.click(this.SelectweDoActivities);
+                await this.page.mouse.click(5,5)
+                break;
+            case "You Do Activities":
+                await this.click(this.SelectyouDoActivities);
+                await this.page.mouse.click(5,5)
+                break;
+            case "All Teaching Elements":
+                await this.click(this.SelectAllTeachingElements);
+                await this.page.mouse.click(5,5)
+                break;
+        }
+    }
     async clickDelete(){
         try{
             await this.click(this.SubmoduleSingleDelete)
@@ -254,6 +289,15 @@ export class AddCourseStructurePage extends basepage {
         try{
             await this.click(this.DeleteAll_confom_btn)
             logger.info("clicked confom delete button of popup")
+        }catch(error){
+            logger.error(error)
+        }
+    }
+
+    async clickDropDownTeaching(){
+        try{
+           await this.click(this.teachingElementdropDown)
+            logger.info("click DropDown Of teaching element")
         }catch(error){
             logger.error(error)
         }
