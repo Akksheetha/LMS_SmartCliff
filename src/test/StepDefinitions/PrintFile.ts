@@ -41,3 +41,16 @@ Then('excel file should download', async function (this: CustomWorld) {
     const fileName = await this.download.suggestedFilename();
     await this.download.saveAs(`downloads/${fileName}`);
 });
+
+
+When('User uncheck the All checkbox', async function (this:CustomWorld) {
+  await this.coursestructurepage.uncheckAddAll()
+});
+
+Then('User should see error message', async function (this:CustomWorld) {
+  await expect(this.coursestructurepage.errmessage).toHaveText(constantData.NotPrintExcel.errmessage)
+});
+
+Then('excel button should disable', async function (this:CustomWorld) {
+  await expect(this.coursestructurepage.excelBtn).toBeDisabled()
+});

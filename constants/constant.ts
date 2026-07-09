@@ -4,5 +4,8 @@ export const constantData = {
         coursemanagementh1:"Course Structures",
         searchBarValue:"JavaScript",
         searchAssertion:"JavaScript"
+    },
+    "NotPrintExcel":{
+        errmessage:"Nothing to display"
     }
 }
