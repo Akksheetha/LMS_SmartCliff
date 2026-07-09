@@ -4,22 +4,28 @@
     "elements": [
       {
         "description": "",
-        "id": "print-file;verify-the-user-can-successfully-print-the-excel-file",
+        "id": "akksheetha-7th-july-course-topic-management;verify-mandatory-title-field",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "Verify the user can successfully print the excel file",
+        "line": 14,
+        "name": "Verify mandatory Title field",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
+              "duration": 298595000
+=======
               "duration": 248445200
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+<<<<<<< HEAD
+=======
             "line": 5,
             "name": "User launches the LMS application",
             "match": {
@@ -33,22 +39,38 @@
           {
             "arguments": [],
             "keyword": "And ",
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             "line": 6,
-            "name": "User enters a valid email",
+            "name": "the user launches the LMS application",
             "match": {
+<<<<<<< HEAD
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6326394900
+=======
               "location": "src\\test\\StepDefinitions\\Login.ts:16"
             },
             "result": {
               "status": "passed",
               "duration": 74979899
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "User enters a valid password",
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
             "match": {
+<<<<<<< HEAD
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7060014899
+=======
               "location": "src\\test\\StepDefinitions\\Login.ts:22"
             },
             "result": {
@@ -145,32 +167,103 @@
             "result": {
               "status": "passed",
               "duration": 3558973799
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
-            "name": "User clicks on Excel Button",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
             "match": {
+<<<<<<< HEAD
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3716429000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Code"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "J-AT-A-005"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10902099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user clicks Add Topic by clicking enable actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18058758599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user clicks save button without entering Title",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 394442900
+=======
               "location": "src\\test\\StepDefinitions\\PrintFile.ts:34"
             },
             "result": {
               "status": "passed",
               "duration": 479393900
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "excel file should download",
+            "line": 17,
+            "name": "the error message should be displayed successfully",
             "match": {
+<<<<<<< HEAD
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66554599
+=======
               "location": "src\\test\\StepDefinitions\\PrintFile.ts:38"
             },
             "result": {
               "status": "passed",
               "duration": 183899099
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           },
           {
@@ -178,6 +271,9 @@
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
+              "duration": 104530300
+=======
               "duration": 67766500
             }
           }
@@ -381,28 +477,390 @@
             "result": {
               "status": "passed",
               "duration": 180195800
+>>>>>>> 318c3520cffc246f304ecd5c992a9d7dbd9c6dd6
             }
           }
         ],
         "tags": [
           {
-            "name": "@PrintFile",
+            "name": "@Akksheetha",
             "line": 1
+          },
+          {
+            "name": "@MandatoryfieldCheck",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;add-a-topic-with-mandatory-details",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Add a Topic with mandatory details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 317724000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1011173900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5922522299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3505932899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Code"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "J-AT-A-005"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10595100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user clicks Add Topic by clicking enable actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13749639000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Custom World",
+                      "Custom World usage"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "enters the topic details",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237614000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "clicks Save button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148754199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the topic should be created successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5008994899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 97735700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@AddingTopic",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;topic-with-skill-set-configuration",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Topic with Skill Set configuration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 292687700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1662282299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7510062400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3144289099
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Code"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "J-AT-A-005"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5490599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "the user clicks Add Topic in a module by clicking enable actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14173273699
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Annotations",
+                      "basics"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 31,
+            "name": "enters the topic details",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134842899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the user selects the Skill Set",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 430577600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "clicks Save button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89633799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the topic with Skill Set should be created successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6566361799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45249599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@TopicSkillSet",
+            "line": 28
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "print-file",
+    "id": "akksheetha-7th-july-course-topic-management",
     "line": 2,
     "keyword": "Feature",
-    "name": "Print File",
+    "name": "Akksheetha-7th july-Course Topic Management",
     "tags": [
       {
-        "name": "@PrintFile",
+        "name": "@Akksheetha",
         "line": 1
       }
     ],
-    "uri": "src\\test\\Features\\PrintFile.feature"
+    "uri": "src\\test\\Features\\courseTopic.feature"
   }
 ]
