@@ -13,6 +13,7 @@ Then("the course {string} should be listed in the Course Structures table", asyn
     await this.searchPage.assertCourseDisplayed(expectedCourse);
 });
 
+
 Then("no course records should be displayed", async function (this: CustomWorld) {
     await this.searchPage.assertNoRecords();
 });
