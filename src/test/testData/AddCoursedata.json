@@ -1,0 +1,69 @@
+{
+  "validCourse": {
+    "courseClient": "rfe",
+    "serviceType": "Automation testing 4",
+    "serviceModel": "Java Selenium",
+    "courseCategory": "Automation Project",
+    "courseName": "mern",
+
+    "courseLevel": "Intermediate",
+
+    "courseImagePath": "TestData/course.png",
+
+    "description": "This course covers frontend fundamentals.",
+
+    "courseHierarchy": [
+      "Module",
+      "Submodule",
+      "Topic",
+      "Subtopic"
+    ],
+
+    "pedagogy": {
+      "iDo": "Lecture",
+      "weDo": "Assignments",
+      "youDo": "Projects"
+    },
+
+    "skillSet": {
+      "coreProgrammingLanguages": [
+        "Java",
+        "Python"
+      ],
+      "frontendTechnologies": [
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "databaseTechnologies": [
+        "MySQL"
+      ]
+    },
+
+    "resourceTypes": {
+      "iDo": [
+        "PPT"
+      ],
+      "weDo": [
+        "PDF"
+      ],
+      "youDo": [
+        "Notes"
+      ]
+    },
+
+    "resourceSettings": {
+      "PPT": {
+        "maxFileSizeMB": "20",
+        "enableAIChat": true,
+        "enableAISummary": true
+      }
+    },
+
+    "expectedLayoutPreview": {
+      "iDo": "Lecture",
+      "weDo": "Assignments",
+      "youDo": "Projects"
+    }
+  }
+}

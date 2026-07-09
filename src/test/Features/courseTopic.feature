@@ -34,3 +34,8 @@ And enters the topic details
 And the user selects the Skill Set
 And clicks Save button
 Then the topic with Skill Set should be created successfully
+
+@PreviewTable
+Scenario: Preview the topic created
+When then user clicks the preview option
+Then the created topics should be displayed

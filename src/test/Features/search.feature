@@ -15,9 +15,11 @@ Feature: Search Course Structures
                   | SearchType  | SearchKeyword | ExpectedCourseName |
                   | Course Name | pytest        | pytest             |
                   | Course Code | J-B-TAD-006   | pytest             |
+                  
 
   @Search @Negative @Janani
   Scenario: Verify the user cannot retrieve any records when an invalid keyword is entered
     When user enters "xyz_invalid_999" in the search box
     Then no course records should be displayed
+
    
