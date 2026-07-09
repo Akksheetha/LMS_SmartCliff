@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "print-file;verify-the-user-can-successfully-print-the-excel-file",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Verify the user can successfully print the excel file",
+        "id": "service-management;verify-the-user-can-successfully-add-service-type",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Verify the user can successfully add service type",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 248445200
+              "duration": 206476200
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 542256300
+              "duration": 1499985900
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 74979899
+              "duration": 70520900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17841899
+              "duration": 19010699
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7053941899
+              "duration": 5040318000
             }
           },
           {
@@ -79,98 +79,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3427145999
+              "duration": 2428140299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "User clicks on Course Management",
+            "name": "User clicks on Dynamic Field Settings",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:11"
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 85719800
+              "duration": 63289200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "User is on the Course Management page",
+            "name": "User is on the Dynamic field settings page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:15"
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 354646099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "User enter javascript in search bar",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6126199099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User clicks on Add Course Structure in javascript Course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36538300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "User clicks on Print Button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3558973799
+              "duration": 8039200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+            "line": 14,
+            "name": "the user clicks Addservice button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2791222400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user enters service name and description",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38427500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user clicks createservice button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 407650200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 17,
-            "name": "User clicks on Excel Button",
+            "name": "the service should be created",
             "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:34"
+              "location": "src\\test\\StepDefinitions\\ServiceManagement.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 479393900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "excel file should download",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 183899099
+              "duration": 3897918799
             }
           },
           {
@@ -178,231 +165,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67766500
+              "duration": 68662400
             }
           }
         ],
         "tags": [
           {
-            "name": "@PrintFile",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "print-file;verify-the-user-cannot-print-the-excel-file-when-no-hierarchy-selected",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Verify the user cannot print the excel file when no hierarchy selected",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 176532100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 548996199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "User enters a valid email",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 84688100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15387800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5484616300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User is on the Dashboard page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2391814399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "User clicks on Course Management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65315600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "User is on the Course Management page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 320030899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "User enter javascript in search bar",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5632485699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User clicks on Add Course Structure in javascript Course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 59659399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "User clicks on Print Button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4611406699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "User uncheck the All checkbox",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 440678200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "User should see error message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6721799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "excel button should disable",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\PrintFile.ts:54"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5013375000,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Excel' })\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.be.disabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Excel' })\u001b[22m\n\u001b[2m    14 × locator resolved to <button data-slot=\"button\" class=\"inline-flex items-center justify-center whitespace-nowrap font-medium cursor-pointer transition-all disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs rounded-m…>…</button>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n\n    at captureRawStack (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeDisabled (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (C:\\Users\\dhars\\Documents\\LMS_SmartCliff\\src\\test\\StepDefinitions\\PrintFile.ts:55:51)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 180195800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@PrintFile",
+            "name": "@ServiceManagement",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "print-file",
+    "id": "service-management",
     "line": 2,
     "keyword": "Feature",
-    "name": "Print File",
+    "name": "Service Management",
     "tags": [
       {
-        "name": "@PrintFile",
+        "name": "@ServiceManagement",
         "line": 1
       }
     ],
-    "uri": "src\\test\\Features\\PrintFile.feature"
+    "uri": "src\\test\\Features\\ServiceManagement.feature"
   }
 ]
