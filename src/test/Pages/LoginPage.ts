@@ -64,6 +64,4 @@ export class LoginPage extends basepage {
 
         expect(validationMessage).toBe(expectedMessage);
     }
-    
-
 }
