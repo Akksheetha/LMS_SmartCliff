@@ -7,5 +7,9 @@ export const constantData = {
     },
     "NotPrintExcel":{
         errmessage:"Nothing to display"
+    },
+    "AddServiceType":{
+        serviceh3: "Service Management",
+        successmess: "Service created successfully"
     }
 }
