@@ -44,4 +44,4 @@ Then the created topics should be displayed
 Scenario: Delete the topic created
 When the user clicks three dots in the topic
 And clicks the delete option
-Then the 
+Then the topic should be deleted successfully

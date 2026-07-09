@@ -82,6 +82,9 @@ When('then user clicks the preview option', async function (this:CustomWorld) {
 });
 
 Then('the created topics should be displayed', async function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
 });
+
+When('clicks the delete option', async function () {
+           // Write code here that turns the phrase above into concrete actions
+           return 'pending';
+         });
