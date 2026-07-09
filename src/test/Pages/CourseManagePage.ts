@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
+import { logger } from "../Utilities/logger";
 
 export class CourseManagePage extends basepage {
 
@@ -24,10 +25,25 @@ export class CourseManagePage extends basepage {
         this.AddCourseStructure_btn= page.locator("//span[text()='Add Course Structure']")
     }
     async fillsearch(text:string){
-        this.fill(this.search,text)
+        try{
+             await this.fill(this.search,text)
+             logger.info("fill the code id in the search bar")
+
+        }catch(error){
+            logger.error(error)
+        }
+       
     }
     async clickAddCourse(){
-        this.click(this.AddCourseStructure_btn)
+        try{
+            await this.AddCourseStructure_btn.waitFor({state:"visible"})
+           await this.click(this.AddCourseStructure_btn)
+            logger.info("clicked the Add Course Structure")
+
+        }catch(error){
+            logger.error(error)
+        }
+        
     }
 
     async clickaddcoursemanagestructure() {
