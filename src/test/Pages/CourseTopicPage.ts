@@ -79,5 +79,6 @@ export class TopicPage extends basepage {
     async clickPreview(){
         await this.click(this.preview);
     }
+    
 
 }
