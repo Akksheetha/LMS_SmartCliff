@@ -15,9 +15,11 @@
     "Vithya": "cucumber-js src/test/Features --tags @Vithya",
     "Janani": "cucumber-js src/test/Features --tags @Janani",
     "Akksheetha": "cucumber-js src/test/Features --tags @Akksheetha",
-    "allure:generate": "allure generate Report/allure-report/results --clean -o Report/allure-report",
-    "allure:open": "allure open Report/allure-report",
-    "allure:serve": "allure serve Report/allure-report/results"
+    "scripts": {
+    "allure:generate": "allure generate Report/allure-report/allure-results --clean -o Report/allure-report/html",
+    "allure:open": "allure open Report/allure-report/html",
+    "allure:serve": "allure serve Report/allure-report/allure-results"
+}
   },
   "keywords": [],
   "author": "",
