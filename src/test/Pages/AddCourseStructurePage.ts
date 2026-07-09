@@ -4,7 +4,6 @@ import { logger } from "../Utilities/logger";
 
 export class AddCourseStructurePage extends basepage {
 
-
     readonly AddSubmodule: Locator;
     readonly title: Locator;
     readonly describe: Locator;
@@ -28,7 +27,6 @@ export class AddCourseStructurePage extends basepage {
     constructor(page: Page) {
         super(page);
 
-        
         this.AddSubmodule = page.locator("(//button[@title='Add New Sub Module'])[1]");
         this.title = page.locator("//textarea[@id='title']");
         this.describe = page.locator("//textarea[@id='description']");
@@ -52,17 +50,8 @@ export class AddCourseStructurePage extends basepage {
     }   
 
     async clickActionSettings() {
-        try{
-            await this.click(this.ActionSettings);
-            logger.info("open the dropDown of ActionSetting")
-        }catch(error){
-            logger.error(error)
-            throw error
-        }
-        
+        await this.click(this.ActionSettings);
     }
-  
-    
 
     async addsubmoduleLink() {
         try{

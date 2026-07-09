@@ -1,9 +1,3 @@
-
-
-import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
-
-import { searchPage } from './../Pages/SearchPage';
-
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
 import { Browser, chromium } from "@playwright/test";
 import { CustomWorld } from "../World/CustomWorld";
@@ -15,6 +9,10 @@ import { CourseStructurePage } from './../Pages/CourseStructurePage';
 import { CourseManagePage } from './../Pages/CourseManagePage';
 import { DashboardPage } from './../Pages/DashboardPage';
 import {FilterPage} from './../Pages/FilterPage';
+import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
+import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
+import { searchPage } from './../Pages/SearchPage';
+
 setDefaultTimeout(60000);
 setDefaultTimeout(90 * 1000);
 let browser: Browser;
@@ -38,6 +36,7 @@ Before(async function (this: CustomWorld) {
     this.coursemanagepage = new CourseManagePage(this.page);
     this.dashboardpage = new DashboardPage(this.page);
     this.filterPage = new FilterPage(this.page);
+    this.dynamicfieldpage = new DynamicFieldPage(this.page)
 });
 
 After(async function (this: CustomWorld, { result, pickle }) {
