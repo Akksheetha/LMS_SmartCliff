@@ -12,6 +12,7 @@ export class TopicPage extends basepage {
     private javaskill:Locator;
     private pythonskill:Locator;
     private sqlskill:Locator;
+    private preview:Locator;
     readonly titletxt:Locator;
     readonly skilltext:Locator;
 
@@ -30,6 +31,7 @@ export class TopicPage extends basepage {
         this.pythonskill = page.getByRole('checkbox', { name: '🐍 Python' });
         this.sqlskill = page.getByRole('checkbox', { name: '🐬 MySQL' });
         this.skilltext = page.getByText('Annotations').first();
+        this.preview = page.locator("button[title='Click to preview course structure'] span[class='hidden sm:inline']");
     }
 
 
@@ -73,6 +75,9 @@ export class TopicPage extends basepage {
         const topic = this.page.locator(`//span[text()='${title}']`).first();
         await topic.waitFor({state:"visible"});
         return await topic.textContent();
+    }
+    async clickPreview(){
+        await this.click(this.preview);
     }
 
 }
