@@ -39,3 +39,8 @@ Then the topic with Skill Set should be created successfully
 Scenario: Preview the topic created
 When then user clicks the preview option
 Then the created topics should be displayed
+
+@DeleteTopic
+Scenario: Delete the topic created
+And the user clicks the three dots and clicks the delete option
+Then the topic should be deleted successfully
