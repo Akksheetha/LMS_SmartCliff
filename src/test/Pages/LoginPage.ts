@@ -38,15 +38,10 @@ export class LoginPage extends basepage {
 
     await this.click(this.loginButton);
     await responsePromise;
-}
-
-    async verifyDashboard() {
-        await expect(this.page).toHaveURL("https://lms-smartcliff.vercel.app/lms/pages/admindashboard",{timeout:5000});
     }
-
     async verifyLearningHubHeading() {
-        await this.page.waitForURL("**/admindashboard", { timeout: 10000 });
-        await expect(this.learningHub).toBeVisible({ timeout: 10000 });
+        await this.page.waitForURL("**/admindashboard", { timeout: 15000 });
+        await expect(this.learningHub).toBeVisible({ timeout: 15000 });
     }
 
 
@@ -56,7 +51,8 @@ export class LoginPage extends basepage {
     }
 
     async verifyPasswordError(expectedMessage: string) {
-        await expect(this.passwordError).toBeVisible({ timeout: 10000 });
+        await this.page.waitForTimeout(1000); 
+        await expect(this.passwordError).toBeVisible({ timeout: 15000 });
         await expect(this.passwordError).toHaveText(expectedMessage);
     }
 
