@@ -1,19 +1,7 @@
 {
   "validUser": {
-    "email": "testing@gmail.com",
+    "email": "testing6@gmail.com",
     "password": "123"
-  },
-  "invalidEmail": {
-    "email": "test@gmail.com",
-    "password": "123"
-  },
-  "invalidPassword": {
-    "email": "testing@gmail.com",
-    "password": "1"
-  },
-  "bothInvalid": {
-    "email": "test@gmail.com",
-    "password": "12"
   },
   "expected": {
     "emailError": "Email is invalid",
