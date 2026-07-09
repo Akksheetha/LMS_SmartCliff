@@ -12,21 +12,18 @@ import {FilterPage} from './../Pages/FilterPage';
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { searchPage } from './../Pages/SearchPage';
-
-setDefaultTimeout(60000);
-setDefaultTimeout(90 * 1000);
+setDefaultTimeout(90000)
 let browser: Browser;
 BeforeAll(async () => {
     getEnv();
     browser = await chromium.launch({
-        headless: true
+        headless: false
     });
 });
 Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
-    this.page.setDefaultTimeout(90*1000);
     this.addCourseStructure= new AddCourseStructurePage(this.page)
     this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);

@@ -23,6 +23,7 @@ export class AddCourseStructurePage extends basepage {
     readonly selectAll:Locator
     readonly deleteAll_btn:Locator
     readonly DeleteAll_confom_btn:Locator
+    readonly teachingElementdropDown:Locator
 
     constructor(page: Page) {
         super(page);
@@ -47,6 +48,8 @@ export class AddCourseStructurePage extends basepage {
         this.selectAll= page.locator("//input[@class='w-4 h-4 cursor-pointer accent-orange-500 rounded']")
         this.deleteAll_btn= page.locator("(//div[@class='flex gap-2 justify-center sm:justify-end w-full sm:w-auto']/child::button)[2]")
         this.DeleteAll_confom_btn= page.locator("(//div[@class='flex gap-3 pt-2']//button[@data-slot='button'])[2]")
+        this.teachingElementdropDown=page.locator("//span[text()='Select elements']")
+
     }   
 
     async clickActionSettings() {
