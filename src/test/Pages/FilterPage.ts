@@ -9,6 +9,8 @@ export class FilterPage extends basepage {
     readonly courseCategory: Locator;
     readonly levelDropdown: Locator;
     readonly courseLevel: Locator;
+    readonly sortByDropdown: Locator;
+    readonly courseDate: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -19,6 +21,8 @@ export class FilterPage extends basepage {
         this.courseCategory = page.locator("//tbody/tr/td[4]");
         this.levelDropdown = page.getByRole('combobox').nth(2);
         this.courseLevel = page.locator("//table//th[contains(text(),'Level')]/parent::tr/following-sibling::tr/td[count(//table//th[contains(text(),'Level')]/preceding-sibling::th)+1]");
+        this.sortByDropdown = page.getByRole('combobox').nth(3);
+        this.courseDate = page.locator("//tbody/tr/td[1]");
     }
 
     async clickCourseManagement() {
@@ -53,5 +57,21 @@ export class FilterPage extends basepage {
             await expect(this.courseLevel.nth(i)).toContainText(level);
         }
     }
-    
+    async clickSortByDropdown() {
+        await this.click(this.sortByDropdown);
+    }
+    async selectSortBy(sortOption: string) {
+        await this.sortByDropdown.selectOption({ value: sortOption.toLowerCase() });
+    }
+    async verifySortedByDate() {
+        const count = await this.courseDate.count();
+        const dates: Date[] = [];
+        for (let i = 0; i < count; i++) {
+            const dateText = await this.courseDate.nth(i).innerText();
+            dates.push(new Date(dateText.trim()));
+        }
+        for (let i = 1; i < dates.length; i++) {
+            expect(dates[i].getTime()).toBeLessThanOrEqual(dates[i - 1].getTime());
+        }
+    }
 }
