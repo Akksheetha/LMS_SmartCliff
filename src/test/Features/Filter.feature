@@ -22,3 +22,8 @@ Feature: Course Filter_VITHYA_08_JULY_2026
       | Software Development  |
       | Automation Project    |
       | JAVA                  |
+
+  Scenario: Verify filtering courses by Level displays only matching courses
+    When User clicks the "All Levels" dropdown
+    And User selects a level from the Level dropdown
+    Then Only courses matching the selected level should be displayed
