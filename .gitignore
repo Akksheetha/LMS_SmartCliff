@@ -1,6 +1,7 @@
 # Logs
 reports/logs/
 *.log
+/Report/
 Report/log/
 Report/cucumber-html/
 Report/cucumber-json/

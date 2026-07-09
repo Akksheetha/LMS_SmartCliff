@@ -30,5 +30,26 @@ Feature Description
               And the user click Add submodule button
              Then the user should see the title in submodule
 
+        Scenario:user edit the existing submodule
+             When the user click the threeDot_btn
+              And the user click the edit btn
+              And the user enter the title of "<title>"
+              And the user enter the Description of "<describe>"
+              And the user click Add submodule button
+             Then the user should see the title in submodule
+
+        Examples:
+                  | title      | describe                 |
+                  | Python     | Python is Dynamic typed  |
+                  | Typescript | Strictlt typed           |
+                  | Java       | Object Oriented language |
+
+        Scenario:user delete the single existing submodule
+             When the user click the threeDot_btn in the exsiting submodule
+              And the user click the delete btn
+              And the user click the delete btn of confom Delete popup
+             Then the user should see the operation compeleted message
+          
+
           
 
