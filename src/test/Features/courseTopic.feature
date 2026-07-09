@@ -9,17 +9,28 @@ When the user clicks course Management and navigate to course structure Page
 And clicks Add course structure action
 | Code       |
 | J-AT-A-005 |
-When the user clicks Add Topic by clicking enable actions
 
 @MandatoryfieldCheck
 Scenario: Verify mandatory Title field
+When the user clicks Add Topic by clicking enable actions
 And the user clicks save button without entering Title
 Then the error message should be displayed successfully
 
 @AddingTopic
 Scenario: Add a Topic with mandatory details
+When the user clicks Add Topic by clicking enable actions
 And enters the topic details
 | Title | Description |
 | Custom World | Custom World usage |
 And clicks Save button
 Then the topic should be created successfully
+
+@TopicSkillSet
+Scenario: Topic with Skill Set configuration
+When the user clicks Add Topic in a module by clicking enable actions
+And enters the topic details
+    | Title          | Description |
+    | Annotations    | basics |
+And the user selects the Skill Set
+And clicks Save button
+Then the topic with Skill Set should be created successfully
