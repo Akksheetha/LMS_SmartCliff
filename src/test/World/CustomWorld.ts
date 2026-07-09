@@ -9,6 +9,7 @@ import { LoginPage } from "../Pages/LoginPage";
 
 import { TopicPage } from "../Pages/CourseTopicPage";
 import { logger } from "../Utilities/logger";
+import { AddcoursePage } from '../Pages/AddcoursePage';
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
@@ -16,9 +17,8 @@ export class CustomWorld extends World{
     loginPage!: LoginPage;
     //logger=logger;
     searchPage!: searchPage;
-    addCourseStructure!:AddCourseStructurePage
-    
-    searchPage!:searchPage;
+    addCourseStructure!:AddCourseStructurePage;
+    addcoursepage!:AddcoursePage;
 
     dashboardpage !: DashboardPage
     coursemanagepage !: CourseManagePage

@@ -45,6 +45,7 @@ export class searchPage extends basepage {
     }
 
     async assertCourseDisplayed(expectedCourse: string) {
+        await this.page.waitForTimeout(2000);
         await expect(this.courseNames).toContainText(expectedCourse);
     }
 async assertNoRecords() {

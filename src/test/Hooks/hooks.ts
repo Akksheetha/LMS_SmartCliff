@@ -1,3 +1,4 @@
+// import { AddcoursePage } from '../Pages/AddCoursePage';
 
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 
@@ -31,6 +32,7 @@ Before(async function (this: CustomWorld) {
     this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);
     this.searchPage = new searchPage(this.page);
+    // this.addcoursepage=new AddCoursePage(this.page);
 
     this.dashboardpage= new DashboardPage(this.page)
 });
