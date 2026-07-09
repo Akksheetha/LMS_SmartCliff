@@ -14,6 +14,7 @@ export class DynamicFieldPage extends basepage {
     readonly editIcon : Locator
     readonly deleteicon : Locator
     readonly updateservicebtn : Locator
+    readonly tablevalue : Locator
 
 
     constructor(page: Page) {
@@ -24,10 +25,11 @@ export class DynamicFieldPage extends basepage {
         this.descriptioninput = page.getByRole('textbox', { name: 'Describe the service...' })
         this.createservicebtn = page.getByText('Create Service')
         this.messagesection = page.locator('//section/div/div')
-        this.searchbar = page.getByRole('textbox', { name: 'Search services...' })
+        this.searchbar = page.locator("//input[@placeholder='Search services...']")
         this.editIcon = page.locator("//tbody/tr[1]/td[5]/div[1]/button[1]") 
         this.deleteicon = page.locator("//tbody/tr[1]/td[5]/div[1]/button[2]")
         this.updateservicebtn = page.getByText('Update Service')
+        this.tablevalue = page.locator("//tbody/tr[1]/td[2]/div/child::div[2]/child::div[1]")
     }
 
     async clickAddService() {
@@ -68,6 +70,56 @@ export class DynamicFieldPage extends basepage {
             let mes = await this.getText(this.messagesection)
             console.log("message: ",mes)
             return mes
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
+    }
+
+    async searchinDynamicfield(value:string) {
+        try{
+            this.fill(this.searchbar,value)
+            logger.info("Typed value in Search Bar")
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
+    }
+
+    async clickEditicon() {
+        try{
+            this.click(this.editIcon)
+                logger.info("Clicked edit icon")
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
+    }
+
+    async clickdeleteticon() {
+        try{
+            this.click(this.deleteicon)
+                logger.info("Clicked delete icon")
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
+    }
+
+    async clickupdateservice() {
+        try{
+            this.click(this.updateservicebtn)
+                logger.info("Clicked update service button")
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
+    }
+
+    async editService(value:string) {
+        try{
+            await this.fill(this.descriptioninput,value)
+            logger.info("Clicked update service button")
         }catch(error) {
             logger.error(error)
             throw error

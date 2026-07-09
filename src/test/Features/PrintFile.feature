@@ -1,4 +1,4 @@
-@PrintFile
+@Darshan
 Feature: Print File
 
   Background:
