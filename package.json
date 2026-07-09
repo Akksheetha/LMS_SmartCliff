@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test-normal": "cucumber-js",
     "test": "cross-env ENV=qa cucumber-js",
+    "test:jeeva": "cross-env ENV=qa cucumber-js --tags '@jeeva'",
+    "rerun": "cross-env ENV=qa cucumber-js @rerun/rerun.txt",
     "posttest": "npx ts-node src/test/Utilities/report.mts",
-    "test:jeeva": "cucumber-js --tags '@jeeva'",
     "test:chrome": "cross-env BROWSER=chromium cucumber-js",
     "test:firefox": "cross-env BROWSER=firefox cucumber-js",
     "test:edge": "cross-env BROWSER=msedge cucumber-js",
-    "Janani": "cucumber-js src/test/Features --tags @Janani"
+    "Vithya": "cucumber-js src/test/Features --tags @Vithya",
+    "Janani": "cucumber-js src/test/Features --tags @Janani",
+    "Akksheetha": "cucumber-js src/test/Features --tags @Akksheetha",
+    "allure:generate": "allure generate Report/allure-report/results --clean -o Report/allure-report",
+    "allure:open": "allure open Report/allure-report",
+    "allure:serve": "allure serve Report/allure-report/results"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +26,9 @@
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.10.2",
+    "allure-playwright": "^3.10.2",
     "cross-env": "^10.1.0",
     "dotenv": "^17.4.2",
     "multiple-cucumber-html-reporter": "^4.1.0",

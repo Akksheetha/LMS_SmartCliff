@@ -1,107 +1,83 @@
-import { expect, Locator, Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
 
 export class TopicPage extends basepage {
-    private courses: Locator;
-    private nextButton: Locator;
-    private addTopic: Locator;
-    private title: Locator;
-    private description: Locator;
-    private save: Locator;
-    private cancel: Locator;
-    private courseNameList:Locator;
-    private actionList: Locator;
-    private previous:Locator;
-    private loading:Locator;
+
+    private AddTopic: Locator;
+    private secondTopic:Locator;
+    private topicTitle: Locator;
+    private topicDescription: Locator;
+    private saveTopicButton: Locator;
+    private topicText: Locator;
+    private javaskill:Locator;
+    private pythonskill:Locator;
+    private sqlskill:Locator;
+    private preview:Locator;
+    readonly titletxt:Locator;
+    readonly skilltext:Locator;
+
 
     constructor(page: Page) {
-    super(page);
 
-    this.courses = page.getByTitle("Course Management");
-
-    this.courseNameList = page.locator("//tbody/tr/td[3]");
-
-    this.actionList = page.locator("//tbody/tr//button[@title='Add Course Structure']");
-
-    this.previous = page.getByRole("button", { name: "Previous" });
-
-    this.nextButton = page.getByRole("button", { name: "Next" });
-
-    this.loading = page.locator(".animate-pulse");
-
-    this.addTopic = page.getByRole("button", { name: "Add Topic" });
-
-    this.title = page.getByPlaceholder("Enter Title");
-
-    this.description = page.getByPlaceholder("Enter Description");
-
-    this.save = page.getByRole("button", { name: "Save" });
-
-    this.cancel = page.getByRole("button", { name: "Cancel" });
+        super(page);
+        this.AddTopic = page.locator("//button[@title='Add New Topic']").first();
+        this.secondTopic =page.locator("button[title='Add New Topic'] span[class='ml-2 text-xs font-medium text-blue-600']");
+        this.topicTitle = page.locator("//textarea[@id='title']");
+        this.topicDescription = page.locator("//textarea[@id='description']");
+        this.saveTopicButton = page.locator("//button[@type='submit']");
+        this.topicText = page.locator("(//span[contains(@class,'break-words')])[last()]");
+        this.titletxt = page.locator("text=Title is required");
+        this.javaskill = page.getByRole('checkbox', { name: '☕ Java' });
+        this.pythonskill = page.getByRole('checkbox', { name: '🐍 Python' });
+        this.sqlskill = page.getByRole('checkbox', { name: '🐬 MySQL' });
+        this.skilltext = page.getByText('Annotations').first();
+        this.preview = page.locator("button[title='Click to preview course structure'] span[class='hidden sm:inline']");
     }
 
-    async navigateToCourses() {
-    await this.click(this.courses);
 
-    await this.page.waitForLoadState("networkidle");
-
-    console.log(await this.page.title());
-
-    console.log(this.page.url());
+    async clickAddTopic(){
+        await this.page.mouse.click(5,5);
+        await this.AddTopic.waitFor({state:"visible"});
+        await this.AddTopic.click();
     }
 
-    async clickAddCourseStructure(courseName: string) {
 
-    const rows = this.page.locator("tbody tr");
-
-    const count = await rows.count();
-
-    for (let i = 0; i < count; i++) {
-
-        const row = rows.nth(i);
-
-        const rowText = await row.innerText();
-
-        if (rowText.includes(courseName)) {
-
-            await this.click(
-                row.getByRole("button", {
-                    name: "Add Course Structure"
-                })
-            );
-
-            return;
-        }
+    async fillTopicTitle(text:string){
+        await this.fill(this.topicTitle,text);
     }
 
-    throw new Error(`Course '${courseName}' not found.`);
+
+    async fillTopicDescription(text:string){
+        await this.fill(this.topicDescription,text);
     }
 
-    async clickAddTopic() {
-        await this.click(this.addTopic);
+
+    async clickSaveButton(){
+        await this.click(this.saveTopicButton);
     }
 
-    async enterTopicDetails(title: string, description: string) {
-
-        await this.fill(this.title, title);
-
-        await this.fill(this.description, description);
-
+    async getTopicText(title:string){
+        const topic = this.page.locator(`//span[text()='${title}']`).first();
+        await topic.waitFor({state:"visible"});
+        return await topic.textContent();
     }
-
-    async clickSave() {
-        await this.click(this.save);
+    async clicksecondTopic(){
+        await this.page.mouse.click(5,5);
+        await this.AddTopic.waitFor({state:"visible"});
+        await this.click(this.secondTopic);
     }
-
-    async clickCancel() {
-        await this.click(this.cancel);
+    async skillSelect(){
+        await this.click(this.javaskill);
+        await this.click(this.pythonskill);
+        await this.click(this.sqlskill);
     }
-    async verifyTopicCreated(title: string) {
-
-        const topic = this.page.getByText(title, { exact: true });
-
-        await expect(topic).toBeVisible();
-
+    async getSkillText(title:string){
+        const topic = this.page.locator(`//span[text()='${title}']`).first();
+        await topic.waitFor({state:"visible"});
+        return await topic.textContent();
+    }
+    async clickPreview(){
+        await this.click(this.preview);
     }
 
 }

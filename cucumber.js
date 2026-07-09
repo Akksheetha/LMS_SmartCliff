@@ -25,9 +25,9 @@ module.exports={
 
         format: [
             "progress",
-            "progress-bar",
             "html:Report/cucumber-html/cucumber-report.html",
             "json:Report/cucumber-json/report.json",
+            "allure-cucumberjs/reporter:Report/allure-report/results",
             "rerun:rerun/rerun.txt"
 ]
 
