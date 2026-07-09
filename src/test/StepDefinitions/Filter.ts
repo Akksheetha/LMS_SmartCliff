@@ -41,5 +41,6 @@ Then("Only courses matching the selected level should be displayed", async funct
         await this.filterPage.selectLevel(row.Level);
         await this.filterPage.verifySelectedLevel(row.Level);
     }
+    
 
 });

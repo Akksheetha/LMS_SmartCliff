@@ -53,4 +53,5 @@ export class FilterPage extends basepage {
             await expect(this.courseLevel.nth(i)).toContainText(level);
         }
     }
+    
 }

@@ -20,6 +20,7 @@ Feature: Login_VITHYA_07_JULY_2026
     And User clicks on the Sign In button
     Then User should see the "<testCase>" validation message
 
+
     Examples:
       | testCase        | email               | password |
       | InvalidEmail     | test@gmail.com      | 123      |

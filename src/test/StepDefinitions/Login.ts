@@ -55,5 +55,6 @@ Then("User should see the {string} validation message", async function (this: Cu
     } else if (testCase === "EmptyFields") {
         await this.loginPage.verifyRequiredField(expected.requiredField);
     }
+    
 
 });
