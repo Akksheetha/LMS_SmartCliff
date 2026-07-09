@@ -7,6 +7,8 @@ Report/cucumber-html/
 Report/cucumber-json/
 rerun/
 
+# Allure
+Report/allure-report/
 # Reports
 Report/cucumber-html/
 Report/cucumber-json/
