@@ -79,22 +79,47 @@ When('the user click the edit btn', async function (this:CustomWorld) {
         await this.addCourseStructure.clicksubmoduleEdit()
  });
 
-   When('the user click the threeDot_btn in the exsiting submodule', async function (this:CustomWorld) {
+When('the user click the threeDot_btn in the exsiting submodule', async function (this:CustomWorld) {
             await this.addCourseStructure.clickSubmoduleThreeDot()
          });
        
        
-         When('the user click the delete btn', async function (this:CustomWorld) {
+When('the user click the delete btn', async function (this:CustomWorld) {
             await this.addCourseStructure.clickDelete()
-         });
+        });
        
 
        
-         When('the user click the delete btn of confom Delete popup', async function (this:CustomWorld) {
+When('the user click the delete btn of confom Delete popup', async function (this:CustomWorld) {
            await this.addCourseStructure.clickDeleteConfom()
-         });
+    });
        
-         Then('the user should see the operation compeleted message', async function (this:CustomWorld) {
+Then('the user should see the operation compeleted message', async function (this:CustomWorld) {
             let act = await this.addCourseStructure.operationCompledText()
             expect(act).toContain("Operation completed successfully!")
-         });
+ });
+
+ 
+       
+When('the user click multiple Delete button', async function (this:CustomWorld) {
+            await this.addCourseStructure.clickmultipleDelete()
+    });
+       
+When('the user click the sub module button', async function (this:CustomWorld) {
+           await this.addCourseStructure.clickSubmoduleToDelete()
+    });
+       
+When('the user click the checkbox of select All', async function (this:CustomWorld) {
+           await this.addCourseStructure.clickSelectAllBTN()
+    });
+       
+
+       
+When('the user click the delete button', async function (this:CustomWorld) {
+           await this.addCourseStructure.clickDelrtrAll()
+});
+
+       
+When('the user click the delete button of confomDelete popup', async function (this:CustomWorld) {
+           await this.addCourseStructure.clickDeleteAllConfom()
+    });

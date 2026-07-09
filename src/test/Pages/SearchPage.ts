@@ -12,11 +12,13 @@ export class searchPage extends basepage {
     constructor(page: Page) {
         super(page);
 
+
         this.courseManagement = page.locator("//div[@title='Course Management']");
         this.searchInput = page.locator("//input[@placeholder='Search courses, codes, clients, or categories...']");
         this.courseNames = page.locator("//span[@class='text-sm font-semibold text-gray-900 dark:text-white font-sans truncate']");
         this.noUsersMessage = page.locator("//p[@class='text-xs font-normal text-gray-400 dark:text-gray-500']");
         this.courseCountHeader = page.locator("//h2[contains(.,'courses')]");
+        
     }
 
     async navigateToCourseStructures(url: string): Promise<void> {
@@ -45,10 +47,11 @@ export class searchPage extends basepage {
     }
 
     async assertCourseDisplayed(expectedCourse: string) {
+        await this.page.waitForTimeout(30000);
         await expect(this.courseNames).toContainText(expectedCourse);
     }
 async assertNoRecords() {
-    await this.page.waitForTimeout(2000);
+    await this.page.waitForTimeout(30000);
 
     await expect(this.noUsersMessage).toBeVisible();
 

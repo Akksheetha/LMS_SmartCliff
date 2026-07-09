@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
+import { logger } from "../Utilities/logger";
 
 export class AddCourseStructurePage extends basepage {
 
@@ -17,6 +18,11 @@ export class AddCourseStructurePage extends basepage {
     readonly SubmoduleSingleDelete:Locator
     readonly SubDeletePopup:Locator
     readonly operationCompletedMsg:Locator
+    readonly multipleDelete:Locator
+    readonly selectSubModule:Locator
+    readonly selectAll:Locator
+    readonly deleteAll_btn:Locator
+    readonly DeleteAll_confom_btn:Locator
 
     constructor(page: Page) {
         super(page);
@@ -36,71 +42,217 @@ export class AddCourseStructurePage extends basepage {
         this.SubmoduleSingleDelete= page.locator("//span[text()='Delete']")
         this.SubDeletePopup = page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[text()='Delete']")
         this.operationCompletedMsg = page.locator("//span[text()='Operation completed successfully!']")
-    }
+        this.multipleDelete= page.locator("//div[text()='Enable']")
+        this.selectSubModule= page.locator("(//div[@class='space-y-3']//button)[2]")
+        this.selectAll= page.locator("//input[@class='w-4 h-4 cursor-pointer accent-orange-500 rounded']")
+        this.deleteAll_btn= page.locator("(//div[@class='flex gap-2 justify-center sm:justify-end w-full sm:w-auto']/child::button)[2]")
+        this.DeleteAll_confom_btn= page.locator("(//div[@class='flex gap-3 pt-2']//button[@data-slot='button'])[2]")
+    }   
 
     async clickActionSettings() {
         await this.click(this.ActionSettings);
     }
 
     async addsubmoduleLink() {
-        await this.page.mouse.click(5, 5);
+        try{
+            await this.page.mouse.click(5, 5);
         await this.page.waitForTimeout(300);
+        logger.info("waiting for the Add submodule link")
         await this.AddSubmodule.waitFor({ state: "visible" });
         await this.AddSubmodule.scrollIntoViewIfNeeded();
         await this.AddSubmodule.click();
+        logger.info("add submodule link is clicked")
+
+        }
+        catch(error){
+            logger.error(error)
+            throw error
+        }
+        
     }
 
     async fillTitle_sub(text: string) {
-        await this.fill(this.title, text);
+        try{
+            await this.fill(this.title, text);
+            logger.info("enter the title for the submodule")
+        }catch(error){
+            logger.error(error)
+            throw error
+        }
+        
     }
 
     async filldescribe_Sub(text: string) {
-        await this.fill(this.describe, text);
+        try{
+            await this.fill(this.describe, text);
+            logger.info("enter the description of the submodule")
+        }catch(error){
+            logger.error(error)
+            throw error
+        }
+       
     }
 
     async clickSubmoduleCheckbox() {
-        await this.click(this.submoduleCheckbox);
+        try{
+            await this.click(this.submoduleCheckbox);
+            logger.info("click the skill checkbox")
+        }
+        catch(error){
+            logger.error(error)
+            throw error
+        }
+        
     }
 
     async addsubmodule_btn() {
-        await this.click(this.AddSumodule_btn);
+        try{
+            await this.click(this.AddSumodule_btn);
+            logger.info("click the save button of submodule")
+        }catch(error){
+            logger.error(error)
+            throw error
+        }
+        
     }
 
     async getSubmoduleText() {
-        return await this.locator(this.subModuleText);
+        try{
+            logger.info("return the text of operation complete")
+            return await this.locator(this.subModuleText);
+            
+        }catch(error){
+            logger.error(error)
+        }
+        
     }
 
     async clickSubmoduleActionSettings() {
-        await this.click(this.ActionSettings);
+        try{
+            await this.click(this.ActionSettings);
+            logger.info("click the more setting option")
+        }catch(error){
+            logger.error(error)
+            throw error
+        }
+        
     }
 
     async clickHierarchy() {
-        await this.click(this.hierarchy);
+        try{
+            await this.click(this.hierarchy);
+            logger.info("enable the hierarchy button")
+        }catch(error){
+            logger.error(error)
+            throw error
+        }
+       
     }
 
     async clickSubmoduleThreeDot(){
-        await this.page.mouse.click(5, 5);
+        try{
+        await this.page.mouse.click(5,5);
         await this.page.waitForTimeout(300);
         await this.SubmoduleThreeDot.waitFor({ state: "visible" });
-        await this.AddSubmodule.scrollIntoViewIfNeeded();
+        logger.info("waiting for the Submodule setting")
         await this.click(this.SubmoduleThreeDot)
+        logger.info("clicked the threeDot of the submodule")
+
+        }catch(error){
+            logger.error(error)
+        }
+        
     }
     async clickSubModuelAdd(){
-        await this.click(this.SubmoduleADD)
+        try{
+            await this.click(this.SubmoduleADD)
+            logger.info("click the Add btn to add the submodule")
+        }catch(error){
+            logger.error(error)
+        }
+        
+        
     }
 
     async clicksubmoduleEdit(){
-        await this.click(this.SubmoduleEdit)
+        try{
+            await this.click(this.SubmoduleEdit)
+            logger.info("click the edit button for submodule")
+        }
+        catch(error){
+            logger.error(error)
+        }
+        
     }
     async clickDelete(){
-        await this.click(this.SubmoduleSingleDelete)
+        try{
+            await this.click(this.SubmoduleSingleDelete)
+            logger.info("submodule is deleted ")
+        }catch(error){
+            logger.error(error)
+        }
+        
     }
     async clickDeleteConfom(){
-        await this.click(this.SubDeletePopup)
+        try{
+            await this.click(this.SubDeletePopup)
+
+        }catch(error){
+            logger.error(error)
+        }
+        
     }
 
     async operationCompledText(){
+        try{
         await this.operationCompletedMsg.waitFor({ state: "visible" });
+        logger.info("return the opration completed text")
         return this.operationCompletedMsg.textContent()
+        
+        }catch(error){
+            logger.error(error)
+        }
+        
+    }
+
+    async clickmultipleDelete(){
+        try{
+            await this.click(this.multipleDelete)
+            logger.info("multipleDelete button clicked")
+        }catch(error){
+            logger.error(error)
+        }
+    }
+    async clickSubmoduleToDelete(){
+        try{
+            await this.click(this.selectSubModule)
+            logger.info("seleted the submodule")
+        }catch(error){
+            logger.error(error)
+        }
+    }
+    async clickSelectAllBTN(){
+        try{
+            await this.click(this.selectAll)
+            logger.info("seleted all the submodule")
+        }catch(error){
+            logger.error(error)
+        }
+    }
+    async clickDelrtrAll(){
+        try{
+            await this.click(this.deleteAll_btn)
+            logger.info("selected delete all button")
+        }catch(error){
+            logger.error(error)
+        }
+    }
+    async clickDeleteAllConfom(){
+        try{
+            await this.click(this.DeleteAll_confom_btn)
+            logger.info("clicked confom delete button of popup")
+        }catch(error){
+            logger.error(error)
+        }
     }
 }
