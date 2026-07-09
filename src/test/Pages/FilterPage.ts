@@ -18,7 +18,7 @@ export class FilterPage extends basepage {
         this.categoryDropdown = page.getByRole('combobox').nth(1);
         this.courseCategory = page.locator("//tbody/tr/td[4]");
         this.levelDropdown = page.getByRole('combobox').nth(2);
-        this.courseLevel = page.locator("//tbody/tr/td[5]");
+        this.courseLevel = page.locator("//table//th[contains(text(),'Level')]/parent::tr/following-sibling::tr/td[count(//table//th[contains(text(),'Level')]/preceding-sibling::th)+1]");
     }
 
     async clickCourseManagement() {
