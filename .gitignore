@@ -25,3 +25,9 @@ node_modules/
 # Local Environment / Secrets
 .env
 .env.*
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
