@@ -42,6 +42,5 @@ Then the created topics should be displayed
 
 @DeleteTopic
 Scenario: Delete the topic created
-When the user clicks three dots in the topic
-And clicks the delete option
+And the user clicks the three dots and clicks the delete option
 Then the topic should be deleted successfully
