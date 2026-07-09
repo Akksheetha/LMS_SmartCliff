@@ -16,3 +16,8 @@ Feature: Print File
   Scenario: Verify the user can successfully print the excel file
     When User clicks on Excel Button
     Then excel file should download
+
+  Scenario: Verify the user cannot print the excel file when no hierarchy selected
+    When User uncheck the All checkbox
+    Then User should see error message
+    And excel button should disable

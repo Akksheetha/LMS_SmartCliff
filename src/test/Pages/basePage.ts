@@ -1,5 +1,5 @@
 import { Page, Locator } from '@playwright/test';
-import { logger } from '../Utilities/logger'; 
+import { logger } from '../Utilities/logger';
 
 export class basepage {
     protected page: Page;
@@ -9,51 +9,109 @@ export class basepage {
     }
 
     async click(locator: Locator) {
-        logger.info(`Clicking element: ${locator}`);
-        await locator.click();
+        try{
+            await locator.click();
+        }
+        catch(error){
+            throw error;
+        }
     }
 
     async fill(locator: Locator, text: string) {
-        logger.info(`Filling element ${locator} with text: ${text}`);
+        try{
         await locator.fill(text);
+        }
+        catch(error){
+            throw error;
+        }
     }
 
     async getText(locator: Locator) {
-        logger.info(`Getting text content from element: ${locator}`);
-        return await locator.textContent(); // Added missing return to ensure the text is actually usable
+        try{
+            return await locator.textContent();
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
 
     async scroll(locator: Locator) {
-        logger.info(`Scrolling to element: ${locator}`);
-        await locator.scrollIntoViewIfNeeded();
+        try{
+            await locator.scrollIntoViewIfNeeded();
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
 
     async doubleClick(locator: Locator) {
-        logger.info(`Double-clicking element: ${locator}`);
-        await locator.dblclick();
+        try{
+            await locator.dblclick();
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
     
     async isVisible(locator: Locator){
-        const visible = await locator.isVisible();
-        logger.info(`Element ${locator} visibility status: ${visible}`);
+        try{
+            const visible = await locator.isVisible();
         return visible;
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
 
     async isEnabled(locator: Locator){
-        const enabled = await locator.isEnabled();
-        logger.info(`Element ${locator} enabled status: ${enabled}`);
-        return enabled;
+        try{
+            const enabled = await locator.isEnabled();
+            return enabled;
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
 
     async isChecked(locator: Locator){
-        const checked = await locator.isChecked();
-        logger.info(`Element ${locator} checked status: ${checked}`);
-        return checked;
+        try{
+            const checked = await locator.isChecked();
+            return checked;
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
     async check(locator: Locator) {
-        return await locator.check()
+        try{
+            await locator.check();
+        }
+        catch(error){
+            throw error;
+        }
+        
     }
     async locator(locator:Locator){
-        return locator
+        try{
+            return locator;
+        }
+        catch(error){
+            throw error;
+        }
+    }
+
+    async uncheck(locator:Locator) {
+        try{
+            await locator.uncheck()
+        }
+        catch(error){
+            throw error;
+        }
     }
 }

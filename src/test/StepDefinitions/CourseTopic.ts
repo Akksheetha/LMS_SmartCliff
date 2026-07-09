@@ -61,3 +61,18 @@ Then('the error message should be displayed successfully', async function (this:
     await expect(this.topicPage.titletxt).toBeVisible({ timeout: 3000 });
     await expect(this.topicPage.titletxt).toContainText("Title is required");
 });
+
+When('the user clicks Add Topic in a module by clicking enable actions', async function (this:CustomWorld){
+    await this.addCourseStructure.clickSubmoduleActionSettings();
+    await this.addCourseStructure.clickHierarchy();
+    await this.topicPage.clicksecondTopic();
+});
+
+When('the user selects the Skill Set', async function (this:CustomWorld) {
+    await this.topicPage.skillSelect();
+});
+
+Then('the topic with Skill Set should be created successfully', async function (this:CustomWorld) {
+    const topicText = await this.topicPage.getSkillText("Annotations");
+    expect(topicText).toContain("Annotations");
+});

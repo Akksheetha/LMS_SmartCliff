@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { basepage } from "./basePage";
+import { logger } from "../Utilities/logger"
 
 export class DashboardPage extends basepage {
 
@@ -13,10 +14,22 @@ export class DashboardPage extends basepage {
     }
 
     async clickCourseManagement() {
-        await this.click(this.courseManagement)
+        try{
+            await this.click(this.courseManagement)
+            logger.info("Clicked CourseManagement")
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
     }
 
     async gettextofLeanringhub() {
-        return await this.getText(this.learningHubh1)
+        try {
+            logger.info("Got Text of LearningHub")
+            return await this.getText(this.learningHubh1)
+        }catch(error) {
+            logger.error(error)
+            throw error
+        }
     }
 }
