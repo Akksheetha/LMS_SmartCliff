@@ -1,4 +1,4 @@
-@Action
+@Akksheetha @Action
 Feature: Akksheetha - Action settings
 
 Background:
