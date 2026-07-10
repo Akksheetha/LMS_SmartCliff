@@ -4,6 +4,10 @@
     "elements": [
       {
         "description": "",
+        "id": "akksheetha---action-settings;enable-hierarchy-actions",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Enable hierarchy actions",
         "id": "add-course;verify-validation-errors-when-mandatory-fields-are-not-filled",
         "keyword": "Scenario Outline",
         "line": 51,
@@ -14,7 +18,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 239865499
+              "duration": 1059073900
             }
           },
           {
@@ -27,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2017587300
+              "duration": 2775865799
             }
           },
           {
@@ -161,6 +165,38 @@
                 ]
               }
             ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicks Add course structure action",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 90089447500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks enable actions by clicking more",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user can edit the course structure successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
             "keyword": "Then ",
             "line": 43,
             "name": "the following validation errors should be displayed",
