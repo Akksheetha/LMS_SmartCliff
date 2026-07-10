@@ -87,8 +87,9 @@ Then('the created topics should be displayed', async function (this:CustomWorld)
 });
 
 When('the user clicks the three dots and clicks the delete option', async function (this:CustomWorld) {
+    await this.addCourseStructure.clickSubmoduleActionSettings();
+    await this.addCourseStructure.clickHierarchy();
     await this.topicPage.clickDelete1();
-    await this.topicPage.clickDelete2();
 });
 
 Then('the topic should be deleted successfully', async function (this:CustomWorld) {
