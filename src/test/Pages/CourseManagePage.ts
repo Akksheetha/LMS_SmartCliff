@@ -26,21 +26,24 @@ export class CourseManagePage extends basepage {
     }
     async fillsearch(text:string){
         try{
-            this.fill(this.search,text)
-            logger.info("Entered value in search")
-        }catch(error) {
+             await this.fill(this.search,text)
+             logger.info("fill the code id in the search bar")
+
+        }catch(error){
             logger.error(error)
-            throw(error)
         }
+       
     }
     async clickAddCourse(){
         try{
-            this.click(this.AddCourseStructure_btn)
-            logger.info("Clicked AddCourse")
-        }catch(error) {
+            await this.AddCourseStructure_btn.waitFor({state:"visible"})
+           await this.click(this.AddCourseStructure_btn)
+            logger.info("clicked the Add Course Structure")
+
+        }catch(error){
             logger.error(error)
-            throw(error)
         }
+        
     }
 
     async clickaddcoursemanagestructure() {

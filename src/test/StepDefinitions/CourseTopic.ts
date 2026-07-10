@@ -76,3 +76,22 @@ Then('the topic with Skill Set should be created successfully', async function (
     const topicText = await this.topicPage.getSkillText("Annotations");
     expect(topicText).toContain("Annotations");
 });
+
+When('then user clicks the preview option', async function (this:CustomWorld) {
+    await this.topicPage.clickPreview();
+});
+
+Then('the created topics should be displayed', async function (this:CustomWorld) {
+    await expect(this.topicPage.cell1).toHaveText("Custom World");
+    await expect(this.topicPage.cell2).toHaveText("Annotations");
+});
+
+When('the user clicks the three dots and clicks the delete option', async function (this:CustomWorld) {
+    await this.topicPage.clickDelete1();
+    await this.topicPage.clickDelete2();
+});
+
+Then('the topic should be deleted successfully', async function (this:CustomWorld) {
+    const text = this.addCourseStructure.operationCompledText();
+    expect(text).toContain("Operation completed successfully!")
+});
