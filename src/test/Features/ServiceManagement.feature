@@ -1,5 +1,5 @@
 @Darshan
-Feature: Service Management
+Feature: DarshanRaj-08_03_2026-Service_Management
 
 Background: 
     Given User launches the LMS application
