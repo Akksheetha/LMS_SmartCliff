@@ -4,49 +4,34 @@
     "elements": [
       {
         "description": "",
-<<<<<<< HEAD
         "id": "akksheetha---action-settings;enable-hierarchy-actions",
         "keyword": "Scenario",
         "line": 12,
         "name": "Enable hierarchy actions",
-=======
         "id": "add-course;verify-validation-errors-when-mandatory-fields-are-not-filled",
         "keyword": "Scenario Outline",
         "line": 51,
         "name": "Verify validation errors when mandatory fields are not filled",
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-<<<<<<< HEAD
               "duration": 1059073900
-=======
-              "duration": 239865499
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-<<<<<<< HEAD
-            "line": 5,
-            "name": "the user launches the LMS application",
-=======
             "line": 4,
             "name": "User launches the LMS application",
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
               "duration": 2775865799
-=======
-              "duration": 2017587300
             }
           },
           {
@@ -73,27 +58,18 @@
             "result": {
               "status": "passed",
               "duration": 20069800
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-<<<<<<< HEAD
-            "line": 6,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-=======
             "line": 7,
             "name": "User clicks on the Sign In button",
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             "match": {
               "location": "src\\test\\StepDefinitions\\Login.ts:52"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 16005997100
-=======
               "duration": 9462933299
             }
           },
@@ -108,27 +84,18 @@
             "result": {
               "status": "passed",
               "duration": 2794468600
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-<<<<<<< HEAD
-            "line": 7,
-            "name": "the user clicks course Management and navigate to course structure Page",
-=======
             "line": 37,
             "name": "user clicks Add Course button",
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             "match": {
               "location": "src\\test\\StepDefinitions\\AddCourse.ts:10"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 26230439099
-=======
               "duration": 420441399
             }
           },
@@ -169,7 +136,6 @@
             "result": {
               "status": "passed",
               "duration": 89184000
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
@@ -183,9 +149,6 @@
                   },
                   {
                     "cells": [
-<<<<<<< HEAD
-                      "J-TM-T-011"
-=======
                       "Please select a service model"
                     ]
                   },
@@ -197,13 +160,11 @@
                   {
                     "cells": [
                       "Please enter a course name"
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
                     ]
                   }
                 ]
               }
             ],
-<<<<<<< HEAD
             "keyword": "And ",
             "line": 8,
             "name": "clicks Add course structure action",
@@ -236,13 +197,11 @@
             "name": "the user can edit the course structure successfully",
             "match": {
               "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
-=======
             "keyword": "Then ",
             "line": 43,
             "name": "the following validation errors should be displayed",
             "match": {
               "location": "src\\test\\StepDefinitions\\AddCourse.ts:130"
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             },
             "result": {
               "status": "passed",
@@ -254,20 +213,12 @@
             "hidden": true,
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 1057310800
-=======
               "duration": 67760200
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           }
         ],
         "tags": [
           {
-<<<<<<< HEAD
-            "name": "@Action",
-            "line": 1
-=======
             "name": "@Janani",
             "line": 35
           },
@@ -278,25 +229,11 @@
           {
             "name": "@Negative",
             "line": 35
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
           }
         ],
         "type": "scenario"
       }
     ],
-<<<<<<< HEAD
-    "id": "akksheetha---action-settings",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Akksheetha - Action settings",
-    "tags": [
-      {
-        "name": "@Action",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\Features\\MoreActions.feature"
-=======
     "id": "add-course",
     "line": 1,
     "keyword": "Feature",
@@ -819,6 +756,5 @@
     "name": "Search Course",
     "tags": [],
     "uri": "src\\test\\Features\\search.feature"
->>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
   }
 ]
