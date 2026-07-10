@@ -9,10 +9,6 @@ export const constantData = {
     },
     "AddServiceType":{
         serviceh3: "Service Management",
-        successmess: "Service created successfully",
-    },
-    "AddUsingExistData":{
-        errmessage: "Request failed with status code 400"
     },
     "EditServiceType":{
         successmes:"Service updated successfully"

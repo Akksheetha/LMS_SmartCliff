@@ -15,12 +15,10 @@ Report/cucumber-json/
 Report/screenshots/
 Report/log/
 Report/reports/
-# Allure
-allure-results/
-Report/allure/
 
 # Allure
 allure-results/
+Report/allure/
 Report/allure-report/
 
 # Playwright
@@ -31,7 +29,7 @@ blob-report/
 # Rerun
 rerun/
 
-# Downloads (if generated during execution)
+# Downloads
 downloads/
 
 # OS Files
