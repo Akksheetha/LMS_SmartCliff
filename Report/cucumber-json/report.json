@@ -1,59 +1,175 @@
 [
   {
-    "description": "",
+    "description": "Feature Description",
     "elements": [
       {
         "description": "",
+<<<<<<< HEAD
         "id": "akksheetha---action-settings;enable-hierarchy-actions",
         "keyword": "Scenario",
         "line": 12,
         "name": "Enable hierarchy actions",
+=======
+        "id": "add-course;verify-validation-errors-when-mandatory-fields-are-not-filled",
+        "keyword": "Scenario Outline",
+        "line": 51,
+        "name": "Verify validation errors when mandatory fields are not filled",
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 1059073900
+=======
+              "duration": 239865499
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+<<<<<<< HEAD
             "line": 5,
             "name": "the user launches the LMS application",
+=======
+            "line": 4,
+            "name": "User launches the LMS application",
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:9"
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
             },
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 2775865799
+=======
+              "duration": 2017587300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116820600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "name": "user launch the application of lms-smartcliff",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:8"
             },
             "result": {
               "status": "passed",
+              "duration": 20069800
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+<<<<<<< HEAD
+            "line": 6,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+=======
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+<<<<<<< HEAD
               "duration": 16005997100
+=======
+              "duration": 9462933299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user clicks the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2794468600
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+<<<<<<< HEAD
             "line": 7,
             "name": "the user clicks course Management and navigate to course structure Page",
+=======
+            "line": 37,
+            "name": "user clicks Add Course button",
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:21"
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:10"
             },
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 26230439099
+=======
+              "duration": 420441399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the \"Create New Course Setup\" modal should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25227500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "user selects only the Course Client \"rfe\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2753677499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user clicks the Next button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89184000
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           },
           {
@@ -62,17 +178,32 @@
                 "rows": [
                   {
                     "cells": [
-                      "Code"
+                      "Please select a service type"
                     ]
                   },
                   {
                     "cells": [
+<<<<<<< HEAD
                       "J-TM-T-011"
+=======
+                      "Please select a service model"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Please select a course category"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Please enter a course name"
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
                     ]
                   }
                 ]
               }
             ],
+<<<<<<< HEAD
             "keyword": "And ",
             "line": 8,
             "name": "clicks Add course structure action",
@@ -105,10 +236,17 @@
             "name": "the user can edit the course structure successfully",
             "match": {
               "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
+=======
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the following validation errors should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:130"
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 58473299
             }
           },
           {
@@ -116,19 +254,37 @@
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 1057310800
+=======
+              "duration": 67760200
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
             }
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@Action",
             "line": 1
+=======
+            "name": "@Janani",
+            "line": 35
+          },
+          {
+            "name": "@AddCourse",
+            "line": 35
+          },
+          {
+            "name": "@Negative",
+            "line": 35
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
           }
         ],
         "type": "scenario"
       }
     ],
+<<<<<<< HEAD
     "id": "akksheetha---action-settings",
     "line": 2,
     "keyword": "Feature",
@@ -140,5 +296,529 @@
       }
     ],
     "uri": "src\\test\\Features\\MoreActions.feature"
+=======
+    "id": "add-course",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add Course",
+    "tags": [],
+    "uri": "src\\test\\Features\\AddCourse.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-course;verify-the-user-can-search-for-a-course-using-course-name",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Verify the user can search for a Course using Course Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204930400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1807605999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86359500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28959399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6584779900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user login with valid data",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3825638300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30903800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the \"All Teaching Elements\" column  in the course Table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30021861400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33031700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-course;verify-the-user-can-search-for-a-course-using-course-code",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Verify the user can search for a Course using Course Code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 201987899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1965379300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85734100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user launch the application of lms-smartcliff",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20815600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12841069600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user login with valid data",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2700719400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31858399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the \"I Do Activities\" column  in the course Table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30018803299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29834100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-course;verify-the-user-cannot-retrieve-any-records-when-an-invalid-keyword-is-entered",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "the user select one Teaching Element",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 195642600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1500606199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76947899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user launch the application of lms-smartcliff",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23777199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7182547000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2701709000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user click the dropdown of teaching element",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24393599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the \"We Do Activities\" column  in the course Table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30027271300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50642699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-click-the-teaching-element-functionality;the-user-select-one-teaching-element",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "the user select one Teaching Element",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 226512900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user launch the application of lms-smartcliff",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 668552100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user login with valid data",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13500257200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user click the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4563247399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user seach the course code of \"C3-AT-A-002\" which is already created",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 859782300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user click the Add course Structure of the searched course",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5152009099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user click the dropdown of teaching element",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5885422999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user click the chechbox of \"You Do Activities\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 499078999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the \"You Do Activities\" column  in the course Table",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4928500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67349699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jeeva",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-course",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Course",
+    "tags": [],
+    "uri": "src\\test\\Features\\search.feature"
+>>>>>>> 50a0ca58846a17e1041b332217524b7b410e39f6
   }
 ]

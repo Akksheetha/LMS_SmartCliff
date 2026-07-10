@@ -9,6 +9,7 @@ import { AddCourseStructurePage } from '../Pages/AddCourseStructurePage';
 import { TopicPage } from "../Pages/CourseTopicPage";
 import { logger } from "../Utilities/logger";
 import {FilterPage} from "../Pages/FilterPage";
+import { AddcoursePage } from '../Pages/AddCoursePage';
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 export class CustomWorld extends World{
     browser!:Browser;
@@ -21,6 +22,7 @@ export class CustomWorld extends World{
     coursemanagepage !: CourseManagePage;
     coursestructurepage !: CourseStructurePage;
     filterPage !: FilterPage;
+    addcoursepage!: AddcoursePage;
     dynamicfieldpage !: DynamicFieldPage
     
     topicPage!: TopicPage;
