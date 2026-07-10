@@ -24,7 +24,14 @@ Feature: Course Filter_VITHYA_08_JULY_2026
       | Automation Project    |
       | JAVA                  |
   
-  Scenario: Verify filtering courses by Level displays only matching courses
-    When User clicks the "All Levels" dropdown
+Scenario: Verify filtering courses by Level displays only matching courses
+    When User opens the Level dropdown
     And User selects a level from the Level dropdown
     Then Only courses matching the selected level should be displayed
+
+Scenario: Verify Sort By Course Name displays courses sorted 
+    When User opens the Sort By dropdown
+    When User selects Course Name from the Sort By dropdown
+    Then Courses should be displayed in reverse alphabetical order by course name
+    
+

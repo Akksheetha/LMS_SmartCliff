@@ -1,5 +1,5 @@
 @Darshan
-Feature: Service Management
+Feature: DarshanRaj-08_03_2026-Service_Management
 
 Background: 
     Given User launches the LMS application
@@ -10,17 +10,21 @@ Background:
     And User clicks on Dynamic Field Settings
     And User is on the Dynamic field settings page
 
-Scenario: Verify the user can successfully add service type
+Scenario Outline: Verify the user can add a service type
     When the user clicks Addservice button
-    And the user enters service name and description
+    And the user enters service name "<type>" "<name>" and description "<description>" 
     And the user clicks createservice button
-    Then the service should be created
+    Then the service should see status "<type>" "<message>"
 
-Scenario: Verify the user cannot add exist service type
-    When the user clicks Addservice button
-    And the user enters already exist service name and description
-    And the user clicks createservice button
-    Then the service should not be created
+Examples:
+    |type   |name           |description            |message                            |
+    |valid  |JavaScript     |This is Testing purpose|Service created successfully       |
+    |valid  |JavaScript.js  |This is Testing purpose|Service created successfully       |
+    |invalid|JavaScript     |This is Testing purpose|Request failed with status code 400|
+
+Scenario:Verify the user can search the service type
+   When the user search the service in search bar
+   Then the system should display the services that searched
 
 Scenario: Verify the user can successfully edit service type
     When the user search the service in search bar
@@ -28,4 +32,5 @@ Scenario: Verify the user can successfully edit service type
     And the user enters service name and description to be edited
     And the user clicks updateservice button
     Then the service should be edited and updated
+
 

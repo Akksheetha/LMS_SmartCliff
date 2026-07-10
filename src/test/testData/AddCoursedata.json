@@ -3,8 +3,8 @@
     "courseClient": "rfe",
     "serviceType": "Automation testing 4",
     "serviceModel": "Java Selenium",
-    "courseCategory": "Automation Project",
-    "courseName": "mern",
+    "courseCategory": "Java",
+    "courseName": "Selenium",
 
     "courseLevel": "Intermediate",
 
@@ -20,10 +20,19 @@
     ],
 
     "pedagogy": {
-      "iDo": "Lecture",
-      "weDo": "Assignments",
-      "youDo": "Projects"
+      "iDo": "Live Classes",
+      "weDo": "Lab",
+      "youDo": "Assessment"
     },
+  "resourceTypes": {
+  "iDo": [
+    "PPT"
+  ],
+  
+  "youDo": [
+    "Notes"
+  ]
+},
 
     "skillSet": {
       "coreProgrammingLanguages": [
@@ -32,25 +41,14 @@
       ],
       "frontendTechnologies": [
         "HTML",
-        "CSS",
-        "React"
+        "CSS"
+        
       ],
       "databaseTechnologies": [
         "MySQL"
       ]
     },
 
-    "resourceTypes": {
-      "iDo": [
-        "PPT"
-      ],
-      "weDo": [
-        "PDF"
-      ],
-      "youDo": [
-        "Notes"
-      ]
-    },
 
     "resourceSettings": {
       "PPT": {

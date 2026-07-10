@@ -19,9 +19,6 @@ Then("Only {string} courses should be displayed", async function (this: CustomWo
 });
 
 
-When("User clicks the \"All Levels\" dropdown", async function (this: CustomWorld) {
-    await this.filterPage.clickLevelDropdown();
-});
 
 When("User selects a level from the Level dropdown", async function (this: CustomWorld) {
 
@@ -41,6 +38,26 @@ Then("Only courses matching the selected level should be displayed", async funct
         await this.filterPage.selectLevel(row.Level);
         await this.filterPage.verifySelectedLevel(row.Level);
     }
-    
+});
+
+
+When("User opens the Level dropdown", async function (this: CustomWorld) {
+
+    await this.filterPage.clickLevelDropdown();
 
 });
+
+When("User opens the Sort By dropdown", async function (this: CustomWorld) {
+
+    await this.filterPage.clickSortByDropdown();
+
+});
+When("User selects Course Name from the Sort By dropdown", async function (this: CustomWorld) {
+    await this.filterPage.selectSortByCourseName();
+});
+
+Then("Courses should be displayed in reverse alphabetical order by course name", async function (this: CustomWorld) {
+    await this.filterPage.verifySortedByCourseName();
+    
+});
+
