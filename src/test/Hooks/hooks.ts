@@ -9,6 +9,9 @@ import { CourseStructurePage } from './../Pages/CourseStructurePage';
 import { CourseManagePage } from './../Pages/CourseManagePage';
 import { DashboardPage } from './../Pages/DashboardPage';
 import {FilterPage} from './../Pages/FilterPage';
+import { AddcoursePage } from '../Pages/AddCoursePage';
+setDefaultTimeout(60000);
+setDefaultTimeout(120 * 1000);
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { searchPage } from './../Pages/SearchPage';
@@ -33,6 +36,7 @@ Before(async function (this: CustomWorld) {
     this.coursemanagepage = new CourseManagePage(this.page);
     this.dashboardpage = new DashboardPage(this.page);
     this.filterPage = new FilterPage(this.page);
+    this.addcoursepage = new AddcoursePage(this.page);
     this.dynamicfieldpage = new DynamicFieldPage(this.page)
 });
 
