@@ -4,56 +4,56 @@
     "elements": [
       {
         "description": "",
-        "id": "akksheetha-7th-july-course-topic-management;delete-the-topic-created",
+        "id": "akksheetha---action-settings;enable-hierarchy-actions",
         "keyword": "Scenario",
-        "line": 44,
-        "name": "Delete the topic created",
+        "line": 12,
+        "name": "Enable hierarchy actions",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 540065999
+              "duration": 1059073900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "the user launches the LMS application",
             "match": {
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 2267132899
+              "duration": 2775865799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 6,
             "name": "the user logs in with valid credentials and navigates to Dashboard",
             "match": {
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 7400024099
+              "duration": 16005997100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 7,
             "name": "the user clicks course Management and navigate to course structure Page",
             "match": {
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 4402546800
+              "duration": 26230439099
             }
           },
           {
@@ -67,31 +67,31 @@
                   },
                   {
                     "cells": [
-                      "J-AT-A-005"
+                      "J-TM-T-011"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "And ",
-            "line": 9,
+            "line": 8,
             "name": "clicks Add course structure action",
             "match": {
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
             },
             "result": {
               "status": "failed",
-              "duration": 90014315600,
+              "duration": 90089447500,
               "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "the user clicks the three dots and clicks the delete option",
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks enable actions by clicking more",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:89"
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:5"
             },
             "result": {
               "status": "skipped",
@@ -101,10 +101,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 46,
-            "name": "the topic should be deleted successfully",
+            "line": 14,
+            "name": "the user can edit the course structure successfully",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:94"
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
             },
             "result": {
               "status": "skipped",
@@ -116,33 +116,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 346875999
+              "duration": 1057310800
             }
           }
         ],
         "tags": [
           {
-            "name": "@Akksheetha",
+            "name": "@Action",
             "line": 1
-          },
-          {
-            "name": "@DeleteTopic",
-            "line": 43
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "akksheetha-7th-july-course-topic-management",
+    "id": "akksheetha---action-settings",
     "line": 2,
     "keyword": "Feature",
-    "name": "Akksheetha-7th july-Course Topic Management",
+    "name": "Akksheetha - Action settings",
     "tags": [
       {
-        "name": "@Akksheetha",
+        "name": "@Action",
         "line": 1
       }
     ],
-    "uri": "src\\test\\Features\\courseTopic.feature"
+    "uri": "src\\test\\Features\\MoreActions.feature"
   }
 ]
