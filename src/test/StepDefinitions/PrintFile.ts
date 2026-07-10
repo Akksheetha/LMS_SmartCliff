@@ -18,7 +18,7 @@ Given('User is on the Course Management page', async function (this:CustomWorld)
 
 Given('User enter javascript in search bar', async function (this: CustomWorld) {
   await this.coursemanagepage.searchJavascript(constantData.PrintFileExcel.searchBarValue);
-  await expect(this.coursemanagepage.tableElement).toHaveText(constantData.PrintFileExcel.searchAssertion,{
+  await expect(this.coursemanagepage.tableElement).toHaveText(constantData.PrintFileExcel.searchBarValue,{
       timeout: 60000,
   });
 });
