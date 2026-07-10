@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 239271199
+              "duration": 233340199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1575978400
+              "duration": 1824744799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 88032999
+              "duration": 77199200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17342400
+              "duration": 21587300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11571551000
+              "duration": 15007624600
             }
           },
           {
@@ -78,8 +78,9 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 7764533100
+              "status": "failed",
+              "duration": 30018597499,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[title=\"Course Management\"]')\u001b[22m\n\n    at FilterPage.click (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\basePage.ts:13:27)\n    at FilterPage.clickCourseManagement (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:30:20)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:6:27)"
             }
           },
           {
@@ -91,8 +92,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 4119366500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -104,8 +105,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 6516369500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -117,8 +118,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 37780100
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -126,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23950499
+              "duration": 239899900
             }
           }
         ],
@@ -150,7 +151,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 132027799
+              "duration": 199027000
             }
           },
           {
@@ -163,7 +164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1585560600
+              "duration": 1669996500
             }
           },
           {
@@ -176,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52669300
+              "duration": 61080199
             }
           },
           {
@@ -189,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11180200
+              "duration": 17633000
             }
           },
           {
@@ -202,7 +203,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5548586400
+              "duration": 14380775199
             }
           },
           {
@@ -215,7 +216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2468956600
+              "duration": 19787514699
             }
           },
           {
@@ -228,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 920770299
+              "duration": 688211699
             }
           },
           {
@@ -241,8 +242,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 30016621200,
-              "error_message": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox').nth(1)\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"w-full h-9 text-sm border border-gray-300 dark:border-gray-700 rounded-lg px-3 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-1 focus:ring-indigo-500 dark:focus:ring-indigo-400 font-sans bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at FilterPage.selectCategory (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:37:33)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:14:27)"
+              "duration": 30017740900,
+              "error_message": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox').nth(1)\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"w-full h-9 text-sm border border-gray-300 dark:border-gray-700 rounded-lg px-3 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-1 focus:ring-indigo-500 dark:focus:ring-indigo-400 font-sans bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at FilterPage.selectCategory (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:38:33)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:14:27)"
             }
           },
           {
@@ -263,7 +264,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 352701800
+              "duration": 173793399
             }
           }
         ],
@@ -287,7 +288,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119400999
+              "duration": 164859799
             }
           },
           {
@@ -300,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1524928500
+              "duration": 1670144100
             }
           },
           {
@@ -313,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56514500
+              "duration": 69499599
             }
           },
           {
@@ -326,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10787900
+              "duration": 12371700
             }
           },
           {
@@ -339,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12062373900
+              "duration": 15008179900
             }
           },
           {
@@ -352,7 +353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2480858699
+              "duration": 15130778100
             }
           },
           {
@@ -365,7 +366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 887810299
+              "duration": 720830799
             }
           },
           {
@@ -377,8 +378,9 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 5383724800
+              "status": "failed",
+              "duration": 30021113199,
+              "error_message": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox').nth(1)\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"w-full h-9 text-sm border border-gray-300 dark:border-gray-700 rounded-lg px-3 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-1 focus:ring-indigo-500 dark:focus:ring-indigo-400 font-sans bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at FilterPage.selectCategory (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:38:33)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:14:27)"
             }
           },
           {
@@ -390,8 +392,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 17423899
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -399,7 +401,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31870999
+              "duration": 157266899
             }
           }
         ],
@@ -423,7 +425,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 126758500
+              "duration": 163778599
             }
           },
           {
@@ -436,7 +438,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1492325300
+              "duration": 1805679999
             }
           },
           {
@@ -449,7 +451,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49828299
+              "duration": 60047599
             }
           },
           {
@@ -462,7 +464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8490300
+              "duration": 11118400
             }
           },
           {
@@ -475,7 +477,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5272715299
+              "duration": 15018192199
             }
           },
           {
@@ -488,7 +490,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2456890200
+              "duration": 19722511199
             }
           },
           {
@@ -501,7 +503,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 673533200
+              "duration": 894626999
             }
           },
           {
@@ -514,7 +516,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73243300
+              "duration": 97575500
             }
           },
           {
@@ -526,8 +528,9 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:23"
             },
             "result": {
-              "status": "passed",
-              "duration": 6139630300
+              "status": "failed",
+              "duration": 30046877899,
+              "error_message": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox').nth(2)\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"w-full h-9 text-sm border border-gray-300 dark:border-gray-700 rounded-lg px-3 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-1 focus:ring-indigo-500 dark:focus:ring-indigo-400 font-sans bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at FilterPage.selectLevel (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:52:34)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:28:31)"
             }
           },
           {
@@ -539,8 +542,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:33"
             },
             "result": {
-              "status": "passed",
-              "duration": 130631999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -548,7 +551,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 43554900
+              "duration": 124982400
             }
           }
         ],
@@ -562,17 +565,17 @@
       },
       {
         "description": "",
-        "id": "course-filter_vithya_08_july_2026;verify-sort-by-date-displays-courses-sorted-correctly",
+        "id": "course-filter_vithya_08_july_2026;verify-sort-by-course-name-displays-courses-sorted",
         "keyword": "Scenario",
         "line": 32,
-        "name": "Verify Sort By Date displays courses sorted correctly",
+        "name": "Verify Sort By Course Name displays courses sorted",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 128917700
+              "duration": 160549300
             }
           },
           {
@@ -585,7 +588,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1472597599
+              "duration": 1634396199
             }
           },
           {
@@ -598,7 +601,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56984499
+              "duration": 59394799
             }
           },
           {
@@ -611,7 +614,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10287599
+              "duration": 17171399
             }
           },
           {
@@ -624,7 +627,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10246993000
+              "duration": 15002147599
             }
           },
           {
@@ -636,8 +639,9 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 2559437600
+              "status": "failed",
+              "duration": 30002554000,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[title=\"Course Management\"]')\u001b[22m\n\n    at FilterPage.click (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\basePage.ts:13:27)\n    at FilterPage.clickCourseManagement (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:30:20)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:6:27)"
             }
           },
           {
@@ -649,8 +653,8 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 831964099
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -662,35 +666,34 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:50"
             },
             "result": {
-              "status": "passed",
-              "duration": 97778400
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 34,
-            "name": "User selects \"Date\" from the Sort By dropdown",
+            "name": "User selects Course Name from the Sort By dropdown",
             "match": {
               "location": "src\\test\\StepDefinitions\\Filter.ts:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 25471900
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 35,
-            "name": "Courses should be displayed in date order",
+            "name": "Courses should be displayed in reverse alphabetical order by course name",
             "match": {
-              "location": "src\\test\\StepDefinitions\\Filter.ts:61"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:59"
             },
             "result": {
-              "status": "failed",
-              "duration": 75113600,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32mNaN\u001b[39m\nReceived:    \u001b[31mNaN\u001b[39m\n    at captureRawStack (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeLessThanOrEqual (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at FilterPage.verifySortedByDate (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:74:40)\n    at async AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:63:5)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -698,7 +701,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 547609800
+              "duration": 159264300
             }
           }
         ],
@@ -722,506 +725,5 @@
       }
     ],
     "uri": "src\\test\\Features\\Filter.feature"
-  },
-  {
-    "description": "  As a user\n  I want to login to the LMS application\n  So that I can access the dashboard",
-    "elements": [
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify login with a valid email and valid password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 139905300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1495642400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "User enters a valid email",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 56919499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11798999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9205351699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "User should be see the Learning Hub Heading",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3303545799
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 36343099
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Vithya",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
-        "keyword": "Scenario Outline",
-        "line": 26,
-        "name": "Verify login validation for different email and password combinations",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 112734700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1480012900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "User enters \"test@gmail.com\" in the email field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53862400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "User enters \"123\" in the password field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10134599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1949469899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should see the \"InvalidEmail\" validation message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2430831899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 29265199
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Vithya",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
-        "keyword": "Scenario Outline",
-        "line": 27,
-        "name": "Verify login validation for different email and password combinations",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 99674899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1833524600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "User enters \"testing6@gmail.com\" in the email field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 54748200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "User enters \"1\" in the password field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8231100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12169967699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should see the \"InvalidPassword\" validation message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9640505499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 35474300
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Vithya",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
-        "keyword": "Scenario Outline",
-        "line": 28,
-        "name": "Verify login validation for different email and password combinations",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 105609400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1433132199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "User enters \"test@gmail.com\" in the email field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 57871400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "User enters \"12\" in the password field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9188399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2075238800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should see the \"BothInvalid\" validation message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1938904700
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 37036499
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Vithya",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
-        "keyword": "Scenario Outline",
-        "line": 29,
-        "name": "Verify login validation for different email and password combinations",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 116563600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "User launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1592733799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "User enters \"\" in the email field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 59535999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "User enters \"\" in the password field",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8867800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "User clicks on the Sign In button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15016768499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should see the \"EmptyFields\" validation message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\Login.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 52302300
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 42309500
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Vithya",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "login_vithya_07_july_2026",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Login_VITHYA_07_JULY_2026",
-    "tags": [
-      {
-        "name": "@Vithya",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\Features\\login.feature"
   }
 ]

@@ -52,14 +52,11 @@ When("User opens the Sort By dropdown", async function (this: CustomWorld) {
     await this.filterPage.clickSortByDropdown();
 
 });
-When("User selects {string} from the Sort By dropdown", async function (this: CustomWorld, sortOption: string) {
-
-    await this.filterPage.selectSortBy(sortOption);
-
+When("User selects Course Name from the Sort By dropdown", async function (this: CustomWorld) {
+    await this.filterPage.selectSortByCourseName();
 });
 
-Then("Courses should be displayed in date order", async function (this: CustomWorld) {
-
-    await this.filterPage.verifySortedByDate();
-
+Then("Courses should be displayed in reverse alphabetical order by course name", async function (this: CustomWorld) {
+    await this.filterPage.verifySortedByCourseName();
 });
+
