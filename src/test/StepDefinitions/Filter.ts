@@ -58,5 +58,6 @@ When("User selects Course Name from the Sort By dropdown", async function (this:
 
 Then("Courses should be displayed in reverse alphabetical order by course name", async function (this: CustomWorld) {
     await this.filterPage.verifySortedByCourseName();
+    
 });
 

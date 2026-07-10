@@ -56,6 +56,7 @@ export class FilterPage extends basepage {
         const count = await this.courseLevel.count();
         for (let i = 0; i < count; i++) {
             await expect(this.courseLevel.nth(i)).toContainText(level);
+            
         }
     }
     async clickSortByDropdown() {

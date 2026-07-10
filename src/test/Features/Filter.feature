@@ -33,4 +33,5 @@ Scenario: Verify Sort By Course Name displays courses sorted
     When User opens the Sort By dropdown
     When User selects Course Name from the Sort By dropdown
     Then Courses should be displayed in reverse alphabetical order by course name
+    
 
