@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "search-course-structures;verify-the-user-can-search-for-a-course-using-course-name",
+        "id": "add-course;verify-validation-errors-when-mandatory-fields-are-not-filled",
         "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Verify the user can search for a Course using Course Name",
+        "line": 51,
+        "name": "Verify validation errors when mandatory fields are not filled",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 215492600
+              "duration": 239865499
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 664178500
+              "duration": 2017587300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71407900
+              "duration": 116820600
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19825100
+              "duration": 20069800
             }
           },
           {
@@ -66,7 +66,213 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15007644500
+              "duration": 9462933299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user clicks the course management",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Search.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2794468600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "user clicks Add Course button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420441399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the \"Create New Course Setup\" modal should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25227500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "user selects only the Course Client \"rfe\"",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2753677499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user clicks the Next button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89184000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Please select a service type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Please select a service model"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Please select a course category"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Please enter a course name"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the following validation errors should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\AddCourse.ts:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58473299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67760200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Janani",
+            "line": 35
+          },
+          {
+            "name": "@AddCourse",
+            "line": 35
+          },
+          {
+            "name": "@Negative",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-course",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add Course",
+    "tags": [],
+    "uri": "src\\test\\Features\\AddCourse.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-course;verify-the-user-can-search-for-a-course-using-course-name",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Verify the user can search for a Course using Course Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204930400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1807605999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86359500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28959399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6584779900
             }
           },
           {
@@ -79,7 +285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10032630900
+              "duration": 3825638300
             }
           },
           {
@@ -92,7 +298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21125299
+              "duration": 30903800
             }
           },
           {
@@ -105,7 +311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30034355499
+              "duration": 30021861400
             }
           },
           {
@@ -113,7 +319,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49300900
+              "duration": 33031700
             }
           }
         ],
@@ -135,7 +341,7 @@
       },
       {
         "description": "",
-        "id": "search-course-structures;verify-the-user-can-search-for-a-course-using-course-code",
+        "id": "search-course;verify-the-user-can-search-for-a-course-using-course-code",
         "keyword": "Scenario Outline",
         "line": 17,
         "name": "Verify the user can search for a Course using Course Code",
@@ -145,7 +351,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 156574000
+              "duration": 201987899
             }
           },
           {
@@ -158,7 +364,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 655161799
+              "duration": 1965379300
             }
           },
           {
@@ -171,7 +377,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117088799
+              "duration": 85734100
             }
           },
           {
@@ -184,7 +390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31544399
+              "duration": 20815600
             }
           },
           {
@@ -197,7 +403,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15013186099
+              "duration": 12841069600
             }
           },
           {
@@ -210,7 +416,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13094266399
+              "duration": 2700719400
             }
           },
           {
@@ -223,7 +429,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29673399
+              "duration": 31858399
             }
           },
           {
@@ -236,7 +442,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30021184600
+              "duration": 30018803299
             }
           },
           {
@@ -244,7 +450,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37779999
+              "duration": 29834100
             }
           }
         ],
@@ -266,7 +472,7 @@
       },
       {
         "description": "",
-        "id": "search-course-structures;verify-the-user-cannot-retrieve-any-records-when-an-invalid-keyword-is-entered",
+        "id": "search-course;verify-the-user-cannot-retrieve-any-records-when-an-invalid-keyword-is-entered",
         "keyword": "Scenario",
         "line": 21,
         "name": "Verify the user cannot retrieve any records when an invalid keyword is entered",
@@ -276,7 +482,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160924400
+              "duration": 195642600
             }
           },
           {
@@ -289,7 +495,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 578473500
+              "duration": 1500606199
             }
           },
           {
@@ -302,7 +508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 121235799
+              "duration": 76947899
             }
           },
           {
@@ -315,7 +521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22594800
+              "duration": 23777199
             }
           },
           {
@@ -328,7 +534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15004978899
+              "duration": 7182547000
             }
           },
           {
@@ -341,7 +547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20346495800
+              "duration": 2701709000
             }
           },
           {
@@ -354,7 +560,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27051500
+              "duration": 24393599
             }
           },
           {
@@ -367,7 +573,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30016351300
+              "duration": 30027271300
             }
           },
           {
@@ -375,7 +581,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32593099
+              "duration": 50642699
             }
           }
         ],
@@ -396,10 +602,10 @@
         "type": "scenario"
       }
     ],
-    "id": "search-course-structures",
+    "id": "search-course",
     "line": 1,
     "keyword": "Feature",
-    "name": "Search Course Structures",
+    "name": "Search Course",
     "tags": [],
     "uri": "src\\test\\Features\\search.feature"
   }
