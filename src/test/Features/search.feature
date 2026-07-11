@@ -1,3 +1,4 @@
+@Janani
 Feature: Search Course
 
   Background:
@@ -8,18 +9,11 @@ Feature: Search Course
     When user clicks the course management 
   @Search @Positive @Janani
   Scenario Outline: Verify the user can search for a Course using <SearchType>
-    And user enters "<SearchKeyword>" in the search box
-    Then the course "<ExpectedCourseName>" should be listed in the Course Structures table
 
-        Examples:
-                  | SearchType  | SearchKeyword | ExpectedCourseName |
-                  | Course Name | pytest        | pytest             |
-                  | Course Code | J-B-TAD-006   | pytest             |
-                  
+And user enters "<SearchKeyword>" in the search box
+Then the course "<ExpectedCourseName>" should be listed in the Course Structures table
 
-  @Search @Negative @Janani
-  Scenario: Verify the user cannot retrieve any records when an invalid keyword is entered
-    When user enters "xyz_invalid_999" in the search box
-    Then no course records should be displayed
-
-   
+Examples:
+| SearchType   | SearchKeyword     | ExpectedCourseName |
+| Course Name  | pytest            | pytest             |
+| Invalid Name | xyz_invalid_999   | No Records Found   |

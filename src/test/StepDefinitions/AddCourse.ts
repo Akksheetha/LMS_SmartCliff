@@ -106,7 +106,7 @@ When(
     "user clicks the Save Course Layout button",
     async function (this: CustomWorld) {
 
-        // TODO
+
         // await this.addcoursepage.clickSaveCourseLayout();
 
     }

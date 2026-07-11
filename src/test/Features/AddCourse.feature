@@ -1,3 +1,4 @@
+@Janani
 Feature: Add Course 
 
   Background:
@@ -32,7 +33,7 @@ Feature: Add Course
 
     Then the course should be created successfully
 
-    @Janani @AddCourse @Negative
+    @AddCourse
   Scenario Outline: Verify validation errors when mandatory fields are not filled
     When user clicks Add Course button
     Then the "Create New Course Setup" modal should be displayed
