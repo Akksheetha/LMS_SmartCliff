@@ -20,13 +20,14 @@ let browser: Browser;
 BeforeAll(async () => {
     getEnv();
     browser = await chromium.launch({
-        headless: false
+        headless: true
     });
 });
 Before(async function (this: CustomWorld) {
     this.browser = browser;
     this.context = await browser.newContext();
     this.page = await this.context.newPage();
+    this.page.setDefaultTimeout(90000);
     this.addCourseStructure= new AddCourseStructurePage(this.page)
     this.coursemanagepage= new CourseManagePage(this.page)
     this.loginPage = new LoginPage(this.page);
