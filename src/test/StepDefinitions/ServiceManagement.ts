@@ -4,8 +4,6 @@ import { expect } from "@playwright/test";
 import { constantData } from "../../../constants/constant";
 import data from "../testData/Servicemanage.json"
 
-let servicename = `${data.AddService.servicename}${Date.now()}`
-
 Given('User clicks on Dynamic Field Settings', async function (this:CustomWorld) {
   await this.dashboardpage.clickDynamicField()
 });
@@ -18,30 +16,29 @@ When('the user clicks Addservice button', async function (this:CustomWorld) {
   await this.dynamicfieldpage.clickAddService()
 });
 
-When('the user enters service name and description', async function (this:CustomWorld) {
-  await this.dynamicfieldpage.filladdservicedetail(servicename,data.AddService.description)
-});
-
 When('the user clicks createservice button', async function (this:CustomWorld) {
   await this.dynamicfieldpage.clickcreatebtn()
 });
 
-Then('the service should be created', async function (this:CustomWorld) { 
- let text = await this.dynamicfieldpage.getTextofmessagesection()
- expect(text).toBe(constantData.AddServiceType.successmess)
+When('the user enters service name {string} {string} and description {string}', async function (type,string, string2) {
+  if(type === "valid") {
+    let servicename = `${string}${Date.now()}`
+    await this.dynamicfieldpage.filladdservicedetail(servicename,string2)
+  }
+  else if(type === "invalid") {
+    await this.dynamicfieldpage.filladdservicedetail(string,string2)
+  }
 });
 
-
-
-
-
-When('the user enters already exist service name and description', async function (this:CustomWorld) {
- await this.dynamicfieldpage.filladdservicedetail(data.AddService.servicename,data.AddService.description)
-});
-
-Then('the service should not be created', async function (this:CustomWorld) {
- let text = await this.dynamicfieldpage.getTextofmessagesection()
- expect(text).toBe(constantData.AddUsingExistData.errmessage)
+Then('the service should see status {string} {string}', async function (type,string) {
+  if(type === "valid") {
+    let text = await this.dynamicfieldpage.getTextofmessagesection()
+    expect(text).toBe(string)
+  }
+  else if(type === "invalid") {
+    let text = await this.dynamicfieldpage.getTextofmessagesection()
+    expect(text).toBe(string)
+  }
 });
 
 
