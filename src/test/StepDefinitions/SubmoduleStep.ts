@@ -1,8 +1,9 @@
-import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
+
 import { Given,When,Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
 import loginData from "../testData/LoginData.json";
+import submoduleData from '../testData/SubmoduleData.json'
 const validUser = loginData.validUser;
 
 Given('user launch the application of lms-smartcliff', async function (this:CustomWorld) {
@@ -19,8 +20,8 @@ When('the user click the course management', async function (this:CustomWorld) {
     await this.dashboardpage.clickCourseManagement()
 });
 
-When('the user seach the course code of {string} which is already created', async function (this:CustomWorld,string) {
-    await this.coursemanagepage.fillsearch(string)
+ When('the user seach the course code , which is already created', async function (this:CustomWorld) {
+    await this.coursemanagepage.fillsearch(submoduleData.code)
 });
 
 When('the user click the Add course Structure of the searched course', async function (this:CustomWorld) {
@@ -43,12 +44,12 @@ When('the user click the add sub module in the sub module', async function (this
     await this.addCourseStructure.addsubmoduleLink()
 });
 
-When('the user enter the title of {string}', async function (this:CustomWorld,string) {
-   await this.addCourseStructure.fillTitle_sub(string)
+ When('the user enter the title', async function (this:CustomWorld) {
+   await this.addCourseStructure.fillTitle_sub(submoduleData.newSubmodule.title)
 });
 
-When('the user enter the Description of {string}', async function (this:CustomWorld,string) {
-    await this.addCourseStructure.filldescribe_Sub(string)
+When('the user enter the Description', async function (this:CustomWorld) {
+    await this.addCourseStructure.filldescribe_Sub(submoduleData.newSubmodule.description)
 });
 
 When('the user click the skill', async function (this:CustomWorld) {
@@ -62,8 +63,18 @@ When('the user click Add submodule button', async function (this:CustomWorld) {
     
 });
 
-Then('the user should see the title in submodule', async function (this:CustomWorld) {
-     //expect(this.addCourseStructure.Textsubmodule()).to('HTML')
+Then('the user should see the title in submodule', async function (this: CustomWorld) {
+   let act = await this.addCourseStructure.operationCompledText()
+    expect(act).toContain("Operation completed successfully!")
+});
+
+When('the user enter the title of {string}', async function (string) {
+  await this.addCourseStructure.fillTitle_sub(string)
+});
+When('the user enter the Description of {string}', async function (string) {
+  
+    await this.addCourseStructure.filldescribe_Sub(string)
+
 });
 
 When('the user click the threeDot_btn', async function (this:CustomWorld) {
@@ -123,3 +134,18 @@ When('the user click the delete button', async function (this:CustomWorld) {
 When('the user click the delete button of confomDelete popup', async function (this:CustomWorld) {
            await this.addCourseStructure.clickDeleteAllConfom()
     });
+
+When('the user click save and immediately click cancel', async function (this: CustomWorld) {
+
+    await this.addCourseStructure.clickSaveAndCancel();
+
+});
+
+Then('the submodule should not be added in the table', async function (this: CustomWorld) {
+
+    const isPresent = await this.addCourseStructure.verifySubmoduleNotAdded(
+        submoduleData.newSubmodule.title
+    );
+    expect(isPresent).toBeFalsy();
+
+});
