@@ -1,4 +1,4 @@
-@jeeva
+
 Feature: user click the Teaching Element functionality
 
 Feature Description

@@ -1,4 +1,5 @@
-Feature: Search Course
+@Janani
+Feature: Janani_Sri_07-07-2026_Search_Course
 
   Background:
     Given User launches the LMS application
@@ -8,18 +9,16 @@ Feature: Search Course
     When user clicks the course management 
   @Search @Positive @Janani
   Scenario Outline: Verify the user can search for a Course using <SearchType>
-    And user enters "<SearchKeyword>" in the search box
-    Then the course "<ExpectedCourseName>" should be listed in the Course Structures table
 
-        Examples:
-                  | SearchType  | SearchKeyword | ExpectedCourseName |
-                  | Course Name | pytest        | pytest             |
-                  | Course Code | J-B-TAD-006   | pytest             |
-                  
+And user enters "<SearchKeyword>" in the search box
+Then the course "<ExpectedCourseName>" should be listed in the Course Structures table
 
-  @Search @Negative @Janani
-  Scenario: Verify the user cannot retrieve any records when an invalid keyword is entered
-    When user enters "xyz_invalid_999" in the search box
-    Then no course records should be displayed
-
-   
+Examples:
+| SearchType   | SearchKeyword     | ExpectedCourseName |
+| Course Name  | pytest            | pytest             |
+| Invalid Name | xyz_invalid_999   | No Records Found   |
+   @Search @Defect @Janani
+  Scenario: Verify search results are displayed correctly when searched from the last pagination page
+    When user navigates to the last page of Course Structures
+    And user enters "jamocha" in the search box
+    Then the course results for "jamocha" should be displayed in the Course Structures table
