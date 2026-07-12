@@ -5,9 +5,7 @@ Background:
 Given the user launches the LMS application
 And the user logs in with valid credentials and navigates to Dashboard
 When the user clicks course Management and navigate to course structure Page
-And clicks Add course structure action
-| Code        |
-| J-BTB-H-001 |
+And clicks Add course structure action for course 2
 
 @HierarchyAction
 Scenario: Enable hierarchy actions

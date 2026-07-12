@@ -2,7 +2,13 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
 import loginData from "../testData/LoginData.json";
+import { readCsvData } from "../Utilities/csvReader";
+import { constantData } from "../../../constants/constant"; 
 
+interface CourseCode {
+    Code: string;
+}
+const courseCodes = readCsvData<CourseCode>("CourseCode.csv");
 const validUser = loginData.validUser;
 
 
@@ -23,8 +29,8 @@ When('the user clicks course Management and navigate to course structure Page', 
 });
 
 
-When('clicks Add course structure action', async function(this:CustomWorld, dataTable){
-    const data = dataTable.hashes()[0];
+When('clicks Add course structure action for course {int}',async function (this: CustomWorld, row: number) {
+    const data = courseCodes[row - 1];
     await this.coursemanagepage.fillsearch(data.Code);
     await this.coursemanagepage.clickAddCourse();
 });
@@ -49,8 +55,8 @@ When('clicks Save button', async function(this:CustomWorld){
 
 
 Then('the topic should be created successfully', async function(this:CustomWorld){
-    const topicText = await this.topicPage.getTopicText("Custom World");
-    expect(topicText).toContain("Custom World");
+    const topicText = await this.topicPage.getTopicText(constantData.CourseTopic.topicTitle);
+    expect(topicText).toContain(constantData.CourseTopic.topicTitle);
 });
 
 When('the user clicks save button without entering Title', async function (this:CustomWorld) {
@@ -59,7 +65,7 @@ When('the user clicks save button without entering Title', async function (this:
 
 Then('the error message should be displayed successfully', async function (this:CustomWorld) {
     await expect(this.topicPage.titletxt).toBeVisible({ timeout: 3000 });
-    await expect(this.topicPage.titletxt).toContainText("Title is required");
+    await expect(this.topicPage.titletxt).toContainText(constantData.CourseTopic.mandatoryTitleError);
 });
 
 When('the user clicks Add Topic in a module by clicking enable actions', async function (this:CustomWorld){
@@ -73,8 +79,8 @@ When('the user selects the Skill Set', async function (this:CustomWorld) {
 });
 
 Then('the topic with Skill Set should be created successfully', async function (this:CustomWorld) {
-    const topicText = await this.topicPage.getSkillText("Annotations");
-    expect(topicText).toContain("Annotations");
+    const topicText = await this.topicPage.getSkillText(constantData.CourseTopic.skillTopicTitle);
+    expect(topicText).toContain(constantData.CourseTopic.skillTopicTitle);
 });
 
 When('then user clicks the preview option', async function (this:CustomWorld) {

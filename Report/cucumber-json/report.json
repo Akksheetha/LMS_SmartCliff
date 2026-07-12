@@ -134,10 +134,30 @@
           {
             "name": "@Vithya",
             "line": 1
+          },
+          {
+            "name": "@DirectActions",
+            "line": 15
           }
         ],
         "type": "scenario"
-      },
+      }
+    ],
+    "id": "akksheetha---action-settings",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Akksheetha - Action settings",
+    "tags": [
+      {
+        "name": "@Akksheetha",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\MoreActions.feature"
+  },
+  {
+    "description": "",
+    "elements": [
       {
         "description": "",
         "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-category-dropdown-displays-only-matching-courses",
@@ -314,8 +334,8 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:15"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 22103082299
             }
           },
           {
@@ -327,8 +347,70 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 501224000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the error message should be displayed successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38571100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36838499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@MandatoryfieldCheck",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;add-a-topic-with-mandatory-details",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Add a Topic with mandatory details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123255900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487333199
             }
           },
           {
@@ -379,12 +461,29 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:44"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 8560561400
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Annotations",
+                      "basics"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 29,
             "name": "User selects a level from the Level dropdown",
@@ -491,8 +590,8 @@
               "location": "src\\test\\StepDefinitions\\Login.ts:26"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 460706500
             }
           },
           {
@@ -556,8 +655,21 @@
               "location": "src\\test\\StepDefinitions\\Filter.ts:59"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 70094500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the topic with Skill Set should be created successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4470839900
             }
           },
           {
