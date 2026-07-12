@@ -1,6 +1,7 @@
 @Vithya
 Feature: Login_VITHYA_07_JULY_2026
 
+Description:
   As a user
   I want to login to the LMS application
   So that I can access the dashboard
