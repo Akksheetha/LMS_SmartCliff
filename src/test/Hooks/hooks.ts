@@ -15,6 +15,7 @@ setDefaultTimeout(120 * 1000);
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { searchPage } from './../Pages/SearchPage';
+import { DirectActions } from "../Pages/DirectActions";
 setDefaultTimeout(90000)
 let browser: Browser;
 BeforeAll(async () => {
@@ -38,7 +39,8 @@ Before(async function (this: CustomWorld) {
     this.dashboardpage = new DashboardPage(this.page);
     this.filterPage = new FilterPage(this.page);
     this.addcoursepage = new AddcoursePage(this.page);
-    this.dynamicfieldpage = new DynamicFieldPage(this.page)
+    this.dynamicfieldpage = new DynamicFieldPage(this.page);
+    this.directActions = new DirectActions(this.page);
 });
 
 After(async function (this: CustomWorld, { result, pickle }) {
