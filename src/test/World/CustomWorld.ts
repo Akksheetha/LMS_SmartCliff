@@ -11,6 +11,7 @@ import { logger } from "../Utilities/logger";
 import {FilterPage} from "../Pages/FilterPage";
 import { AddcoursePage } from '../Pages/AddCoursePage';
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
+import { DirectActions } from '../Pages/DirectActions';
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
@@ -26,6 +27,7 @@ export class CustomWorld extends World{
     dynamicfieldpage !: DynamicFieldPage
     
     topicPage!: TopicPage;
+    directActions!:DirectActions;
     logger=logger;
     download!: Download;
 }   

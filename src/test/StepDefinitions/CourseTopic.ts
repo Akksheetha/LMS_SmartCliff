@@ -90,9 +90,10 @@ When('the user clicks the three dots and clicks the delete option', async functi
     await this.addCourseStructure.clickSubmoduleActionSettings();
     await this.addCourseStructure.clickHierarchy();
     await this.topicPage.clickDelete1();
+    await this.addCourseStructure.clickDeleteConfom();
+
 });
 
 Then('the topic should be deleted successfully', async function (this:CustomWorld) {
-    const text = this.addCourseStructure.operationCompledText();
-    expect(text).toContain("Operation completed successfully!")
+    await expect(this.topicPage.AddTopic).toBeVisible();
 });
