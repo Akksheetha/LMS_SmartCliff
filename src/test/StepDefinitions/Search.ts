@@ -44,3 +44,14 @@ Then(
         await this.searchPage.assertCourseCount(count);
     }
 );
+
+When("user navigates to the last page of Course Structures", async function (this: CustomWorld) {
+    await this.searchPage.navigateToLastPage();
+});
+
+Then(
+    "the course results for {string} should be displayed in the Course Structures table",
+    async function (this: CustomWorld, keyword: string) {
+        await this.searchPage.assertRecordDisplayedInTable(keyword);
+    }
+);

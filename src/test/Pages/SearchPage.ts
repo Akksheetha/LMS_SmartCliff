@@ -9,6 +9,8 @@ export class searchPage extends basepage {
     private readonly courseNames: Locator;
     private readonly noUsersMessage: Locator;
     private readonly courseCountHeader: Locator;
+    readonly nextPageButton: Locator;
+    private readonly tableRows: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -18,6 +20,10 @@ export class searchPage extends basepage {
         this.courseNames = page.locator("//span[@class='text-sm font-semibold text-gray-900 dark:text-white font-sans truncate']");
         this.noUsersMessage = page.locator("//p[@class='text-xs font-normal text-gray-400 dark:text-gray-500']");
         this.courseCountHeader = page.locator("//h2[contains(.,'courses')]");
+        
+        this.nextPageButton = page.getByRole("button", { name: "Next" });
+
+        this.tableRows = page.locator("table tbody tr");
     }
 
     async navigateToCourseStructures(url: string): Promise<void> {
@@ -129,6 +135,51 @@ export class searchPage extends basepage {
             logger.info("Course count verified successfully.");
         } catch (error) {
             logger.error(`Course count verification failed: ${error}`);
+            throw error;
+        }
+    }
+    async navigateToLastPage() {
+        try {
+            logger.info("Navigating to the last pagination page.");
+
+            // Guard against infinite loop in case pagination behaves unexpectedly
+            let safetyCounter = 0;
+            const maxClicks = 50;
+
+            while (await this.nextPageButton.isEnabled() && safetyCounter < maxClicks) {
+                await this.nextPageButton.click();
+                await this.page.waitForLoadState("networkidle");
+                safetyCounter++;
+            }
+
+            if (safetyCounter >= maxClicks) {
+                logger.error("Reached maximum click safety limit while paginating. Possible infinite pagination.");
+                throw new Error("Exceeded maximum pagination clicks — check pagination behavior.");
+            }
+
+            logger.info(`Reached last page after ${safetyCounter} click(s).`);
+        } catch (error) {
+            logger.error(`Failed to navigate to the last page: ${error}`);
+            throw error;
+        }
+    }
+
+   
+    
+   
+    async assertRecordDisplayedInTable(keyword: string) {
+        try {
+            logger.info(`Verifying a record containing '${keyword}' is displayed in the table.`);
+
+            const matchingRow = this.tableRows.filter({ hasText: keyword }).first();
+
+            await expect(matchingRow).toBeVisible({
+                timeout: 10000
+            });
+
+            logger.info(`Record containing '${keyword}' is displayed as expected.`);
+        } catch (error) {
+            logger.error(`DEFECT :No record containing '${keyword}' was found after searching from the last page. Error: ${error}`);
             throw error;
         }
     }
