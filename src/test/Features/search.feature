@@ -1,5 +1,5 @@
 @Janani
-Feature: Search Course
+Feature: Janani_Sri_07-07-2026_Search_Course
 
   Background:
     Given User launches the LMS application
@@ -17,3 +17,8 @@ Examples:
 | SearchType   | SearchKeyword     | ExpectedCourseName |
 | Course Name  | pytest            | pytest             |
 | Invalid Name | xyz_invalid_999   | No Records Found   |
+   @Search @Defect @Janani
+  Scenario: Verify search results are displayed correctly when searched from the last pagination page
+    When user navigates to the last page of Course Structures
+    And user enters "jamocha" in the search box
+    Then the course results for "jamocha" should be displayed in the Course Structures table

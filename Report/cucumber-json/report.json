@@ -1,212 +1,124 @@
 [
   {
-    "description": "",
+    "description": "Description: \n  As an LMS user\n  I want to filter the courses by category\n  So that I can view courses of a selected category",
     "elements": [
       {
         "description": "",
-        "id": "akksheetha---action-settings;enable-hierarchy-actions",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Enable hierarchy actions",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-category-dropdown-displays-only-matching-courses",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Verify filtering courses by Category dropdown displays only matching courses",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 518525099
+              "duration": 78872799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "the user launches the LMS application",
+            "line": 11,
+            "name": "User launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 856970900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7548191700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3566965500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "clicks Add course structure action for course 2",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6981152500
+              "duration": 3689029700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "the user clicks enable actions by clicking more",
+            "name": "User enters a valid email",
             "match": {
-              "location": "src\\test\\StepDefinitions\\MoreActions.ts:5"
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 7927431099
+              "duration": 90955400
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 13,
-            "name": "the user can edit the course structure successfully",
+            "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 20718600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 24301800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Akksheetha",
-            "line": 1
-          },
-          {
-            "name": "@HierarchyAction",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "akksheetha---action-settings;enable-direct-actions",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Enable Direct Actions",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 111361500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 499912199
+              "duration": 10977600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 10294241800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6042575800
+              "duration": 6209924199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "clicks Add course structure action for course 2",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 7907602800
+              "duration": 3558474800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 905975500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
-            "name": "the user clicks Direct actions by clicking more",
+            "line": 19,
+            "name": "User selects \"Software Development\" from the Category dropdown",
             "match": {
-              "location": "src\\test\\StepDefinitions\\MoreActions.ts:14"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 10203809600
+              "duration": 6877349900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "the user can edit the level successfully",
+            "line": 20,
+            "name": "Only \"Software Development\" courses should be displayed",
             "match": {
-              "location": "src\\test\\StepDefinitions\\MoreActions.ts:19"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 16423900
+              "duration": 38424600
             }
           },
           {
@@ -214,13 +126,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12692100
+              "duration": 15371100
             }
           }
         ],
         "tags": [
           {
-            "name": "@Akksheetha",
+            "name": "@Vithya",
             "line": 1
           },
           {
@@ -248,78 +160,178 @@
     "elements": [
       {
         "description": "",
-        "id": "akksheetha-7th-july-course-topic-management;verify-mandatory-title-field",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Verify mandatory Title field",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-category-dropdown-displays-only-matching-courses",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Verify filtering courses by Category dropdown displays only matching courses",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 93959099
+              "duration": 67999299
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "the user launches the LMS application",
+            "line": 11,
+            "name": "User launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 505588900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8378683100
+              "duration": 1277217499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "the user clicks course Management and navigate to course structure Page",
+            "line": 12,
+            "name": "User enters a valid email",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 4008702000
+              "duration": 62581899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "clicks Add course structure action for course 1",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5937676900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 13,
-            "name": "the user clicks Add Topic by clicking enable actions",
+            "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:37"
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8718099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7464462699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4051666099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 880864600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User selects \"software\" from the Category dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 88058682999,
+              "error_message": "locator.selectOption: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('combobox').nth(1)\u001b[22m\n\u001b[2m    - locator resolved to <select class=\"w-full h-9 text-sm border border-gray-300 dark:border-gray-700 rounded-lg px-3 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-1 focus:ring-indigo-500 dark:focus:ring-indigo-400 font-sans bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    173 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at FilterPage.selectCategory (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Pages\\FilterPage.ts:38:33)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\StepDefinitions\\Filter.ts:14:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Only \"software\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 3284400,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:49:37)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-level-displays-only-matching-courses",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify filtering courses by Level displays only matching courses",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1724499,
+              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:29:20)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
             },
             "result": {
               "status": "passed",
@@ -329,10 +341,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
-            "name": "the user clicks save button without entering Title",
+            "line": 13,
+            "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:61"
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
             },
             "result": {
               "status": "passed",
@@ -404,206 +416,49 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 12827283100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5661548699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "clicks Add course structure action for course 1",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 7427602899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "the user clicks Add Topic by clicking enable actions",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10464532700
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Title",
-                      "Description"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Custom World",
-                      "Custom World usage"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 20,
-            "name": "enters the topic details",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 132921199
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "clicks Save button",
+            "line": 16,
+            "name": "User opens the Filters panel",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:51"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 315616099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "the topic should be created successfully",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3468855000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49932499
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Akksheetha",
-            "line": 1
-          },
-          {
-            "name": "@AddingTopic",
-            "line": 17
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "akksheetha-7th-july-course-topic-management;topic-with-skill-set-configuration",
-        "keyword": "Scenario",
-        "line": 27,
-        "name": "Topic with Skill Set configuration",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 248689899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 681214999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7749497999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2405054600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "clicks Add course structure action for course 1",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8306597399
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 28,
-            "name": "the user clicks Add Topic in a module by clicking enable actions",
+            "name": "User opens the Level dropdown",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:70"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:44"
             },
             "result": {
               "status": "passed",
@@ -631,22 +486,108 @@
             ],
             "keyword": "And ",
             "line": 29,
-            "name": "enters the topic details",
+            "name": "User selects a level from the Level dropdown",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:44"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:23"
             },
             "result": {
-              "status": "passed",
-              "duration": 98513399
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Only courses matching the selected level should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1165200,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:49:37)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-sort-by-course-name-displays-courses-sorted",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Verify Sort By Course Name displays courses sorted",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1671200,
+              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:29:20)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
-            "name": "the user selects the Skill Set",
+            "line": 13,
+            "name": "User enters a valid password",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:76"
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
             },
             "result": {
               "status": "passed",
@@ -656,10 +597,62 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "clicks Save button",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:51"
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User opens the Sort By dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "User selects Course Name from the Sort By dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Courses should be displayed in reverse alphabetical order by course name",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:59"
             },
             "result": {
               "status": "passed",
@@ -683,263 +676,31 @@
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 18886700
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Akksheetha",
-            "line": 1
-          },
-          {
-            "name": "@TopicSkillSet",
-            "line": 26
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "akksheetha-7th-july-course-topic-management;preview-the-topic-created",
-        "keyword": "Scenario",
-        "line": 37,
-        "name": "Preview the topic created",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 100288599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 557223499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8290800400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2509402999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "clicks Add course structure action for course 1",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10090756699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 38,
-            "name": "then user clicks the preview option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:85"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7794596900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "the created topics should be displayed",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:89"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47900099
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 32110699
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Akksheetha",
-            "line": 1
-          },
-          {
-            "name": "@PreviewTable",
-            "line": 36
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "akksheetha-7th-july-course-topic-management;delete-the-topic-created",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "Delete the topic created",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 125361099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user launches the LMS application",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 524114299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user logs in with valid credentials and navigates to Dashboard",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7821640000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user clicks course Management and navigate to course structure Page",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2556990699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "clicks Add course structure action for course 1",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19773722699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "the user clicks the three dots and clicks the delete option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:94"
-            },
-            "result": {
               "status": "failed",
-              "duration": 90016359400,
-              "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "the topic should be deleted successfully",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:102"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 135135500
+              "duration": 436099,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\vithy\\Desktop\\Expleo\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:49:37)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@Akksheetha",
+            "name": "@Vithya",
             "line": 1
-          },
-          {
-            "name": "@DeleteTopic",
-            "line": 41
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "akksheetha-7th-july-course-topic-management",
-    "line": 2,
+    "id": "course-filter_vithya_08_july_2026",
+    "line": 3,
     "keyword": "Feature",
-    "name": "Akksheetha-7th july-Course Topic Management",
+    "name": "Course Filter_VITHYA_08_JULY_2026",
     "tags": [
       {
-        "name": "@Akksheetha",
+        "name": "@Vithya",
         "line": 1
       }
     ],
-    "uri": "src\\test\\Features\\courseTopic.feature"
+    "uri": "src\\test\\Features\\Filter.feature"
   }
 ]
