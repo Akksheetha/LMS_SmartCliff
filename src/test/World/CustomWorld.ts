@@ -12,6 +12,7 @@ import {FilterPage} from "../Pages/FilterPage";
 import { AddcoursePage } from '../Pages/AddCoursePage';
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { EditPage } from '../Pages/EditCourseStructure';
+import { DirectActions } from '../Pages/DirectActions';
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
@@ -28,6 +29,7 @@ export class CustomWorld extends World{
     Edit!:EditPage
     
     topicPage!: TopicPage;
+    directActions!:DirectActions;
     logger=logger;
     download!: Download;
 }   

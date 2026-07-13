@@ -2,6 +2,7 @@
 
 Feature: Course Filter_VITHYA_08_JULY_2026
 
+Description: 
   As an LMS user
   I want to filter the courses by category
   So that I can view courses of a selected category
@@ -22,7 +23,6 @@ Feature: Course Filter_VITHYA_08_JULY_2026
       | Category              |
       | Software Development  |
       | Automation Project    |
-      | JAVA                  |
   
 Scenario: Verify filtering courses by Level displays only matching courses
     When User opens the Level dropdown

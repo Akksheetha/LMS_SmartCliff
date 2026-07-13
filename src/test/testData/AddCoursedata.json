@@ -1,10 +1,10 @@
 {
   "validCourse": {
     "courseClient": "rfe",
-    "serviceType": "Automation testing 4",
-    "serviceModel": "Java Selenium",
-    "courseCategory": "Java",
-    "courseName": "Selenium",
+    "serviceType": "business to institution",
+    "serviceModel": "skilling",
+    "courseCategory": "Software Development",
+    "courseName": "Mean Development",
 
     "courseLevel": "Intermediate",
 

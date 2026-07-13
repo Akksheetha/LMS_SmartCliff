@@ -6,9 +6,7 @@ Background:
 Given the user launches the LMS application
 And the user logs in with valid credentials and navigates to Dashboard
 When the user clicks course Management and navigate to course structure Page
-And clicks Add course structure action
-| Code       |
-| J-AT-A-005 |
+And clicks Add course structure action for course 1
 
 @MandatoryfieldCheck
 Scenario: Verify mandatory Title field

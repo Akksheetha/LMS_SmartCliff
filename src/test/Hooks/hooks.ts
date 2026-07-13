@@ -16,6 +16,7 @@ import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
 import { searchPage } from './../Pages/SearchPage';
 import { EditPage } from "../Pages/EditCourseStructure";
+import { DirectActions } from "../Pages/DirectActions";
 setDefaultTimeout(90000)
 let browser: Browser;
 BeforeAll(async () => {
@@ -41,6 +42,9 @@ Before(async function (this: CustomWorld) {
     this.addcoursepage = new AddcoursePage(this.page);
     this.dynamicfieldpage = new DynamicFieldPage(this.page)
     this.Edit= new EditPage(this.page)
+
+    this.directActions = new DirectActions(this.page);
+
 });
 
 After(async function (this: CustomWorld, { result, pickle }) {
