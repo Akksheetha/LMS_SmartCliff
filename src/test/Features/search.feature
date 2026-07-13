@@ -15,7 +15,7 @@ Then the course "<ExpectedCourseName>" should be listed in the Course Structures
 
 Examples:
 | SearchType   | SearchKeyword     | ExpectedCourseName |
-| Course Name  | pytest            | pytest             |
+| Course code Valid  | J-BTI-S-003    | Python testing  |
 | Invalid Name | xyz_invalid_999   | No Records Found   |
    @Search @Defect @Janani
   Scenario: Verify search results are displayed correctly when searched from the last pagination page
