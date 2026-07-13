@@ -3,6 +3,8 @@ import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
 
 
+
+
 When('the user click the dropdown of teaching element', async function (this:CustomWorld) {
            await this.addCourseStructure.clickDropDownTeaching()
          });
