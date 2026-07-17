@@ -13,6 +13,7 @@ import { AddcoursePage } from '../Pages/AddCoursePage';
 import { DynamicFieldPage } from '../Pages/DynamicFieldPage';
 import { EditPage } from '../Pages/EditCourseStructure';
 import { DirectActions } from '../Pages/DirectActions';
+
 export class CustomWorld extends World{
     browser!:Browser;
     context!:BrowserContext;
