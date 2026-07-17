@@ -28,6 +28,7 @@ export class FilterPage extends basepage {
 
     async clickCourseManagement() {
         logger.info("Clicking Course Management.");
+        
         await this.click(this.courseManagement);
     }
 

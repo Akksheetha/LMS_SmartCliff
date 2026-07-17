@@ -24,6 +24,7 @@ export class LoginPage extends basepage {
 
     async launchApplication(url: string) {
         logger.info(`Launching application: ${url}`);
+        
         await this.page.goto(url);
     }
 
