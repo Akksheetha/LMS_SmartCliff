@@ -1,0 +1,1089 @@
+[
+  {
+    "description": "Description: \n  As an LMS user\n  I want to filter the courses by category\n  So that I can view courses of a selected category",
+    "elements": [
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-category-dropdown-displays-only-matching-courses",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Verify filtering courses by Category dropdown displays only matching courses",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 294839100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30852573499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126416700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18414499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9154727599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12242686000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2164555300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User selects \"Software Development\" from the Category dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000413600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Only \"Software Development\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51469899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34441999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-category-dropdown-displays-only-matching-courses",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Verify filtering courses by Category dropdown displays only matching courses",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 164064200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1507778800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58718399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22334600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12396900899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15717116800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9091580999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User selects \"Automation Project\" from the Category dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71910942499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Only \"Automation Project\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45134200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72325199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-filtering-courses-by-level-displays-only-matching-courses",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify filtering courses by Level displays only matching courses",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 149891400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1747967499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79846199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30698399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10853020900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8417442899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3592672400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "User opens the Level dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121840299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "User selects a level from the Level dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6169008100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Only courses matching the selected level should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235315100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41054000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "course-filter_vithya_08_july_2026;verify-sort-by-course-name-displays-courses-sorted",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Verify Sort By Course Name displays courses sorted",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 113388500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1184817000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50692799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14785999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5206853899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User navigates to the Course Management page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6386277800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User opens the Filters panel",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1022914700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User opens the Sort By dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150697299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "User selects Course Name from the Sort By dropdown",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40021299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Courses should be displayed in reverse alphabetical order by course name",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Filter.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51841499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45787299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "course-filter_vithya_08_july_2026",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Course Filter_VITHYA_08_JULY_2026",
+    "tags": [
+      {
+        "name": "@Vithya",
+        "line": 2
+      }
+    ],
+    "uri": "src\\test\\Features\\Filter.feature"
+  },
+  {
+    "description": "Description:\n  As a user\n  I want to login to the LMS application\n  So that I can access the dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-with-a-valid-email-and-valid-password",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify login with a valid email and valid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 170447800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 451022499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User enters a valid email",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87332899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters a valid password",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25798999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15025799799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should be see the Learning Hub Heading",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7042074800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40533499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Verify login validation for different email and password combinations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 186064299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 465200600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User enters \"test@gmail.com\" in the email field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117470600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User enters \"123\" in the password field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23155100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4266732199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should see the \"InvalidEmail\" validation message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1943918100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35406000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Verify login validation for different email and password combinations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 142143100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1167973500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User enters \"testing6@gmail.com\" in the email field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60090100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User enters \"1\" in the password field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14817799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5298784299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should see the \"InvalidPassword\" validation message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14675382000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46407299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Verify login validation for different email and password combinations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 133469100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 613036599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User enters \"test@gmail.com\" in the email field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71283699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User enters \"12\" in the password field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14683399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9525726699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should see the \"BothInvalid\" validation message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5977107000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34944899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login_vithya_07_july_2026;verify-login-validation-for-different-email-and-password-combinations",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Verify login validation for different email and password combinations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136730500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474923000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User enters \"\" in the email field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80540399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User enters \"\" in the password field",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27193900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks on the Sign In button",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15017477399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should see the \"EmptyFields\" validation message",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\Login.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33800899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37191200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Vithya",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login_vithya_07_july_2026",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login_VITHYA_07_JULY_2026",
+    "tags": [
+      {
+        "name": "@Vithya",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\login.feature"
+  }
+]

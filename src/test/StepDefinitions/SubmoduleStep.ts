@@ -1,9 +1,12 @@
-import { AddCourseStructurePage } from './../Pages/AddCourseStructurePage';
+
 import { Given,When,Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
 import loginData from "../testData/LoginData.json";
+import { readCsvData } from "../Utilities/csvReader";
+
 const validUser = loginData.validUser;
+const submoduleCsv: any[] = readCsvData('submodule.csv');
 
 Given('user launch the application of lms-smartcliff', async function (this:CustomWorld) {
  await this.loginPage.launchApplication(process.env.BASEURL!);
@@ -19,8 +22,8 @@ When('the user click the course management', async function (this:CustomWorld) {
     await this.dashboardpage.clickCourseManagement()
 });
 
-When('the user seach the course code of {string} which is already created', async function (this:CustomWorld,string) {
-    await this.coursemanagepage.fillsearch(string)
+ When('the user seach the course code , which is already created', async function (this:CustomWorld) {
+    await this.coursemanagepage.fillsearch(submoduleCsv[0].code)
 });
 
 When('the user click the Add course Structure of the searched course', async function (this:CustomWorld) {
@@ -43,12 +46,12 @@ When('the user click the add sub module in the sub module', async function (this
     await this.addCourseStructure.addsubmoduleLink()
 });
 
-When('the user enter the title of {string}', async function (this:CustomWorld,string) {
-   await this.addCourseStructure.fillTitle_sub(string)
+ When('the user enter the title', async function (this:CustomWorld) {
+   await this.addCourseStructure.fillTitle_sub(submoduleCsv[0].title)
 });
 
-When('the user enter the Description of {string}', async function (this:CustomWorld,string) {
-    await this.addCourseStructure.filldescribe_Sub(string)
+When('the user enter the Description', async function (this:CustomWorld) {
+    await this.addCourseStructure.filldescribe_Sub(submoduleCsv[0].description)
 });
 
 When('the user click the skill', async function (this:CustomWorld) {
@@ -62,8 +65,26 @@ When('the user click Add submodule button', async function (this:CustomWorld) {
     
 });
 
-Then('the user should see the title in submodule', async function (this:CustomWorld) {
-     //expect(this.addCourseStructure.Textsubmodule()).to('HTML')
+Then('the user should see the title in submodule', async function (this: CustomWorld) {
+   let act = await this.addCourseStructure.operationCompledText()
+    expect(act).toContain("Operation completed successfully!")
+});
+
+When('the user enter the title of {string}', async function (this: CustomWorld, string) {
+  await this.addCourseStructure.fillTitle_sub(string)
+});
+When('the user enter the Description of {string}', async function (this: CustomWorld, string) {
+  
+    await this.addCourseStructure.filldescribe_Sub(string)
+
+});
+
+When('the user enter the title from csv row {int}', async function (this: CustomWorld, rowIndex) {
+    await this.addCourseStructure.fillTitle_sub(submoduleCsv[rowIndex].title)
+});
+
+When('the user enter the Description from csv row {int}', async function (this: CustomWorld, rowIndex) {
+    await this.addCourseStructure.filldescribe_Sub(submoduleCsv[rowIndex].description)
 });
 
 When('the user click the threeDot_btn', async function (this:CustomWorld) {
@@ -123,3 +144,27 @@ When('the user click the delete button', async function (this:CustomWorld) {
 When('the user click the delete button of confomDelete popup', async function (this:CustomWorld) {
            await this.addCourseStructure.clickDeleteAllConfom()
     });
+
+When('the user click save and immediately click cancel', async function (this: CustomWorld) {
+
+    await this.addCourseStructure.clickSaveAndCancel();
+
+});
+
+Then('the submodule should not be added in the table', async function (this: CustomWorld) {
+
+    const isPresent = await this.addCourseStructure.verifySubmoduleNotAdded(
+        submoduleCsv[0].title
+    );
+    expect(isPresent).toBeFalsy();
+
+});
+
+Then('the submodule should able to cancel the process', async function (this: CustomWorld) {
+
+    const isPresent = await this.addCourseStructure.verifySubmoduleNotAdded(
+        submoduleCsv[0].title
+    );
+    expect(isPresent).toBeFalsy();
+
+});

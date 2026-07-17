@@ -11,6 +11,9 @@ export class CourseManagePage extends basepage {
     readonly coursestructure:Locator
     private search:Locator
     private AddCourseStructure_btn:Locator;
+    private threeDot:Locator
+    readonly EditCourse:Locator
+   
 
     constructor(page: Page) {
         super(page);
@@ -23,6 +26,9 @@ export class CourseManagePage extends basepage {
         this.coursestructure = page.locator("/html/body/div[3]/div/main/div/div/div/div[1]/div/div[1]/div/div/h1")
         this.search=page.locator("//div[@class='relative']/child::input[@type='text']")
         this.AddCourseStructure_btn= page.locator("//span[text()='Add Course Structure']")
+        this.threeDot=page.locator("//div[@class='flex gap-1 justify-center']//div")
+        this.EditCourse=page.locator("(//div[@style='opacity: 1; transform: none;']//button)[10]")
+        
     }
     async fillsearch(text:string){
         try{
@@ -64,6 +70,15 @@ export class CourseManagePage extends basepage {
             logger.error(error)
             throw error
         }
+    }
+
+    async clickthreeDotForEdit(){
+        await this.click(this.threeDot)
+    }
+    async clickEditCourse(){
+        await this.scroll(this.EditCourse)
+        await this.EditCourse.waitFor({state:"visible"})
+        await this.click(this.EditCourse)
     }
 }
 

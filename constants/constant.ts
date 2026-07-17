@@ -12,5 +12,10 @@ export const constantData = {
     },
     "EditServiceType":{
         successmes:"Service updated successfully"
+    },
+    "CourseTopic": {
+        topicTitle: "Custom World",
+        skillTopicTitle: "Annotations",
+        mandatoryTitleError: "Title is required"
     }
 }

@@ -1,6 +1,6 @@
 {
   "validUser": {
-    "email": "testing6@gmail.com",
+    "email": "testing@gmail.com",
     "password": "123"
   },
   "expected": {
@@ -8,4 +8,5 @@
     "passwordError": "Password is incorrect",
     "requiredField": "Please fill out this field."
   }
+  
 }

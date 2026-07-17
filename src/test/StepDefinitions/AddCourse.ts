@@ -7,6 +7,11 @@ function getCourseTestDataByKey(key: string) {
     return (AddCourseData as any)[key];
 }
 
+When("user navigates to course management", async function (this: CustomWorld) {
+    // TODO: replace with the real locator for your Course Management nav item
+    await this.dashboardpage.clickCourseManagement();
+});
+
 When("user clicks Add Course button", async function (this: CustomWorld) {
     await this.addcoursepage.addCoursebtn();
 });
@@ -106,7 +111,7 @@ When(
     "user clicks the Save Course Layout button",
     async function (this: CustomWorld) {
 
-        // TODO
+
         // await this.addcoursepage.clickSaveCourseLayout();
 
     }
@@ -132,5 +137,60 @@ Then(
     async function (this: CustomWorld, dataTable) {
         const expectedMessages = dataTable.raw().map((row: string[]) => row[0]);
         await this.addcoursepage.verifyValidationErrors(expectedMessages);
+    }
+);
+
+
+When(
+    "user clicks the Preview and Create button without selecting course hierarchy",
+    async function (this: CustomWorld) {
+
+        await this.addcoursepage.clickPreviewAndCreate();
+
+    }
+);
+
+Then(
+    "the validation error {string} should be displayed",
+    async function (this: CustomWorld, message: string) {
+
+        await this.addcoursepage.verifyValidationErrors([message]);
+
+    }
+);
+
+When(
+    "user clicks the Previous button",
+    async function (this: CustomWorld) {
+
+        await this.addcoursepage.clickPrevious();
+
+    }
+);
+
+Then(
+    "the Next button should be visible",
+    async function (this: CustomWorld) {
+
+        expect(await this.addcoursepage.isNextButtonVisible()).toBeTruthy();
+
+    }
+);
+
+When(
+    "user clicks the Help button",
+    async function (this: CustomWorld) {
+
+        await this.addcoursepage.clickHelp();
+
+    }
+);
+
+Then(
+    "the {string} guide modal should be displayed",
+    async function (this: CustomWorld, _title: string) {
+
+        expect(await this.addcoursepage.isCourseCreationGuideVisible()).toBeTruthy();
+
     }
 );

@@ -32,6 +32,9 @@ export class AddCourseStructurePage extends basepage {
     readonly weDoActivities:Locator
     readonly youDoActivities:Locator
     readonly allTeachingElements:Locator
+    readonly cancelButton: Locator;
+   
+    readonly savingButton: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -65,6 +68,10 @@ export class AddCourseStructurePage extends basepage {
         this.weDoActivities=page.locator("(//th[text()='We Do Activities'])[1]");
         this.youDoActivities=page.locator("(//th[text()='You Do Activities'])[1]");
         this.allTeachingElements=page.locator("(//th[text()='All Teaching Elements'])[1]");
+        this.cancelButton = page.getByRole('button', { name: 'Cancel' });
+
+        
+        this.savingButton = page.locator("//button[contains(.,'Saving')]");
     }   
 
     async clickActionSettings() {
@@ -252,6 +259,22 @@ export class AddCourseStructurePage extends basepage {
         }
         
     }
+
+    async clickSaveAndCancel() {
+        try{
+            await this.AddSumodule_btn.click();
+            await this.cancelButton.click();
+            await this.page.waitForTimeout(7000);
+
+        }catch(error){
+            logger.error(error)
+        }
+}
+async verifySubmoduleNotAdded(title: string) {
+    const locator = this.page.locator(`text=${title}`);
+    return await locator.isVisible().catch(() => false);
+
+}
 
     async clickmultipleDelete(){
         try{
