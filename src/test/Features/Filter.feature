@@ -24,6 +24,7 @@ Description:
       | Software Development  |
       | Automation Project    |
   
+  
 Scenario: Verify filtering courses by Level displays only matching courses
     When User opens the Level dropdown
     And User selects a level from the Level dropdown

@@ -106,5 +106,6 @@ export class FilterPage extends basepage {
         }
 
         logger.info("Course Name sorting verified successfully.");
+        
     }
 }

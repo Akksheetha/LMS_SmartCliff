@@ -12,6 +12,7 @@ When("User opens the Filters panel", async function (this: CustomWorld) {
 
 When("User selects {string} from the Category dropdown", async function (this: CustomWorld, category: string) {
     await this.filterPage.selectCategory(category);
+    
 });
 
 Then("Only {string} courses should be displayed", async function (this: CustomWorld, category: string) {
