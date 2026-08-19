@@ -36,3 +36,9 @@ Scenario: Verify Sort By Course Name displays courses sorted
     Then Courses should be displayed in reverse alphabetical order by course name
     
 
+  Scenario: Clear All filters
+    Given Admin has applied a category, level, and sort filter
+    When Admin clicks on the Clear All button
+    Then Status, Category, and Level should reset to All
+    And all courses should be displayed
+
