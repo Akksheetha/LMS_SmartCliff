@@ -42,3 +42,12 @@ Then the created topics should be displayed
 Scenario: Delete the topic created
 And the user clicks the three dots and clicks the delete option
 Then the topic should be deleted successfully
+
+@CancelAddTopic
+Scenario: Cancel adding a Topic
+When the user clicks Add Topic by clicking enable actions
+And enters the topic details
+    | Title              | Description              |
+    | Cancelled Topic    | Topic should not be saved |
+And clicks Cancel button
+Then the topic should not be created successfully

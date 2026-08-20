@@ -18,6 +18,7 @@ export class TopicPage extends basepage {
     private delete2:Locator;
     private delete:Locator;
     private deletetopic:Locator;
+    private cancelTopicButton: Locator;
     readonly cell1:Locator;
     readonly cell2:Locator;
     readonly titletxt:Locator;
@@ -45,6 +46,7 @@ export class TopicPage extends basepage {
         this.deletetopic = page.locator("body > div:nth-child(13) > div:nth-child(2) > main:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > button:nth-child(2)");
         this.delete1 = page.locator("td[title*='Custom World'] button");
         this.delete2 = page.locator("td[title*='Annotations'] button");
+        this.cancelTopicButton = page.getByRole('button', { name: 'Cancel', exact: true });
     }
 
 
@@ -96,6 +98,18 @@ export class TopicPage extends basepage {
             throw error;
         }
     }
+
+    async clickCancelButton() {
+    try {
+        await this.cancelTopicButton.waitFor({ state: "visible" });
+        await this.cancelTopicButton.click();
+        logger.info("Cancel button clicked while adding topic");
+    }
+    catch (error) {
+        logger.error("Error:", error);
+        throw error;
+    }
+}
 
     async getTopicText(title:string){
         try{
@@ -180,5 +194,8 @@ export class TopicPage extends basepage {
                 throw error;
             }
     }
+    getTopicByTitle(title: string): Locator {
+    return this.page.locator(`//span[text()='${title}']`);
+}
 
 }

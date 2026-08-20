@@ -88,8 +88,8 @@ When('then user clicks the preview option', async function (this:CustomWorld) {
 });
 
 Then('the created topics should be displayed', async function (this:CustomWorld) {
-    await expect(this.topicPage.cell1).toHaveText("Custom World");
-    await expect(this.topicPage.cell2).toHaveText("Annotations");
+    await expect(this.topicPage.cell1).toHaveText(constantData.CourseTopic.topicTitle);
+    await expect(this.topicPage.cell2).toHaveText(constantData.CourseTopic.skillTopicTitle);
 });
 
 When('the user clicks the three dots and clicks the delete option', async function (this:CustomWorld) {
@@ -102,4 +102,12 @@ When('the user clicks the three dots and clicks the delete option', async functi
 
 Then('the topic should be deleted successfully', async function (this:CustomWorld) {
     await expect(this.topicPage.AddTopic).toBeVisible();
+});
+When('clicks Cancel button', async function (this: CustomWorld) {
+    await this.topicPage.clickCancelButton();
+});
+Then('the topic should not be created successfully', async function (this: CustomWorld) {
+    const cancelledTopic = this.topicPage.getTopicByTitle("Cancelled Topic");
+
+    await expect(cancelledTopic).toHaveCount(0);
 });

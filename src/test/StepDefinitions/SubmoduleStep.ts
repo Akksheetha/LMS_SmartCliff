@@ -4,9 +4,10 @@ import { CustomWorld } from "../World/CustomWorld";
 import { expect } from "@playwright/test";
 import loginData from "../testData/LoginData.json";
 import { readCsvData } from "../Utilities/csvReader";
+import { MultipleSubmodule } from "../../Type/addMultipleSubModule";
 
 const validUser = loginData.validUser;
-const submoduleCsv: any[] = readCsvData('submodule.csv');
+const submoduleCsv = readCsvData<MultipleSubmodule>('submodule.csv');
 
 Given('user launch the application of lms-smartcliff', async function (this:CustomWorld) {
  await this.loginPage.launchApplication(process.env.BASEURL!);
