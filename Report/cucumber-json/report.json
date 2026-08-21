@@ -1,173 +1,340 @@
 [
   {
-    "description": "Feature Description",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-add-a-newsubmodule-1st-time",
+        "id": "akksheetha---action-settings;enable-hierarchy-actions",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "user Add a newSubmodule 1st time",
+        "line": 11,
+        "name": "Enable hierarchy actions",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 324247699
+              "duration": 777533199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
+            "line": 5,
+            "name": "the user launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 573627999
+              "duration": 1271737199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5764262900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+            "line": 7,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5360914199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 8,
-            "name": "the user login with valid data",
+            "name": "clicks Add course structure action for course 2",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 5395730100
+              "duration": 23786354599
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2604853999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 331367100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7116349399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 12,
-            "name": "the user click the Action Setting option",
+            "name": "the user clicks enable actions by clicking more",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:5"
             },
             "result": {
-              "status": "failed",
-              "duration": 1640613000,
-              "error_message": "locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\\'More\\']')\u001b[22m\n\u001b[2m    - locator resolved to <span class=\"hidden sm:inline tracking-tight\">More</span>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\n    at AddCourseStructurePage.click (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Pages\\basePage.ts:13:27)\n    at AddCourseStructurePage.clickActionSettings (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Pages\\AddCourseStructurePage.ts:78:20)\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\StepDefinitions\\SubmoduleStep.ts:35:35)"
+              "status": "passed",
+              "duration": 11027651499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the user can edit the course structure successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38465400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 160047999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@HierarchyAction",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha---action-settings;enable-direct-actions",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Enable Direct Actions",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 299027600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1288950499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9321571600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3416279900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicks Add course structure action for course 2",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75881642900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 17,
-            "name": "the user enable the hierarchy Action",
+            "name": "the user clicks Direct actions by clicking more",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6773490799
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 18,
-            "name": "the user click the add sub module in the sub module",
+            "name": "the user can edit the level successfully",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:44"
+              "location": "src\\test\\StepDefinitions\\MoreActions.ts:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5055899900,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tbody tr:nth-child(1) td:nth-child(5) div:nth-child(1) div:nth-child(2) button:nth-child(1)')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr:nth-child(1) td:nth-child(5) div:nth-child(1) div:nth-child(2) button:nth-child(1)')\u001b[22m\n\n    at captureRawStack (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\MoreActions.ts:20:44)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 441979300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@DirectActions",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "akksheetha---action-settings",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Akksheetha - Action settings",
+    "tags": [
+      {
+        "name": "@Akksheetha",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\Features\\MoreActions.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;verify-mandatory-title-field",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify mandatory Title field",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 312747900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 954685100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "the user enter the title from csv row 0",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:82"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7054542700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3544980000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "the user enter the Description from csv row 0",
+            "line": 9,
+            "name": "clicks Add course structure action for course 1",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:86"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30378860300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks Add Topic by clicking enable actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4300099,
+              "error_message": "locator.click: Target page, context or browser has been closed\n    at AddCourseStructurePage.click (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\basePage.ts:13:27)\n    at AddCourseStructurePage.clickSubmoduleActionSettings (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\AddCourseStructurePage.ts:157:24)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:39:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "the user click the skill",
+            "line": 14,
+            "name": "the user clicks save button without entering Title",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:57"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user click Add submodule button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:62"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:62"
             },
             "result": {
               "status": "skipped",
@@ -177,10 +344,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
-            "name": "the user should see the title in submodule",
+            "line": 15,
+            "name": "the error message should be displayed successfully",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:66"
             },
             "result": {
               "status": "skipped",
@@ -192,42 +359,59 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 4989600,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "duration": 4630999,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@jeeva",
+            "name": "@Akksheetha",
             "line": 1
+          },
+          {
+            "name": "@MandatoryfieldCheck",
+            "line": 11
           }
         ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-add-multiple-submodule",
+        "id": "akksheetha-7th-july-course-topic-management;add-a-topic-with-mandatory-details",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "user add multiple submodule",
+        "line": 18,
+        "name": "Add a Topic with mandatory details",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 2691699,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
+              "status": "passed",
+              "duration": 308796300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
+            "line": 6,
+            "name": "the user launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 984895699,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
               "status": "skipped",
@@ -238,9 +422,9 @@
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "the user login with valid data",
+            "name": "the user clicks course Management and navigate to course structure Page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
               "status": "skipped",
@@ -251,48 +435,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "the user click the course management",
+            "name": "clicks Add course structure action for course 1",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
               "status": "skipped",
@@ -302,10 +447,40 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 26,
-            "name": "the user enable the hierarchy Action",
+            "line": 19,
+            "name": "the user clicks Add Topic by clicking enable actions",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Custom World",
+                      "Custom World usage"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "enters the topic details",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:45"
             },
             "result": {
               "status": "skipped",
@@ -315,10 +490,100 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "the user click the threeDot_btn",
+            "line": 23,
+            "name": "clicks Save button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:90"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the topic should be created successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 6197600,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@AddingTopic",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;topic-with-skill-set-configuration",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Topic with Skill Set configuration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392781800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 549287299,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
               "status": "skipped",
@@ -328,10 +593,23 @@
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action for course 1",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 28,
-            "name": "the user click the Add btn",
+            "name": "the user clicks Add Topic in a module by clicking enable actions",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:94"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:71"
             },
             "result": {
               "status": "skipped",
@@ -339,38 +617,29 @@
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Annotations",
+                      "basics"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 29,
-            "name": "the user enter the title from csv row 1",
+            "name": "enters the topic details",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "the user enter the Description from csv row 1",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:86"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "the user click the skill",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:57"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:45"
             },
             "result": {
               "status": "skipped",
@@ -381,9 +650,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "the user click Add submodule button",
+            "name": "the user selects the Skill Set",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:62"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:77"
             },
             "result": {
               "status": "skipped",
@@ -392,201 +661,11 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 33,
-            "name": "the user should see the title in submodule",
+            "name": "clicks Save button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 901799,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-edit-the-existing-submodule",
-        "keyword": "Scenario Outline",
-        "line": 46,
-        "name": "user edit the existing submodule",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 4528099,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "the user enable the hierarchy Action",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "the user click the threeDot_btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:90"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "the user click the edit btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:99"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "the user enter the title of \"Python\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:73"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "the user enter the Description of \"Python is Dynamic typed\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:76"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "the user click Add submodule button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:62"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:52"
             },
             "result": {
               "status": "skipped",
@@ -596,10 +675,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
-            "name": "the user should see the title in submodule",
+            "line": 34,
+            "name": "the topic with Skill Set should be created successfully",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:81"
             },
             "result": {
               "status": "skipped",
@@ -611,448 +690,59 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 527400,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "duration": 3294300,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@jeeva",
+            "name": "@Akksheetha",
             "line": 1
+          },
+          {
+            "name": "@TopicSkillSet",
+            "line": 26
           }
         ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-edit-the-existing-submodule",
-        "keyword": "Scenario Outline",
-        "line": 47,
-        "name": "user edit the existing submodule",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1881900,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "the user enable the hierarchy Action",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "the user click the threeDot_btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:90"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "the user click the edit btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:99"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "the user enter the title of \"Typescript\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:73"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "the user enter the Description of \"Strictlt typed\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:76"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "the user click Add submodule button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:62"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "the user should see the title in submodule",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 785299,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-edit-the-existing-submodule",
-        "keyword": "Scenario Outline",
-        "line": 48,
-        "name": "user edit the existing submodule",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 2220000,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "the user enable the hierarchy Action",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "the user click the threeDot_btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:90"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "the user click the edit btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:99"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "the user enter the title of \"Java\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:73"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "the user enter the Description of \"Object Oriented language\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:76"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "the user click Add submodule button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:62"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "the user should see the title in submodule",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 651399,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-delete-the-single-existing-submodule",
+        "id": "akksheetha-7th-july-course-topic-management;preview-the-topic-created",
         "keyword": "Scenario",
-        "line": 50,
-        "name": "user delete the single existing submodule",
+        "line": 37,
+        "name": "Preview the topic created",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 2157300,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
+              "status": "passed",
+              "duration": 252532100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
+            "line": 6,
+            "name": "the user launches the LMS application",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 348577900,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
               "status": "skipped",
@@ -1063,9 +753,9 @@
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "the user login with valid data",
+            "name": "the user clicks course Management and navigate to course structure Page",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
               "status": "skipped",
@@ -1076,48 +766,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "the user click the course management",
+            "name": "clicks Add course structure action for course 1",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
               "status": "skipped",
@@ -1127,10 +778,272 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
-            "name": "the user enable the hierarchy Action",
+            "line": 38,
+            "name": "then user clicks the preview option",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the created topics should be displayed",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 4194799,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@PreviewTable",
+            "line": 36
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;delete-the-topic-created",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Delete the topic created",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 323596600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 638485899,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action for course 1",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "the user clicks the three dots and clicks the delete option",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "the topic should be deleted successfully",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:103"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 3920899,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Akksheetha",
+            "line": 1
+          },
+          {
+            "name": "@DeleteTopic",
+            "line": 41
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "akksheetha-7th-july-course-topic-management;cancel-adding-a-topic",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Cancel adding a Topic",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 263442299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user launches the LMS application",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 616055199,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user logs in with valid credentials and navigates to Dashboard",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks course Management and navigate to course structure Page",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicks Add course structure action for course 1",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "the user clicks Add Topic by clicking enable actions",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Title",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cancelled Topic",
+                      "Topic should not be saved"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 49,
+            "name": "enters the topic details",
+            "match": {
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:45"
             },
             "result": {
               "status": "skipped",
@@ -1141,9 +1054,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 52,
-            "name": "the user click the threeDot_btn in the exsiting submodule",
+            "name": "clicks Cancel button",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:103"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:106"
             },
             "result": {
               "status": "skipped",
@@ -1152,37 +1065,11 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 53,
-            "name": "the user click the delete btn",
+            "name": "the topic should not be created successfully",
             "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:108"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 54,
-            "name": "the user click the delete btn of confom Delete popup",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:114"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 55,
-            "name": "the user should see the operation compeleted message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:118"
+              "location": "src\\test\\StepDefinitions\\CourseTopic.ts:109"
             },
             "result": {
               "status": "skipped",
@@ -1194,1374 +1081,34 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 420699,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "duration": 5942399,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@jeeva",
+            "name": "@Akksheetha",
             "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;scenario-name-:-user-able-to-delete-multiple-submodule",
-        "keyword": "Scenario",
-        "line": 57,
-        "name": "Scenario name : user able to delete multiple submodule",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 4490200,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
           },
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 58,
-            "name": "the user click multiple Delete button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:125"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 59,
-            "name": "the user click the sub module button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:129"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 60,
-            "name": "the user click the checkbox of select All",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:133"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "the user click the delete button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:139"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "the user click the delete button of confomDelete popup",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:144"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 63,
-            "name": "the user should see the operation compeleted message",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:118"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 548400,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026;user-cancel-the-save-operation-while-submodule-is-saving",
-        "keyword": "Scenario",
-        "line": 66,
-        "name": "user cancel the save operation while submodule is saving",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 2457699,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user click the Action Setting option",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:34"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 68,
-            "name": "the user enable the hierarchy Action",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 69,
-            "name": "the user click the threeDot_btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:90"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 70,
-            "name": "the user click the Add btn",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:94"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 71,
-            "name": "the user enter the title from csv row 0",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 72,
-            "name": "the user enter the Description from csv row 0",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:86"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 73,
-            "name": "the user click the skill",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:57"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 74,
-            "name": "the user click save and immediately click cancel",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:148"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 75,
-            "name": "the submodule should able to cancel the process",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:163"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 547800,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
+            "name": "@CancelAddTopic",
+            "line": 46
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "jeevapranesh_07_july_2026_submodule-functionality__updated_09_july_2026",
+    "id": "akksheetha-7th-july-course-topic-management",
     "line": 2,
     "keyword": "Feature",
-    "name": "JeevaPranesh_07_JULY_2026_submodule functionality__updated_09_July_2026",
+    "name": "Akksheetha-7th july-Course Topic Management",
     "tags": [
       {
-        "name": "@jeeva",
+        "name": "@Akksheetha",
         "line": 1
       }
     ],
-    "uri": "src\\test\\Features\\Submodule.feature"
-  },
-  {
-    "description": "Feature Description",
-    "elements": [
-      {
-        "description": "",
-        "id": "jeevapranesh_08_july_2026_teaching-element-functionality__updated_09_july_2026;the-user-select-one-teaching-element",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "the user select one Teaching Element",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1947499,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the user click the dropdown of teaching element",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user click the chechbox of \"All Teaching Elements\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the user should see the \"All Teaching Elements\" column  in the course Table",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:18"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 445600,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_08_july_2026_teaching-element-functionality__updated_09_july_2026;the-user-select-one-teaching-element",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "the user select one Teaching Element",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1642599,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the user click the dropdown of teaching element",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user click the chechbox of \"I Do Activities\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the user should see the \"I Do Activities\" column  in the course Table",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:18"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 599600,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_08_july_2026_teaching-element-functionality__updated_09_july_2026;the-user-select-one-teaching-element",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "the user select one Teaching Element",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1421399,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the user click the dropdown of teaching element",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user click the chechbox of \"We Do Activities\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the user should see the \"We Do Activities\" column  in the course Table",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:18"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 520400,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_08_july_2026_teaching-element-functionality__updated_09_july_2026;the-user-select-one-teaching-element",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "the user select one Teaching Element",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 3216499,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user seach the course code , which is already created",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the Add course Structure of the searched course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:29"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the user click the dropdown of teaching element",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user click the chechbox of \"You Do Activities\"",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the user should see the \"You Do Activities\" column  in the course Table",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\TeachingElement.ts:18"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 563200,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "jeevapranesh_08_july_2026_teaching-element-functionality__updated_09_july_2026",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "JeevaPranesh_08_JULY_2026_Teaching Element functionality__updated_09_July_2026",
-    "tags": [
-      {
-        "name": "@jeeva",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\Features\\TeachingElemets.feature"
-  },
-  {
-    "description": "Feature Description",
-    "elements": [
-      {
-        "description": "",
-        "id": "jeevapranesh_10_july_2026_course-modificationedit-and-delete-updated_11_july_2026;user-able-to-edit-the-course-name-of-already-existing-course-name",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "user able to Edit the Course Name of already existing course name",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1562799,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user seach the course code for edit from csv",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the user click the threeDont of exsisting course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the user click the Edit button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:20"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the user click the next button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:24"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the user click the previewAndUpdatebutton",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:28"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the user click the Save courseLayout button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "the user should able to seen the edited course name",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:36"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 433699,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "jeevapranesh_10_july_2026_course-modificationedit-and-delete-updated_11_july_2026;user-able-to-change-the-course-name-to-custom-name",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "user able to change the course name to custom name",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 3259699,
-              "error_message": "browser.newContext: Target page, context or browser has been closed\n    at async AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:30:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "user launch the application of lms-smartcliff",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:11"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "the user login with valid data",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the user click the course management",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\SubmoduleStep.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user seach the course code for edit from csv",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "the user click the threeDont of exsisting course",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "the user click the Edit button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:20"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the user select Others Custom Name from course name dropdown",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:43"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "the user type custom course name from csv",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:47"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "the user click the next button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:24"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "the user click the previewAndUpdatebutton",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:28"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "the user click the Save courseLayout button",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "the user should able to see the custom course name from csv",
-            "match": {
-              "location": "src\\test\\StepDefinitions\\ModifyCourse.ts:51"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 532400,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at AllureCucumberWorld.<anonymous> (D:\\Expleo-Tranning\\Playwright_project\\LMS_SmartCliff\\src\\test\\Hooks\\hooks.ts:53:37)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@jeeva",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "jeevapranesh_10_july_2026_course-modificationedit-and-delete-updated_11_july_2026",
-    "line": 3,
-    "keyword": "Feature",
-    "name": "JeevaPranesh_10_JULY_2026_course modificationEdit and Delete-updated_11_July_2026",
-    "tags": [
-      {
-        "name": "@jeeva",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\Features\\courseModification.feature"
+    "uri": "src\\test\\Features\\courseTopic.feature"
   }
 ]
