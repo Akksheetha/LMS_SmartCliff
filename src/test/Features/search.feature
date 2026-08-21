@@ -7,7 +7,7 @@ Feature: Janani_Sri_07-07-2026_Search_Course
     And User enters a valid password
     And User clicks on the Sign In button
     When user clicks the course management 
-  @Search @Positive @Janani
+  @Search @Janani
   Scenario Outline: Verify the user can search for a Course using <SearchType>
 
 And user enters "<SearchKeyword>" in the search box
