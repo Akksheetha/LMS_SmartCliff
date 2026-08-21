@@ -14,8 +14,6 @@ module.exports={
            
         ],
 
-        
-
         paths:[
             "src/test/Features/**/*.feature",
         ],

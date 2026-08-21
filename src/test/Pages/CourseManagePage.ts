@@ -20,7 +20,7 @@ export class CourseManagePage extends basepage {
         this.addcoursestructure = page.locator('button').filter({ hasText: 'Add Course Structure' }).first()
         this.courseStructureH1 = page.locator("//h1[text()='Course Structures']")
         this.searchbar = page.getByRole('textbox', { name: 'Search courses, codes, clients, or categories...' })
-        this.tableElement = page.locator('//tbody//tr[contains(.,"JavaScript")]//td[3]//button/span').first();
+        this.tableElement = page.locator('//tbody//tr[contains(.,"Python Development")]//td[3]//button/span').first();
 
         this.addcoursestructure = page.locator('button').filter({ hasText: 'Add Course Structure' }).first()
         this.coursestructure = page.locator("/html/body/div[3]/div/main/div/div/div/div[1]/div/div[1]/div/div/h1")

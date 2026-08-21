@@ -9,8 +9,8 @@ Feature: DarshanRaj-08_03_2026-Print_File
     And User is on the Dashboard page
     And User clicks on Course Management
     And User is on the Course Management page
-    And User enter javascript in search bar
-    And User clicks on Add Course Structure in javascript Course
+    And User enter python in search bar
+    And User clicks on Add Course Structure in python Course
     And User clicks on Print Button
 
   Scenario: Verify the user can successfully print the excel file
