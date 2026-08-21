@@ -197,5 +197,35 @@ export class TopicPage extends basepage {
     getTopicByTitle(title: string): Locator {
     return this.page.locator(`//span[text()='${title}']`);
 }
+async openDeleteConfirmation(){
+    try{
+        await this.page.mouse.click(5,5);
+        await this.delete1.waitFor({state:"visible"});
+        await this.click(this.delete1);
+        await this.click(this.delete);
+        logger.info("Delete confirmation popup opened");
+    }
+    catch(error){
+        logger.error("Error:", error);
+        throw error;
+    }
+}
+async cancelDeleteConfirmation(){
+    try{
+        const cancelButton = this.page.getByRole('button', {
+            name: 'Cancel',
+            exact: true
+        });
+
+        await cancelButton.waitFor({state:"visible"});
+        await cancelButton.click();
+
+        logger.info("Delete confirmation cancelled");
+    }
+    catch(error){
+        logger.error("Error:", error);
+        throw error;
+    }
+}
 
 }

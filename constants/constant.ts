@@ -16,6 +16,7 @@ export const constantData = {
     "CourseTopic": {
         topicTitle: "Custom World",
         skillTopicTitle: "Annotations",
+        titleOnlyTopicTitle: "Title Only Topic",
         mandatoryTitleError: "Title is required"
-    }
+}
 }

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 777533199
+              "duration": 430088999
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1271737199
+              "duration": 985950399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5764262900
+              "duration": 5734663099
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5360914199
+              "duration": 2997160600
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23786354599
+              "duration": 9538656100
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11027651499
+              "duration": 5602664199
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38465400
+              "duration": 19548599
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160047999
+              "duration": 64755600
             }
           }
         ],
@@ -128,7 +128,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 299027600
+              "duration": 204037299
             }
           },
           {
@@ -141,7 +141,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1288950499
+              "duration": 859274600
             }
           },
           {
@@ -154,7 +154,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9321571600
+              "duration": 7354882700
             }
           },
           {
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3416279900
+              "duration": 3458612999
             }
           },
           {
@@ -180,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75881642900
+              "duration": 10205956400
             }
           },
           {
@@ -193,7 +193,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6773490799
+              "duration": 4943266700
             }
           },
           {
@@ -206,7 +206,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5055899900,
+              "duration": 5023800400,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tbody tr:nth-child(1) td:nth-child(5) div:nth-child(1) div:nth-child(2) button:nth-child(1)')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr:nth-child(1) td:nth-child(5) div:nth-child(1) div:nth-child(2) button:nth-child(1)')\u001b[22m\n\n    at captureRawStack (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\MoreActions.ts:20:44)"
             }
           },
@@ -215,7 +215,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 441979300
+              "duration": 240541399
             }
           }
         ],
@@ -259,7 +259,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 312747900
+              "duration": 257168899
             }
           },
           {
@@ -272,7 +272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 954685100
+              "duration": 1597478999
             }
           },
           {
@@ -285,7 +285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7054542700
+              "duration": 7354101900
             }
           },
           {
@@ -298,7 +298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3544980000
+              "duration": 2471204400
             }
           },
           {
@@ -311,7 +311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30378860300
+              "duration": 10630716099
             }
           },
           {
@@ -323,9 +323,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
             },
             "result": {
-              "status": "failed",
-              "duration": 4300099,
-              "error_message": "locator.click: Target page, context or browser has been closed\n    at AddCourseStructurePage.click (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\basePage.ts:13:27)\n    at AddCourseStructurePage.clickSubmoduleActionSettings (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\AddCourseStructurePage.ts:157:24)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:39:35)"
+              "status": "passed",
+              "duration": 5107495399
             }
           },
           {
@@ -337,8 +336,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:62"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 410241299
             }
           },
           {
@@ -350,17 +349,16 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:66"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 15736600
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 4630999,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 48457999
             }
           }
         ],
@@ -388,7 +386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 308796300
+              "duration": 288706900
             }
           },
           {
@@ -400,9 +398,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 984895699,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+              "status": "passed",
+              "duration": 1042447199
             }
           },
           {
@@ -414,8 +411,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6770126700
             }
           },
           {
@@ -427,8 +424,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3963746099
             }
           },
           {
@@ -440,8 +437,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 20361747600
             }
           },
           {
@@ -453,8 +450,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5116532399
             }
           },
           {
@@ -483,8 +480,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:45"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 156793699
             }
           },
           {
@@ -496,8 +493,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 203938399
             }
           },
           {
@@ -509,17 +506,17 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:57"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 90004145500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 6197600,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 511574699
             }
           }
         ],
@@ -547,7 +544,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 392781800
+              "duration": 258963900
             }
           },
           {
@@ -559,9 +556,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 549287299,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+              "status": "passed",
+              "duration": 2975182000
             }
           },
           {
@@ -573,8 +569,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10906801399
             }
           },
           {
@@ -586,8 +582,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3053851900
             }
           },
           {
@@ -599,8 +595,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11946744699
             }
           },
           {
@@ -612,8 +608,9 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 7677467200,
+              "error_message": "locator.click: Error: strict mode violation: locator('button[title=\\'Add New Topic\\'] span[class=\\'ml-2 text-xs font-medium text-blue-600\\']') resolved to 2 elements:\n    1) <span class=\"ml-2 text-xs font-medium text-blue-600\">Add New Topic</span> aka getByRole('button', { name: 'Add New Topic' }).first()\n    2) <span class=\"ml-2 text-xs font-medium text-blue-600\">Add New Topic</span> aka getByRole('button', { name: 'Add New Topic' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for locator('button[title=\\'Add New Topic\\'] span[class=\\'ml-2 text-xs font-medium text-blue-600\\']')\u001b[22m\n\n    at TopicPage.click (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\basePage.ts:13:27)\n    at TopicPage.clicksecondTopic (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\CourseTopicPage.ts:130:20)\n    at async AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:74:5)"
             }
           },
           {
@@ -689,9 +686,8 @@
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 3294300,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 166583700
             }
           }
         ],
@@ -719,7 +715,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 252532100
+              "duration": 246039400
             }
           },
           {
@@ -731,9 +727,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 348577900,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+              "status": "passed",
+              "duration": 929416899
             }
           },
           {
@@ -745,8 +740,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5619883699
             }
           },
           {
@@ -758,8 +753,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3971928699
             }
           },
           {
@@ -771,8 +766,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10293473800
             }
           },
           {
@@ -784,8 +779,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:86"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5389346599
             }
           },
           {
@@ -797,17 +792,17 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:90"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5018978099,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('cell', { name: 'Custom World' }).nth(1)\nExpected: \u001b[32m\"Custom World\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('cell', { name: 'Custom World' }).nth(1)\u001b[22m\n\n    at captureRawStack (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:91:40)"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 4194799,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 172804899
             }
           }
         ],
@@ -835,7 +830,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323596600
+              "duration": 291949099
             }
           },
           {
@@ -847,9 +842,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 638485899,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+              "status": "passed",
+              "duration": 1176844500
             }
           },
           {
@@ -861,8 +855,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6265967799
             }
           },
           {
@@ -874,8 +868,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2927986199
             }
           },
           {
@@ -887,8 +881,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10133703800
             }
           },
           {
@@ -900,8 +894,9 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:95"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 90004559400,
+              "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
             }
           },
           {
@@ -921,9 +916,8 @@
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 3920899,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 733907800
             }
           }
         ],
@@ -951,7 +945,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 263442299
+              "duration": 276585699
             }
           },
           {
@@ -963,9 +957,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 616055199,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://lms-smartcliff.vercel.app/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.launchApplication (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Pages\\LoginPage.ts:25:25)\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\StepDefinitions\\CourseTopic.ts:16:26)"
+              "status": "passed",
+              "duration": 1284781799
             }
           },
           {
@@ -977,8 +970,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 8910609200
             }
           },
           {
@@ -990,8 +983,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2425382400
             }
           },
           {
@@ -1003,8 +996,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10436815600
             }
           },
           {
@@ -1016,8 +1009,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:38"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5080719900
             }
           },
           {
@@ -1046,8 +1039,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:45"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 111705400
             }
           },
           {
@@ -1059,8 +1052,8 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:106"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 266103599
             }
           },
           {
@@ -1072,17 +1065,16 @@
               "location": "src\\test\\StepDefinitions\\CourseTopic.ts:109"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 8337699
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5942399,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at AllureCucumberWorld.<anonymous> (C:\\Users\\akksh\\OneDrive\\Desktop\\Testing modules\\LMS_Project\\LMS_SmartCLiff\\src\\test\\Hooks\\hooks.ts:53:37)"
+              "status": "passed",
+              "duration": 82295800
             }
           }
         ],

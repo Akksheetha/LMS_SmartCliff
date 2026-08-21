@@ -111,3 +111,38 @@ Then('the topic should not be created successfully', async function (this: Custo
 
     await expect(cancelledTopic).toHaveCount(0);
 });
+
+When('enters the topic title only', async function (this: CustomWorld, dataTable) {
+    const data = dataTable.hashes()[0];
+
+    await this.topicPage.fillTopicTitle(data.Title);
+});
+
+Then('the topic with title only should be created successfully', async function (this: CustomWorld) {
+    const topicText = await this.topicPage.getTopicText(
+        constantData.CourseTopic.titleOnlyTopicTitle
+    );
+
+    expect(topicText).toContain(
+        constantData.CourseTopic.titleOnlyTopicTitle
+    );
+});
+When('the user opens the delete confirmation for the topic', async function(this:CustomWorld){
+    await this.addCourseStructure.clickSubmoduleActionSettings();
+    await this.addCourseStructure.clickHierarchy();
+    await this.topicPage.openDeleteConfirmation();
+});
+
+When('the user cancels the delete confirmation', async function(this:CustomWorld){
+    await this.topicPage.cancelDeleteConfirmation();
+});
+
+Then('the topic should still be available', async function(this:CustomWorld){
+    const topicText = await this.topicPage.getTopicText(
+        constantData.CourseTopic.topicTitle
+    );
+
+    expect(topicText).toContain(
+        constantData.CourseTopic.topicTitle
+    );
+});

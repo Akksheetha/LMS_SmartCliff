@@ -16,3 +16,20 @@ Then the user can edit the course structure successfully
 Scenario: Enable Direct Actions
 When the user clicks Direct actions by clicking more
 Then the user can edit the level successfully
+
+@DisableHierarchyAction
+Scenario: Disable hierarchy actions
+When the user clicks enable actions by clicking more
+And the user disables hierarchy actions
+Then the hierarchy actions should be disabled
+
+@DirectActionsControls
+Scenario: Verify Direct Actions controls are displayed
+    When the user clicks direct actions by clicking more
+    Then the Direct Actions controls should be displayed
+
+@DisableDirectActions
+Scenario: Disable Direct Actions
+When the user clicks Direct actions by clicking more
+And the user disables Direct actions
+Then the level edit control should not be visible

@@ -51,3 +51,27 @@ And enters the topic details
     | Cancelled Topic    | Topic should not be saved |
 And clicks Cancel button
 Then the topic should not be created successfully
+
+@TitleOnlyTopic
+Scenario: Add a Topic with Title only
+When the user clicks Add Topic by clicking enable actions
+And enters the topic title only
+    | Title           |
+    | Title Only Topic |
+And clicks Save button
+Then the topic with title only should be created successfully
+
+@CancelDeleteTopic
+Scenario: Cancel deleting a Course Topic
+    When the user clicks delete for the topic "Custom World"
+    And the user cancels the delete confirmation
+    Then the topic "Custom World" should still be available
+
+@PreviewNewTopic
+Scenario: Preview a new topic before saving
+    When the user clicks Add Topic by clicking enable actions
+    And enters the topic details
+        | Title         | Description             |
+        | Preview Topic | Topic preview test data |
+    And clicks Preview button
+    Then the topic preview should be displayed

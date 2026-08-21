@@ -22,7 +22,7 @@ let browser: Browser;
 BeforeAll(async () => {
     getEnv();
     browser = await chromium.launch({
-        headless: false
+        headless: true
     });
 });
 Before(async function (this: CustomWorld) {
